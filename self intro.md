@@ -1,39 +1,41 @@
-Hi, myself ramkotni I have 16 years of hands on experience in PLM Technologies and Java Full Stack technologies, used core Java concepts JDK 8, JDK 11 and executor frameworks 
-and extensively worked on different frameworks like spring hibernate, Spring Boot, 
+Hi, I'm Ram Kotni. I have 16 years of experience in Java Fullstack technologies, primarily working as a backend developer utilizing core Java concepts, including JDK 8, JDK 11, and executor frameworks. I have extensive experience with frameworks such as Spring, Hibernate, and Spring Boot. I've both exposed and consumed downstream REST endpoints using REST templates and Feign clients, and I've worked on microservices from scratch as well as existing ones, employing various patterns like Saga, Discovery, API Gateway, and Circuit Breaker.
 
-I have exposed and consumed downstream REST endpoints using REST templates and feign clients And also worked on micro services from the scratch and existing microservices also by using the different patterns like saga pattern, Discovery pattern, API gateway pattern and circuit breaker patterns.
+I monitor application logs using Splunk dashboards and track memory spikes with Grafana and AppDynamics dashboards. Deployment is managed through Jenkins CI/CD pipelines, and I'm proficient in writing Jenkins scripts. I also maintain AWS EC2 instances and am well-versed in using S3 buckets, IAM policies, and CloudWatch.
 
-And we used to monitor the application logs using the Splunk dashboards and we monitor memory spikes using Grafana and Appdynamics dashboards.
+As a developer, I ensure the code is testable by writing JUnit test cases using the Mockito framework, aiming for 90% code coverage with SonarQube plugins. I handle authentication and authorization of user requests using JSON Web Tokens and AWS IAM policies. I've worked extensively with Kafka as both a consumer and producer, managing different Kafka topics, consumer groups, partition offsets, and configurations.
 
-And we use to deploy through Jenkins CI CD pipelines and have good exposure to write the Jenkins script file. 
+My database experience includes Oracle, PostgreSQL, MySQL, MongoDB, Cassandra, and DynamoDB. On the frontend, I have experience with JavaScript, Angular, HTML, CSS, and some exposure to React.js.
 
-And we used to maintain the AWS EC2 instances. And also I am well versed with the s3 buckets, IAM policies and CloudWatch as well These are the services which I have used in AWS 
+Roles and Responsibilities:
+Follow agile methodologies with two-week sprints, participating in all agile ceremonies such as planning, review, refinement, retrospective, and daily stand-up meetings.
+Prepare quarterly roadmaps during JAD(Joint Application Development) sessions, prioritize user stories, and work on them accordingly.
+Review pull requests from team members, manage deployments, and provide demos to stakeholders in UAT environments.
+Deploy to different environments, including Linux.
+Write JUnit test cases using the Mockito framework and maintain 85% test coverage with JaCoCo and SonarQube plugins.
+Oversee and support offshore team members.
+These are the technologies and methodologies I have worked with throughout my career.
+=====
+Introduction:
 
-and we used to write the Junit test cases as a developer we must and should make sure the whatever the code we have been written it should be testable using Mockito framework we are writing Junit test cases. 
+"Hi, I'm Ram Kotni, and I have 16 years of experience working in Java Full Stack technologies, with a primary focus on backend development. My expertise centers around core Java concepts, including JDK 8, JDK 11, JDK17 and Java Executor frameworks, which I've used to build efficient, scalable applications."
 
-And we are ensuring that 90% of code coverage by using sonarqube plugins.
+Professional Summary:
 
-And we use to authenticate and authorize the user request using the JSON web tokens and AWS IAM policies 
+"I’m highly skilled in using frameworks like Spring, Hibernate, and Spring Boot, and have worked on RESTful services extensively, using REST templates and Feign clients to both expose and consume downstream endpoints. In my previous role, I had the opportunity to design microservices from the ground up and enhance existing services, applying key design patterns such as Saga, Discovery, API Gateway, and Circuit Breaker."
 
-and I acted as a Kafka Consumer for the different Kafka topics and also have produced different messages as well and also good exposure on the Configuring the different consumer groups and partitions offset and these kinds of the configurations.
+Technical Skills:
 
-worked Oracle, Postgresql and MySQL RDBMS databases and also noSQL databases like MongoDB, Cassandra and DynamoDB.
+"My work often involves monitoring application logs through Splunk and tracking memory with Grafana and AppDynamics. I handle deployments via Jenkins CI/CD pipelines and write Jenkins scripts as needed. I also manage AWS resources like EC2, S3, IAM, and CloudWatch, ensuring secure and optimized cloud environments. Additionally, I maintain high code quality, using tools like JUnit with Mockito for testing, aiming for robust coverage with SonarQube."
 
-And I worked on the UI technologies as well using the JavaScript Angular and HTML and CSS, and also have good exposure on React js as well. 
+Database and Frontend Experience:
 
-And these are the tech stack which I had worked on it. 
+"I have a solid database background, with experience across Oracle, PostgreSQL, MySQL, MongoDB, Cassandra, and DynamoDB. On the frontend, I’ve worked with JavaScript, Angular, HTML, CSS, and some React.js, giving me a full-stack perspective."
 
-Coming to my roles and responsibilities:
+Project Highlight:
 
-Architect solutions to simplify business processes. Build simple, scalable, robust, secure applications.
-As a Architect my role involved design the overall structure of software solutions making high level design decision ensuring the system meets functional and nonfunctional requirements
-I collaborate with stakeholders, development team and other architects and define architecture patterns.
+"One of my notable projects was at Amazon Robotics, where I worked on a system to improve the efficiency and accuracy of delivery agents through real-time data. This involved using Java 17 and Spring Boot to process data streams and AWS for scalable storage and processing. The project helped me combine my backend expertise with AWS cloud and DevOps practices to make an impact in real-world logistics."
 
+Closing:
 
-We were following agile methodologies. It's about two weeks of sprint. And I was involving all agile ceremonies like planning, review , refinement and retrospective and DSM meeting.
-Usually we will have zad session there will prepare roadmap for the entire quarter.based on the priority will pick the user stories and will work on it.
+"I’m looking forward to bringing my technical experience and collaborative approach to this role and am excited to discuss how my background aligns with the team’s objectives."
 
-I use to review the other folks PRs I used to take care of all the deployments and giving demo to the stakeholders in the UAT environments and I have good exposure on deploying to the different environments using the Linux environment as well.
-after that will write junit test cases using Mockito framework and we are maintaining 85% of test coverage to ensure that we are using jacoco and SonarQube plugins.
-
-I use to take care about the offshore team members also.
