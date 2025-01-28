@@ -1,3 +1,297 @@
+Spring Boot uses annotations to simplify development by reducing boilerplate code and providing powerful functionalities out of the box. These annotations are categorized based on their usage, such as for configuration, dependency injection, data access, REST APIs, testing, and more.
+
+Here’s a detailed guide to Spring Boot annotations, what they do, and how they’re used:
+
+1. Core Annotations
+Annotation	Purpose	Example
+@SpringBootApplication	Combines @Configuration, @EnableAutoConfiguration, and @ComponentScan for bootstrapping the application.	@SpringBootApplication public class MyApp { public static void main(String[] args) { SpringApplication.run(MyApp.class, args); } }
+@Configuration	Marks a class as a source of bean definitions.	@Configuration public class AppConfig { @Bean public MyBean myBean() { return new MyBean(); } }
+@ComponentScan	Scans specified packages for components, configurations, and services.	@ComponentScan(basePackages = "com.example")
+@EnableAutoConfiguration	Enables Spring Boot’s auto-configuration mechanism.	@EnableAutoConfiguration public class AppConfig {}
+2. Dependency Injection Annotations
+Annotation	Purpose	Example
+@Component	Marks a class as a Spring-managed component.	@Component public class MyService {}
+@Service	Specialized version of @Component for service classes.	@Service public class UserService {}
+@Repository	Specialized version of @Component for data access layers.	@Repository public class UserRepository {}
+@Controller	Specialized version of @Component for MVC controllers.	@Controller public class UserController {}
+@RestController	Combines @Controller and @ResponseBody to simplify RESTful API development.	@RestController public class ApiController { @GetMapping("/api") public String api() { return "Hello"; } }
+@Autowired	Automatically injects a bean where required.	@Autowired private MyService myService;
+@Qualifier	Specifies which bean to inject when multiple beans of the same type are available.	@Autowired @Qualifier("beanName") private MyService myService;
+@Primary	Marks a bean as the default choice when multiple beans of the same type exist.	@Primary @Bean public MyService defaultService() { return new MyService(); }
+3. Data Access Annotations
+Annotation	Purpose	Example
+@Entity	Marks a class as a JPA entity.	@Entity public class User { @Id private Long id; }
+@Table	Specifies the database table associated with an entity.	@Table(name = "users")
+@Id	Marks a field as the primary key.	@Id @GeneratedValue private Long id;
+@GeneratedValue	Configures how primary key values are generated.	@GeneratedValue(strategy = GenerationType.IDENTITY)
+@Column	Specifies a column mapping in the database.	@Column(name = "user_name", nullable = false)
+@ManyToOne / @OneToMany	Defines relationships between entities.	@ManyToOne @JoinColumn(name = "user_id")
+@Repository	Marks a class as a repository, enabling exception translation for database operations.	@Repository public interface UserRepository extends JpaRepository<User, Long> {}
+4. REST and Web Annotations
+Annotation	Purpose	Example
+@RequestMapping	Maps HTTP requests to handler methods or classes.	@RequestMapping("/api")
+@GetMapping / @PostMapping	Specialized shortcuts for HTTP GET and POST requests.	@GetMapping("/users") public List<User> getUsers() { return ...; }
+@RequestBody	Maps the HTTP request body to a method parameter.	@PostMapping("/add") public User addUser(@RequestBody User user) { ... }
+@ResponseBody	Converts the return value of a method into the HTTP response body.	@ResponseBody public String sayHello() { return "Hello!"; }
+@PathVariable	Maps URI template variables to method parameters.	@GetMapping("/users/{id}") public User getUser(@PathVariable Long id) { ... }
+@RequestParam	Maps query parameters to method parameters.	@GetMapping("/search") public List<User> search(@RequestParam String name) { ... }
+5. Validation Annotations
+Annotation	Purpose	Example
+@Valid	Triggers validation on an object.	public ResponseEntity<String> createUser(@Valid @RequestBody User user) {}
+@NotNull	Validates that a field is not null.	@NotNull private String name;
+@Size	Specifies size constraints on a field.	@Size(min = 2, max = 20) private String username;
+@Pattern	Validates a field against a regular expression.	@Pattern(regexp = "[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}") private String email;
+6. Testing Annotations
+Annotation	Purpose	Example
+@SpringBootTest	Loads the entire application context for integration testing.	@SpringBootTest public class MyTests { ... }
+@MockBean	Creates a mock of a bean and replaces it in the application context.	@MockBean private UserService userService;
+@Test	Marks a method as a test case (JUnit 5).	@Test public void testSomething() { ... }
+7. Actuator Annotations
+Annotation	Purpose	Example
+@Endpoint	Custom actuator endpoint.	@Endpoint(id = "custom") public class CustomEndpoint { ... }
+@ReadOperation	Marks a method as a "read" operation for an endpoint.	@ReadOperation public String getData() { return "data"; }
+Summary
+Spring Boot annotations simplify configuration and coding by automating common tasks. Their categories span core configuration, dependency injection, data access, web development, validation, testing, and more. These annotations enable developers to focus on business logic while Spring Boot handles the boilerplate.
+
+Spring boot components:
+
+pring Boot simplifies the development of Spring-based applications by providing a set of features and tools for rapid application development. Its main components and features are as follows:
+
+1. Spring Boot Starters
+Description: Predefined dependencies or templates that bundle commonly used libraries for specific functionalities.
+Purpose: Simplifies Maven/Gradle configuration.
+Examples:
+spring-boot-starter-web for web applications.
+spring-boot-starter-data-jpa for JPA and Hibernate integration.
+spring-boot-starter-security for Spring Security integration.
+2. Spring Boot Auto-Configuration
+Description: Automatically configures Spring beans and settings based on the application's classpath and environment.
+Purpose: Reduces boilerplate code by eliminating manual configurations.
+Example:
+If spring-webmvc is present, Spring Boot auto-configures a DispatcherServlet.
+3. Spring Boot CLI (Command Line Interface)
+Description: A command-line tool to quickly create and run Spring Boot applications using Groovy scripts.
+Purpose: Speeds up prototyping and testing.
+Example:
+bash
+Copy
+Edit
+spring run app.groovy
+4. Spring Boot Actuator
+Description: Provides production-ready features to monitor and manage applications.
+Purpose: Exposes endpoints for health checks, metrics, environment properties, and more.
+Example Endpoints:
+/actuator/health: Application health status.
+/actuator/metrics: Performance metrics.
+/actuator/env: Environment properties.
+5. Spring Boot DevTools
+Description: Tools to enhance developer productivity.
+Purpose: Provides features like automatic application restart, live reload, and relaxed binding for development.
+Example: Automatically reloads the application when code changes are detected.
+6. Spring Boot Configuration Files
+Description: Centralized files for application configuration.
+Purpose: Makes managing application properties simple and consistent.
+Types:
+application.properties
+application.yml
+Example:
+properties
+Copy
+Edit
+server.port=8081
+spring.datasource.url=jdbc:mysql://localhost:3306/mydb
+7. Embedded Servers
+Description: Spring Boot includes embedded servers like Tomcat, Jetty, and Undertow.
+Purpose: Allows applications to run standalone without needing an external web server.
+Example: Run a web application using the embedded Tomcat server.
+8. Spring Boot Initializer
+Description: A web-based tool (https://start.spring.io/) for generating Spring Boot project scaffolding.
+Purpose: Quickly create project structure and dependencies.
+Usage:
+Select dependencies (e.g., Web, JPA, Security).
+Download the pre-configured project.
+9. Spring Boot Logging
+Description: Provides default logging using Logback.
+Purpose: Simplifies logging configuration with minimal setup.
+Example:
+Logging level configuration:
+properties
+Copy
+Edit
+logging.level.org.springframework=DEBUG
+10. Spring Boot Testing
+Description: Provides testing support for Spring applications.
+Purpose: Simplifies writing unit and integration tests.
+Tools:
+@SpringBootTest: Load the full application context for testing.
+@TestRestTemplate: Simplifies REST API testing.
+11. Spring Boot Application Class
+Description: The entry point for a Spring Boot application.
+Purpose: Bootstraps the application using the @SpringBootApplication annotation.
+Example:
+java
+Copy
+Edit
+@SpringBootApplication
+public class MyApp {
+    public static void main(String[] args) {
+        SpringApplication.run(MyApp.class, args);
+    }
+}
+12. Externalized Configuration
+Description: Supports configuration from external sources (e.g., environment variables, command-line arguments).
+Purpose: Makes the application flexible and environment-independent.
+Example:
+Command-line argument:
+bash
+Copy
+Edit
+java -jar app.jar --server.port=8081
+Summary Table
+Component	Purpose
+Starters	Simplify dependency management
+Auto-Configuration	Automatically configures beans based on classpath dependencies
+CLI	Run applications using Groovy for rapid prototyping
+Actuator	Provides production-ready endpoints for monitoring
+DevTools	Enhances developer productivity with auto-reloading
+Config Files	Centralized configuration management
+Embedded Servers	Enable standalone deployment with embedded servers
+Initializer	Quickly scaffold a Spring Boot project
+Logging	Default logging support with Logback
+Testing	Simplified testing framework
+Application Class	Entry point for the application
+Externalized Config	Flexibility through external configuration sources
+By leveraging these components, Spring Boot simplifies the development process and provides a powerful framework for building modern Java applications.
+
+
+
+
+
+
+How to write immutable class in Hibernate
+
+Steps to Write an Immutable Class in Hibernate
+Declare the Class as final:
+
+This ensures the class cannot be extended, preventing modification through subclassing.
+java
+Copy
+Edit
+public final class Employee {
+Mark the Entity as Immutable:
+
+Use the @Immutable annotation (available in Hibernate 5 and later) on the class to tell Hibernate that it should not update the entity in the database.
+java
+Copy
+Edit
+import org.hibernate.annotations.Immutable;
+
+@Entity
+@Immutable
+public final class Employee {
+Use final for Fields:
+
+Mark all fields as final to ensure their values cannot be changed once initialized.
+java
+Copy
+Edit
+    private final Long id;
+    private final String name;
+    private final String department;
+Make Fields Private and Use Getters Only:
+
+Ensure all fields are private and provide only getters (no setters).
+java
+Copy
+Edit
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+Initialize Fields in Constructor:
+
+Use a constructor to initialize all fields. Hibernate uses this constructor to create instances.
+java
+Copy
+Edit
+    public Employee(Long id, String name, String department) {
+        this.id = id;
+        this.name = name;
+        this.department = department;
+    }
+Configure Hibernate Mapping:
+
+Ensure Hibernate does not expect to update the entity. For example:
+Do not use cascading updates.
+Avoid methods that modify fields or collections.
+Complete Example
+java
+Copy
+Edit
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import org.hibernate.annotations.Immutable;
+
+@Entity
+@Immutable
+public final class Employee {
+
+    @Id
+    private final Long id;
+
+    private final String name;
+
+    private final String department;
+
+    // No-arg constructor for Hibernate
+    protected Employee() {
+        this.id = null;
+        this.name = null;
+        this.department = null;
+    }
+
+    public Employee(Long id, String name, String department) {
+        this.id = id;
+        this.name = name;
+        this.department = department;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+}
+Key Hibernate Configuration
+@Immutable Annotation: Prevents Hibernate from performing updates or deletions on this entity. If you try to modify the entity and persist it, Hibernate will ignore the changes.
+Disable Cascade Updates: Ensure cascading updates or merges are not applied to immutable entities.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 UX/Java Engineer:
 Roles and Responsibilities:
 Front-End Development:
