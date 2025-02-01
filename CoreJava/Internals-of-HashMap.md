@@ -237,3 +237,275 @@ By using these techniques, HashMap maintains an average time complexity of O(1) 
 
 ========
 
+Internals of HashMap in Java
+A HashMap in Java is an implementation of the Map interface and stores key-value pairs. Under the hood, it uses an array of buckets and a hashing mechanism to store and retrieve data efficiently.
+
+Let's break down the internals of a HashMap, including how it works, how collisions are handled, and an example.
+
+1. Hashing in HashMap
+When you insert a key-value pair into a HashMap, the key is passed through a hash function to generate a hash code. This hash code is then used to determine the index in an internal array (called a bucket array) where the key-value pair will be stored.
+
+Key steps involved:
+HashCode Calculation: When you call put(K key, V value), the hashCode() method of the key is invoked to generate a hash code. The hash code is a 32-bit integer that represents the key.
+
+Bucket Index Calculation: The hash code is then used to calculate the bucket index where the key-value pair should be stored. This is typically done by taking the hash code modulo the current size of the array.
+
+java
+Copy
+int index = (n - 1) & hash;  // n is the number of buckets, hash is the hash code of the key
+This step ensures that the hash code is distributed evenly across the buckets.
+
+Storing the Key-Value Pair: The key-value pair is then stored in the bucket array at the calculated index.
+
+2. The Structure of a HashMap
+A HashMap uses an array to store its entries, and each entry is a linked list (or a red-black tree in Java 8 and above) when multiple keys hash to the same bucket. This is done to handle collisions (i.e., when two keys have the same bucket index).
+
+Array of Buckets: The internal structure of a HashMap is an array of buckets, where each bucket stores a linked list of entries (key-value pairs).
+Entry: Each entry in a bucket is represented by an Entry object, which contains:
+Key: The key of the key-value pair.
+Value: The value associated with the key.
+Hash: The hash code of the key.
+Next: A reference to the next entry in the linked list (used for chaining in case of collisions).
+3. Collisions in HashMap
+A collision occurs when two distinct keys generate the same hash code, and thus, they map to the same index in the bucket array. Since the HashMap uses the bucket index (calculated from the hash code) to store the key-value pairs, when two keys have the same hash code (or fall into the same bucket), they collide.
+
+Why do collisions happen?
+Hash Code Distribution: The hash code is a 32-bit integer, which means there are potentially many keys that can generate the same hash code, causing them to map to the same index.
+Limited Bucket Size: The number of buckets in the HashMap is usually much smaller than the number of keys being stored. As a result, many keys may end up hashing to the same bucket index, leading to collisions.
+4. How Collisions Are Handled
+1. Chaining (Linked List)
+The most common way HashMap handles collisions is through chaining, where each bucket holds a linked list (or a tree in some cases) of entries that have the same bucket index.
+
+Linked List: When two keys hash to the same bucket, their key-value pairs are stored in a linked list at that bucket.
+Performance: If there are a lot of collisions, the linked list can grow, and the performance of HashMap can degrade to O(n) for lookups, where n is the number of elements in the linked list.
+2. Treeification (Java 8 and above)
+In Java 8, if a bucket's linked list exceeds a certain threshold (usually 8 entries), the linked list is converted into a balanced red-black tree. This tree structure allows for O(log n) lookup, insert, and delete operations instead of the O(n) time complexity of a linked list.
+
+When Treeification happens: If the number of elements in a bucket exceeds 8, the linked list is replaced with a red-black tree, which balances the entries and provides faster lookup.
+5. Example of a HashMap in Action
+Let’s walk through an example of how HashMap works, including a collision.
+
+java
+Copy
+import java.util.HashMap;
+
+public class HashMapExample {
+    public static void main(String[] args) {
+        // Create a HashMap
+        HashMap<String, String> map = new HashMap<>();
+
+        // Insert some key-value pairs
+        map.put("A", "Apple");
+        map.put("B", "Banana");
+        map.put("C", "Cherry");
+        map.put("A", "Avocado");  // Duplicate key, replaces "Apple" with "Avocado"
+
+        // Print the HashMap
+        System.out.println(map);  // Output: {A=Avocado, B=Banana, C=Cherry}
+    }
+}
+Explanation:
+The keys "A", "B", and "C" will be hashed into different buckets (since their hash codes will be different).
+If there were a collision (e.g., if two keys had the same hash code), they would be stored in a linked list or tree at the same bucket index.
+If we insert a duplicate key, like "A", the value will simply be replaced (no new entry is added).
+6. Resizing of HashMap
+As elements are added to a HashMap, the number of entries grows, and the map may eventually reach a point where the current bucket array is too small to handle the number of elements efficiently. At this point, the HashMap will resize:
+
+Resizing: The capacity of the internal array is doubled, and all entries are rehashed and moved to new buckets based on their hash codes.
+Threshold: The resizing happens when the load factor exceeds the threshold (usually 0.75). This means the HashMap will resize when the number of entries is 75% of the current capacity.
+Use Cases of HashMap
+Fast Lookups: HashMap is ideal when you need to store data in key-value pairs and retrieve values quickly based on the keys. Its average time complexity for get and put operations is O(1) (assuming a good hash function).
+
+Caching: When building a caching system, HashMap can be used to store and retrieve cached data efficiently.
+
+Counting Frequencies: You can use a HashMap to count the frequency of items. The keys would be the items, and the values would be the frequencies.
+
+java
+Copy
+HashMap<String, Integer> wordCount = new HashMap<>();
+wordCount.put("apple", 3);
+wordCount.put("banana", 5);
+Implementing Dictionaries: HashMap is commonly used to implement dictionaries, where words are the keys, and their definitions or translations are the values.
+
+Why Collisions Happen in HashMap
+Limited Hash Code Range: The hashCode() method generates a 32-bit integer, and since there are potentially many more objects than available hash codes, there is a chance that multiple objects will produce the same hash code.
+
+Hashing Function Design: A poorly designed hashCode() method can increase the likelihood of collisions. For example, if many objects have similar hash codes (or if all objects have the same hash code), many keys will collide.
+
+Load Factor: When the number of elements grows too large relative to the number of buckets (the load factor), the likelihood of collisions increases.
+
+Conclusion
+A HashMap in Java uses a hashing mechanism to store key-value pairs in an array of buckets.
+Collisions happen when two keys hash to the same bucket index. These collisions are handled using chaining (linked lists or trees).
+Treeification in Java 8 helps improve performance in case of large collisions by converting long linked lists into balanced trees.
+Understanding hash code distribution and choosing an appropriate load factor can help reduce collisions and improve performance.
+
+==============
+
+o solve collisions in a HashMap in Java, we primarily rely on the mechanism called chaining. Chaining involves storing multiple key-value pairs at the same bucket in a linked list (or tree in Java 8+ if the list is too long). The solution to a collision does not require you to modify the HashMap itself, as it handles this internally.
+
+However, for educational purposes, let's demonstrate how you can simulate solving collisions using a custom implementation, and then we'll look at how the HashMap itself resolves collisions automatically.
+
+Understanding the Problem:
+Collision happens when two different keys have the same hash code and thus get mapped to the same index in the HashMap's internal bucket array.
+Java's built-in HashMap automatically handles collisions using chaining or treeification (if the linked list is long enough).
+Approach to Solve Collisions:
+In this example, we’ll implement a simplified version of a HashMap that handles collisions via chaining (linked lists). Here's how we can do it:
+
+Hashing: Each key's hash code is used to determine the index in the array.
+Chaining: If two keys hash to the same index, we store their key-value pairs in a linked list at that bucket.
+Traversal: During lookup, we traverse the linked list at the bucket to find the corresponding key-value pair.
+Custom HashMap Implementation for Collision Handling
+Here is a Java program that demonstrates how collisions are handled manually using a linked list:
+
+java
+Copy
+import java.util.LinkedList;
+
+class CustomHashMap<K, V> {
+    private static final int SIZE = 16;  // Number of buckets
+    private LinkedList<Entry<K, V>>[] table;
+
+    // Constructor
+    public CustomHashMap() {
+        table = new LinkedList[SIZE];
+    }
+
+    // Define the entry structure (key-value pair)
+    static class Entry<K, V> {
+        K key;
+        V value;
+
+        Entry(K key, V value) {
+            this.key = key;
+            this.value = value;
+        }
+    }
+
+    // Hash function to calculate the index of the bucket
+    private int getBucketIndex(K key) {
+        return key.hashCode() % SIZE;
+    }
+
+    // Put method to insert key-value pair
+    public void put(K key, V value) {
+        int index = getBucketIndex(key);
+
+        // If the bucket is empty, create a new LinkedList
+        if (table[index] == null) {
+            table[index] = new LinkedList<>();
+        }
+
+        // Check if the key already exists in the bucket
+        for (Entry<K, V> entry : table[index]) {
+            if (entry.key.equals(key)) {
+                // If the key is found, update the value
+                entry.value = value;
+                return;
+            }
+        }
+
+        // If the key is not found, add a new entry to the linked list
+        table[index].add(new Entry<>(key, value));
+    }
+
+    // Get method to retrieve value by key
+    public V get(K key) {
+        int index = getBucketIndex(key);
+        if (table[index] != null) {
+            for (Entry<K, V> entry : table[index]) {
+                if (entry.key.equals(key)) {
+                    return entry.value;
+                }
+            }
+        }
+        return null;  // Return null if the key is not found
+    }
+
+    // Print the map for visualization
+    public void printMap() {
+        for (int i = 0; i < SIZE; i++) {
+            if (table[i] != null) {
+                System.out.print("Bucket " + i + ": ");
+                for (Entry<K, V> entry : table[i]) {
+                    System.out.print("[" + entry.key + "=" + entry.value + "] ");
+                }
+                System.out.println();
+            }
+        }
+    }
+}
+
+public class CustomHashMapDemo {
+    public static void main(String[] args) {
+        // Create a new CustomHashMap
+        CustomHashMap<String, String> map = new CustomHashMap<>();
+
+        // Insert some key-value pairs
+        map.put("A", "Apple");
+        map.put("B", "Banana");
+        map.put("C", "Cherry");
+        map.put("A", "Avocado");  // Duplicate key, value will be updated
+
+        // Display the map
+        map.printMap();
+
+        // Retrieve a value by key
+        System.out.println("Value for key 'B': " + map.get("B"));
+        System.out.println("Value for key 'A': " + map.get("A"));
+    }
+}
+Explanation of the Program:
+Bucket Array: We use an array of LinkedList to simulate buckets. Each bucket is represented by a linked list, where the key-value pairs are stored.
+
+Hashing and Index Calculation: We use the hashCode() of the key to calculate the bucket index. The index is obtained by taking the modulus of the hash code and the number of buckets.
+
+Handling Collisions:
+
+If two keys hash to the same index, they will be stored in the same linked list at that bucket. The key-value pairs are chained together in the list.
+When inserting a key-value pair, we check if the key already exists in the linked list. If it exists, we update the value; otherwise, we add a new entry.
+Retrieving Values: To retrieve a value, we compute the bucket index and traverse the linked list at that bucket to find the matching key and return its value.
+
+Example Output:
+less
+Copy
+Bucket 5: [A=Avocado] 
+Bucket 6: [B=Banana] 
+Bucket 10: [C=Cherry] 
+Value for key 'B': Banana
+Value for key 'A': Avocado
+How Collisions Are Handled:
+For example, the key "A" and "B" may hash to the same bucket index (e.g., index 5). This means that both "A" and "B" will be stored in the same bucket. In this case, they are linked together as separate entries in the LinkedList at index 5.
+When you insert the key "A" again with the value "Avocado", the program will check the linked list at index 5. Since "A" already exists, the value will be updated to "Avocado".
+How to Improve this Example with Java's Built-in HashMap:
+Java's HashMap already handles collisions in an optimized way, so you don't need to manually handle them. The HashMap class internally handles hashing, bucket indexing, collision resolution (using chaining or treeification), and resizing. Below is an example of how you can use the built-in HashMap to automatically handle collisions:
+
+java
+Copy
+import java.util.HashMap;
+
+public class HashMapDemo {
+    public static void main(String[] args) {
+        // Create a new HashMap
+        HashMap<String, String> map = new HashMap<>();
+
+        // Insert some key-value pairs
+        map.put("A", "Apple");
+        map.put("B", "Banana");
+        map.put("C", "Cherry");
+        map.put("A", "Avocado");  // Duplicate key, value will be updated
+
+        // Display the map
+        System.out.println(map);
+
+        // Retrieve a value by key
+        System.out.println("Value for key 'B': " + map.get("B"));
+        System.out.println("Value for key 'A': " + map.get("A"));
+    }
+}
+Summary:
+Collisions in a HashMap happen when two or more keys hash to the same bucket.
+Chaining is the technique used to resolve collisions, where each bucket holds a linked list of key-value pairs.
+You can handle collisions manually by creating a custom HashMap (as shown above), but Java's built-in HashMap handles it for you efficiently.
+The built-in HashMap may switch from a linked list to a red-black tree if there are many collisions, to optimize performance.
+In real-world scenarios, using Java’s built-in HashMap is preferred, as it is highly optimized and handles resizing, hashing, and collision management automatically.
