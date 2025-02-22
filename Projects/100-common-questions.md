@@ -1,6 +1,6 @@
 | **#** | **Question** | **Answer** |
 |-------|--------------|------------|
-| 1 | Tell me about yourself. | I’m a software developer with 5 years of experience working in both front-end and back-end technologies. I have a passion for solving problems and building efficient solutions. For example, I recently worked on a project where I helped improve the performance of an e-commerce website by optimizing the database queries. |
+| 1 | Tell me about yourself. | I’m a software developer with 16 years of experience working in both front-end and back-end technologies. I have a passion for solving problems and building efficient solutions. For example, I recently worked on a project where I helped improve the performance of an e-commerce website by optimizing the database queries. |
 | 2 | What are your strengths? | One of my strengths is my ability to quickly learn new technologies. For instance, when I joined my previous company, I was tasked with working on a system that used technologies I wasn't familiar with, but within a few weeks, I was able to contribute effectively. |
 | 3 | What are your weaknesses? | One area I’m working to improve is delegating tasks. Sometimes I tend to take on too much myself, but I’ve learned to trust my team more, which has helped improve our workflow and communication. |
 | 4 | What do you see as a major success in your life? | Completing my degree while working part-time was a major accomplishment. It taught me time management and discipline. |
