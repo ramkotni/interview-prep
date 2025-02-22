@@ -59,3 +59,26 @@ Scalability Review: As Biogen grows, revisit the system architecture to ensure i
 Process Automation: Identify further areas for automation in the supply chain to improve efficiency, reduce manual intervention, and lower operational costs.
 By following these tasks in a structured, phased manner, Biogen can implement a robust, scalable, and compliant system that supports the efficient delivery and monitoring of its biopharmaceutical products, ensuring patient safety, regulatory compliance, and supply chain optimization.
 
+
+Situation:
+In my previous role, our team was handling multiple environments (development, staging, and production) for a large-scale application. The deployment process was manual, requiring developers to perform repetitive tasks such as uploading code, configuring environments, and restarting services. This led to inconsistencies across environments and sometimes caused delays, especially when deploying complex updates.
+
+Task:
+My task was to streamline the deployment process by automating it across all environments. The goal was to eliminate the risk of human error, reduce the time spent on deployments, and ensure that the same process was used in each environment for consistency.
+
+Action:
+To address the issue, I started by researching best practices for deployment automation. I decided to implement deployment scripts using Shell scripts for environment-specific configurations and Ansible for automation. Here’s how I approached the process:
+
+Scripting the Deployment Process: I wrote custom scripts that handled tasks like code checkout from version control, dependencies installation, environment-specific configurations (e.g., database credentials, environment variables), and service restarts.
+
+Environment-Specific Adjustments: I created configuration files for each environment (dev, staging, production) to ensure that the deployment scripts could adjust dynamically depending on the target environment.
+
+Version Control Integration: I integrated the scripts with Git and used Jenkins to automate the process further, setting up the Continuous Integration/Continuous Deployment (CI/CD) pipeline. This allowed us to automatically trigger the deployment scripts whenever changes were pushed to specific branches in Git.
+
+Testing: I ran multiple test deployments in the development and staging environments to ensure that the scripts worked as expected, automating each step of the process correctly without manual intervention.
+
+Documentation: I also documented the entire process to ensure that other developers could use and modify the scripts when necessary.
+
+Result:
+After implementing the deployment scripts, the entire deployment process became automated and consistent across all environments. The deployment time was significantly reduced, and the risk of human error was minimized. The team no longer had to manually configure each environment or worry about inconsistencies. As a result, deployments became faster, more reliable, and repeatable, which contributed to smoother releases and more efficient workflow. The automation saved hours of manual work every week and improved the overall productivity of the development team.
+
