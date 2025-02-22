@@ -82,3 +82,7 @@ Documentation: I also documented the entire process to ensure that other develop
 Result:
 After implementing the deployment scripts, the entire deployment process became automated and consistent across all environments. The deployment time was significantly reduced, and the risk of human error was minimized. The team no longer had to manually configure each environment or worry about inconsistencies. As a result, deployments became faster, more reliable, and repeatable, which contributed to smoother releases and more efficient workflow. The automation saved hours of manual work every week and improved the overall productivity of the development team.
 
+---Add this to Amazon ---
+A major challenge I faced was troubleshooting a critical issue that caused system downtime. I managed to identify the root cause and implement a solution, minimizing downtime and preventing future occurrences.
+
+
