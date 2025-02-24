@@ -1,0 +1,21 @@
+================ Interviewer: Hi Ram, can you introduce yourself and tell us a bit about your background?
+
+Ram Kotni: Absolutely! I’m Ram Kotni, and I bring 16 years of experience in IT, where I’ve played multiple Roles – from backend development to leading and architecting full-stack solutions. Over the years, I’ve developed a strong foundation in Spring Boot, Hibernate, and the Spring Framework, with significant experience designing and building microservices from the ground up using patterns like Circuit Breaker, Saga, and Discovery.
+
+In terms of my daily development activities, I’ve always been hands-on. I’m involved in everything from writing clean, efficient code to designing architecture. I typically start my day by reviewing the previous day’s work, ensuring all tasks are aligned with sprint goals, and addressing any blockers that may have come up. I then dive into writing RESTful microservices, building out APIs, and ensuring proper integration with frontend systems and external services.
+
+Deployment is managed through Jenkins CI/CD pipelines, and I'm proficient in writing Jenkins scripts. I've worked extensively with Kafka as both a consumer and producer, managing different Kafka topics, consumer groups, partition offsets, and configurations.
+
+As a lead developer and architect, I also play a key role in designing system architecture, ensuring scalability, fault tolerance, and security of the solutions we develop. I also mentor junior developers, conduct code reviews, and work with cross-functional teams to implement solutions that align with business requirements. Agile ceremonies are a big part of my day too, where I actively participate in sprint planning, daily stand-ups, and review meetings, ensuring timely delivery and that the team is aligned with project objectives.
+
+Interviewer: That’s great! Can you share more about your specific role in the projects you’ve worked on and what you did on a daily basis?
+
+Ram Kotni: Absolutely! In my current role, I lead the Amazon Delivery Tracking System project, a full-stack Java application for real-time delivery tracking.
+
+On a daily basis, my tasks include:
+
+Backend development: I work with Spring Boot to design and develop microservices that handle core features like delivery status, real-time updates, and user management. Frontend collaboration: I work closely with frontend developers, ensuring that the React interfaces we build communicate seamlessly with the backend. AWS management: I deploy the microservices to EC2, manage S3 storage, and set up CloudWatch for monitoring. Security implementation: I ensure JWT authentication is implemented for secure access. Quality control: I write JUnit tests to ensure both functional and non-functional requirements are met before deployment. As a lead developer, I ensure the code is following best practices, and as an architect, I ensure that the architecture is scalable and fault-tolerant.
+
+Previously, at Biogen, I led the development of a full-stack Java application to support their research in neurological diseases like MS and Alzheimer's. My daily activities included:
+
+Microservice development: I built RESTful APIs using Spring Boot to manage clinical trial data, patient records, and drug development data. Database design: I designed and optimized databases using Oracle and Hibernate to handle large volumes of clinical and medical data. Frontend development: I worked with React to develop dashboards and interfaces for real-time access to patient and clinical trial data. Collaboration and mentoring: I mentored junior developers and worked with cross-functional teams to integrate the application with AWS services (EC2, S3, IAM, CloudWatch). Security: I implemented JWT authentication and role-based access controls to ensure compliance with HIPAA and other regulatory standards. Agile methodology: I led the Agile ceremonies, worked on sprint planning, and ensured the team stayed aligned with sprint goals. I also regularly deployed code to UAT, demonstrated the new features to stakeholders, and ensured everything was properly tested using JUnit before going live.
