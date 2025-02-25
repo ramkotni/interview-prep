@@ -1,58 +1,60 @@
-I bro, drag it till the
-Yeah. Now you can do that. You
-I like to communicate between the micro services. Actually, typically, we are having a customer service and we are making the changes to the customer, and we are broadcasting the changes to the customer to all the downstream applications using the Kafka topic, actually. So that is how, like, we are able to play around with the kaska
-like We are having a 10 topics. Actually, I
-like we have multiple consumers, actually, I
-No, actually we are having a topic. Each topic is having its own consumer groups. So like, assume that we have a customer topic is there so that is being subscribed by The like seven to eight Consumer groups, actually, so I
-uh, sorry, sorry.
-So it is nothing, but like when we have a collection, we would be opening up a stream, and we would be having the different functions would be there, like map function, filter function, so this is called the stream pipelining.
-Intermediate means which would be resulting in a stream as output. Terminal would be like a non stream as output, and there would be many intermediate operations, but there will be only one terminal operation. So
-like functional programming, lambda expression, stream, API, optional class, Java, date, time, API, so these are the different features.
-Do to prevent the null pointer exception and to better manage the like presence of a value and absence of a value. That's where we would be used optional in nature. So
-uh, typically, right? We would be doing a profiling for a large scale applications, and we would be checking like how the memory is behaving like with the different loads. And we would be using the like asynchronous programming and putting the records into the event loop kind of thing, so that, like, the load on the processing system would be somewhat moderately low,
-not really
-we would be use the chunk based processing. So the chunk based processing is like we would be picking up a chunk of records and process it. So that is how we would be using the streaming API. So
-uh, we have been using the like, what to say, uh, cacheable annotation, and we are able to use the cache headers actually. And that is how like we are enabling The caching with respect to the RESTful API. Ah,
-uh like Redis, distributed cache I would be using,
-like in memory cache, distributed cache. So these are the ones we are using. Eh cache is the in memory cache, and Redis is the distributed cache. So
-in memory cache and distribute in memory cache,
-we have been using the like concurrent collections, and we have been using the like functional programming. That is how we are ensuring The thread safety you
-third set please.
-We have been using the actuator endpoints, and we are having a health check endpoint is there, and we are having the different endpoints, like pro Matheus endpoint. We are using the monitoring platforms like pro Matthias and Grafana, and we have been using the Sagar API, and We have been using the distributed tracing as well.
-So
-we have been using the Docker images, and these Docker images we are deploying into the Kubernetes using the Like Jenkins based CICD pipelines so
-we are using the Jenkins based CICD pipelines.
-We are having a build stage, unit test stage, like we are having a security stage and the code quality gate stage, sonar cube integration, Artifactory integration,
-So these are the major Things that we have you.
-I, yes, I worked on the angler and react both. Actually, I'm pretty good with both of them. I
-You, yes, I am having a decent experience with the Node js as well.
-Hello, you.
-No, not really, but I have a decent experience. It's an awkward case. I
-uh, see, typically we would be using the load children attribute that would be helping us to, like, do the lazy loading actually, load children attribute using the routing actually, so that would be helping us to do the lazy Loading. I
-We have been using the like authorization server, and we have been using the authorization header for all the outgoing calls using the HTTP interceptors. And we have been able to work with this one like so like using the routing stage, we are using the route cards. So that is how We have been doing. I
-we have been using the local storage. So that is the part of
-so that is how we are Maintaining the state. So
-yes, I try to work with the Angular material, and I was able to play around with that actually. So definitely, I have a great experience with that. I
-yeah, I know Bootstrap and other things actually definitely Have a great experience with that. I
-Sorry, ar,
-they are accessibility standards. So
-like, if you are visually blind, or something like, where we would be managing through the tab access actually,
-we would be giving the options to access the application. So
-yeah, sorting based on a like, merging with smaller elements.
-Okay, let me think about it. So I
-so it would be using a divide and conquer method. So it would be dividing the array into smaller arrays, and then building the and sorting them. And it would be coming back with, again, the output one actually, can I go ahead?
-Okay, go For a Java. Wait, I
-Yeah, so it would be defining the base case, like, if the length is less than or equal to one, then we are returning the array itself,
-less than one. There is no Need to start, right? So,
-Capturing the length of the
-capturing the length of the array, then I'm finding the mid of the element.
-I because I want to start the left one and the right one. I
-so I want to Start the left and right. I
-It's order of n square
-order of n, log N,
-order of n, log n,
-n, log n,
-1970-01-01T00:11:18+00:00--
+
+Q1: How do you communicate between microservices in your application?
+A1: We use Kafka to communicate between microservices. For example, when changes are made to customer data in the customer service, those changes are broadcast to all downstream applications via Kafka topics. Each topic has its own consumer group, allowing multiple services to consume the data simultaneously.
+
+Q2: Can you explain the concept of stream pipelining in Java?
+A2: Stream pipelining refers to the process of chaining multiple stream operations together, like map and filter. These operations are divided into two types:
+
+Intermediate operations: These return another stream as output (e.g., map, filter).
+Terminal operations: These return a non-stream result (e.g., collect, forEach). Only one terminal operation can be performed in a stream pipeline, but you can chain multiple intermediate operations.
+Q3: What features of Java 8 do you work with?
+A3: We primarily use features like:
+
+Functional programming (e.g., lambdas)
+Stream API for handling collections
+Optional class for null safety
+Java Date and Time API for managing date and time operations
+Q4: What is the purpose of the Optional class in Java?
+A4: The Optional class helps prevent NullPointerExceptions by explicitly representing the presence or absence of a value. It provides methods like isPresent() and ifPresent() to handle values in a more functional and safe manner.
+
+Q5: How do you handle large-scale application performance?
+A5: We perform profiling to monitor memory usage and behavior under different loads. We use asynchronous programming to offload tasks and minimize load on the processing system. Additionally, we use chunk-based processing to handle records in batches, which helps manage the load more efficiently.
+
+Q6: How do you handle caching in your system?
+A6: We use annotations like @Cacheable for caching and configure cache headers for RESTful APIs. We use Ehcache as an in-memory cache and Redis as a distributed cache to improve performance and reduce database load.
+
+Q7: What tools do you use for monitoring and health checks?
+A7: We use Actuator endpoints for health checks and monitoring. Tools like Prometheus and Grafana are integrated for monitoring, while distributed tracing helps trace and monitor requests across services.
+
+Q8: How do you manage CI/CD pipelines in your projects?
+A8: We use Jenkins-based CI/CD pipelines for our deployments. The pipeline includes several stages like:
+
+Build stage
+Unit test stage
+Security stage
+Code quality gate (via SonarQube integration)
+Artifact deployment (via Artifactory)
+Q9: Do you have experience with front-end frameworks like Angular and React?
+A9: Yes, I have experience working with both Angular and React. I am comfortable using both for building dynamic and responsive web applications.
+
+Q10: How do you handle routing and lazy loading in Angular?
+A10: In Angular, we use the loadChildren attribute to implement lazy loading in the routing module. This helps load components only when needed, improving performance and reducing the initial load time.
+
+Q11: How do you manage authentication and authorization in your front-end applications?
+A11: We use an authorization server to handle authentication. The authorization header is included in all outgoing API calls using HTTP interceptors. This ensures secure communication between the front-end and back-end services.
+
+Q12: How do you handle state management in Angular?
+A12: We use local storage to maintain the state of the application. This ensures that the state persists even if the page is reloaded.
+
+Q13: What UI libraries do you use in your front-end applications?
+A13: I have worked with Angular Material for building responsive UI components and have experience with Bootstrap for styling and layout.
+
+Q14: Can you explain the concept of accessibility in web development?
+A14: Accessibility standards ensure that web applications are usable by people with disabilities. For example, visually impaired users can navigate the app using keyboard shortcuts like tab access, allowing them to interact with the app without a mouse.
+
+Q15: Can you explain the merge sort algorithm and its time complexity?
+A15: Merge sort is a divide-and-conquer algorithm that divides the array into smaller sub-arrays, sorts them, and then merges them back together. It works by repeatedly dividing the array into halves until the base case (array length ≤ 1) is reached, then merging the sorted arrays.
+The time complexity of merge sort is O(n log n), where n is the number of elements in the array.
 
 
 
