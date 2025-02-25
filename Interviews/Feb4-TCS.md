@@ -1,39 +1,39 @@
-I Okay, Java eight futures, you are asking, right? Yeah, so in the Java eight futures, there are some changes, as did so there are like, lambda expression, stream, APIs, functional interface, deeper methods, base 64 ENCODE, decode, static methods and interfaces. Optional classes, collector classes for each method, parallel array streams.
-Optional classes i
-Okay, like map versus filter versus word, reduce, map, filter, reduce, array methods. So generally, the map is nothing but mapping the element like filter takes Asana predicates as arguments, so basically, you are validating your inputs collection against the condition where the map allows you To define the user existent function on the stream. So
-yes, I verbs,
-compare, comparable and comparator you are asking,
-Okay,
-okay, compatible, and future is nothing but compatible. Future is a better choice for the complex asynchronizes programming while future is better for a simple
-asynchronizes operations.
-Future use the blocking calls to retrieve the result while compatible future uses non blocking operations. Compatible future can change the multiple tasks together, while future cannot like compatible future has the methods to handle the task completion, while future does not do it. So
-until the task completion. But while future does not
-call back function, sir, I'm asking.
-So compatible, future can manually completed while future cannot do it. So compatible,
-compatible,
-manual compilation,
-compilation,
-like, like manual compilation, I
-I love the
-otter Follow up
-Okay, okay, fine.
-So in Java, manual compilation is nothing, but typically refers the ability to explicitly complete a computation or a single completion of a task, rather than relying on automatic execution flow In this
-no problem otter or display.
-Okay, so I phone
-disconnect, and this speaker won't see me. Zoom, local, connect, I know teleport.
-Amanda, Monday, mute, teleport,
-well, you
-sorry,
-but link, late diction. Link, you could copy Salem really sorry time is shaken. Available later otter, I join,
-join Join Room.
-Join join them.
-So manual compilation in the thread scale typically refers to ability to explicitly complete compilation or single the compilation of the task, rather than relying on automatic execution flow. This is relevant to compatible future and the future task, which allow the developer to manually complete a task, so manual compilation, so in compatible future class, Java,
-yes, I worked on reactive programming.
-Okay, reactive programming in the Java is nothing but a it is asynchronizes programming, which the data streams and the propagations of the changes it This means it becomes a possible to express the static, dynamic data streams with easy
-via programming languages. So
-okay, streams is nothing but the flow of any data and propagations are nothing but any I
-like streams are not like in Java. Java streams are nothing but sequence element supporting functional styling and propagation is context of a streams usually refers to how The data or exceptions flow through a stream pipeline. So
-so the functional style is nothing but a like suppose, instead of using often a for loop condition, we are using of a streams. It makes very easy to you, and you can write the Lambda expressions where the single notation like taking of an arguments and giving of any expressions and implementing of any various methods like filter map and grouping by collecting, collector in the form of a list, all the Java eight makes the developer easy to work on that instead of writing of the large, lengthy programming that is A functional way of styling of in programming you
-Okay, in Java, we can tell that thread local storages are nothing but a memory management method that use the static or a global memory locals to the thread that allows the storage of the data that appears To be global in the system with separate threads. I
-down the independent ya
-rab even these.
+Q1: Can you explain the changes introduced in Java 8 Futures?
+A1: Yes! In Java 8, there were several changes, such as:
+
+Lambda expressions
+Stream APIs
+Functional interfaces
+Default methods in interfaces
+Base64 encoding and decoding methods
+Optional classes
+Collector classes for stream operations
+Parallel array streams
+Q2: What is the difference between map, filter, and reduce in Java Streams?
+A2:
+
+Map: The map operation transforms each element of the stream using a given function.
+Filter: The filter operation is used to filter the elements of a stream based on a condition specified by a predicate.
+Reduce: The reduce operation is used to aggregate or combine the elements of the stream into a single result, like summing the elements or finding the maximum.
+Q3: What is the difference between Comparable and Comparator in Java?
+A3:
+
+Comparable: Used when objects of a class need to be compared with each other. The class implements the Comparable interface and overrides the compareTo method.
+Comparator: Used when we need to compare objects from different classes or implement custom comparison logic. It uses the compare method to compare two objects.
+Q4: What is the difference between Future and CompletableFuture?
+A4:
+
+Future: Used for simple asynchronous operations and it blocks when trying to get the result of the task.
+CompletableFuture: A better choice for complex asynchronous programming as it provides non-blocking operations, the ability to combine multiple tasks together, and handle task completion via callbacks. You can also manually complete tasks in CompletableFuture, which isn't possible with Future.
+Q5: What is manual completion in the context of CompletableFuture?
+A5: Manual completion refers to the ability to explicitly complete a task in CompletableFuture. Instead of relying on automatic execution flow, the developer can control when the task is marked as complete. This is useful for situations where the task depends on external conditions or other computations.
+
+Q6: Can you explain what reactive programming is in Java?
+A6: Reactive programming in Java refers to asynchronous programming where data streams and propagation of changes are handled. It allows expressing dynamic data streams easily and is based on the concept of handling streams of data and events. This is implemented via the Reactive Streams API, and it enables developers to process and manipulate streams in a functional style, improving code readability and performance.
+
+Q7: How does Java Streams work in a functional style?
+A7: Java Streams allow developers to process sequences of elements in a functional style. Instead of using traditional loops, you can use operations like map, filter, and collect to process data in a declarative manner. This approach makes the code more readable and less error-prone, especially with complex operations on large datasets.
+
+Q8: What is thread-local storage in Java?
+A8: Thread-local storage is a memory management technique in Java that allows each thread to have its own independent copy of a variable. This prevents data sharing between threads and provides thread safety. The data appears to be global in the system but is actually local to the thread using it, which can help prevent synchronization issues.
+
