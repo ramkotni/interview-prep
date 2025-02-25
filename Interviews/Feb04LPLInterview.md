@@ -1,144 +1,97 @@
-No, thank you, MongoDB, okay, so coming to the journal link is journaling is nothing, but it's a checkpoints to provide a consistent view of data on disk and allow the MongoDB to recover from the last checkpoints. However, if MongoDB exit unexpectedly in between the checkpoints, journaling is required to recover the information that occurred after the last checkpoint.
-It's a journaling is a wide Tiger create on journal record for each client initiated write operation. The Journal records include any internal write operation and caused by the internal write for example, updating a document in a collection may result in the modification to the indexes. Why did Tiger create a single journal record that includes both update operation it is associated to the index modification?
-17? 17.
-In Java, 17 you are asking you
-collection, a collection,
-okay, garbage collection is basically used to remove the focusing on the performance of the efficient and the efficiency. The key changes in this is g1 garbage collector. So default garbage collector in Java 17, g1 it received the performance enhancement and improve the including reducing a memory usages by identifying the removing the duplicate strings, and improve the performance when dealing with the large object and parallel full GC speed up of GC process, which significantly improving the application performance.
-And Z. Garbage Collector is mainly so it is a low let.
-So functional interfaces are interface which consists of a single abstract method. Each goes only single, abstract method. There are four types of a functional interfaces are predicates, consumer, supplier and the function predicates is nothing, but it accepts the inputs and judge it whether it is a true or a false. Mainly, we are using of any filter functions and consumer. Consumer is nothing, but it is accepts the arguments, but it does not return any return type will not be there, but it. Suppliers will act. They will not accept anything, but it gives us something output.
-Predicates are basically used for the filter operation. I
-Hello, you.
-Sorry, option classes are used in Java eight futures to to use, to to avoid the null pointer exceptions so method likes or else will provide a default values if the value is for absent, while if present, execute the code only if the value is present. The equals method checks the Equality between the optional objects you
-You want the position of you
-Okay, position of for well sinister. I
-Yeah, sure, I'll be using even a control Girl system. I
-connection with MJ can be I
-so I don't have the idea deleted. Can I write In the Online compiler? So
-Okay, fine. So here we are. I'm using a boat of Java, eight futures. Okay, first, we are going to consider about of any int string input is wrong and well, I am going to add it now I'm going to take this As a input Stream. I
-just code logic after code Logic and Rasta Ninja Pali I
-So fail first, and the Fail say for the two. Okay. So the there are two things are there that is fail fast is iterators used to loop across the collection object, if the collection structure change, fail fast iterator immediately through the concurrent modification exception when iterating over the collection that was undergoes the structural change
-the fail safe iterator. Do not throw any exception you
-uh, to handle the concurrent modification. How to Handle, right?
-Okay, so to handle the concurrent modification exception in Java, we need to use the regular hash map,
-sorting key value pair, but
-that is a thread safe, allowing the multiple threads to read and write data concurrently without explicitly synchronization. So the so the internal mechanism, the internal segment, Segment mechanism, where each segment is at its own block, enabling the efficiently to the parallel accesses to the different parts of the map. Just be a mindful potential concurrency issues when performing of complex operation involving in multiple key values update
-where you might need to use the methods like compute to ensure the authenticity You
-Yes, I was done. Yes, yes, I was
-sub. Submit.
-What? Okay, so submit and the executors are both were used in the executor services. This moth methods used to submit the task for execution. There are, there are key differences between them. First is executor. This method is inherited from the executor interface and does not return a value. It simply execute a given runnable task. But submitter is a method it will return the future object which represent the result of submitted task. You can also use this object to check if the task is complete,
-wait for completion or retrieve the result you
-compatible future we are we are going to use you.
-What is the best using
-from monolithic to the microservices application the process, need to break down into the single application, into the smaller and independent services. This can be complex and the time consuming process, but need to be helped the cloud agility. So the first thing we should wanted to plan like evaluate the current monolithic application, include the performance dependencies and the structure we need to identify the modulars, identify the logic into the independent modules and group of modules decompose, breakdown into the application, into the smaller and more manageable components, refactor, refactor the code data to split the database into smaller service specific databases. Design communication, design and implement a communication between the micro services. We need to test the architecture thoroughly and
-track progress, monitor the application performance during of the migration you
-micro services.
-I was used a port of saga. Design pattern,
-C, Q, R, S design pattern
-and resilience for J like circuit breaker mechanism,
-which design pattern i
-Okay. Circuit tracker design pattern is an A. It is used to for the fault tolerance in our application. For suppose a micro services was communicating with the B micro services. In some cases, B micro services is not responding back to the a micro services, if something is going on happens, so the fault tolerance will handle this situation. There are three segments in it, half closed, under the open. So closed is nothing. But when a service A B is communicating with the service B, so it is in the closed state, but A is not communicating with the B, then it is in the open state. So during this open state, half open will every recurrently, like every five milliseconds, it will check whether connection is happened between A to
-B. So this is the way we can implement a circuit breaker mechanism you
-Yes, I worked on load balancing.
-Load balancing in microservice is a process to distribute the traffic across the multiple services in the micro services architecture. It helps us ensure that no single server is over violent, and the application can scale up the needed. So main, main purpose of using of load balances to traffic between the services, user as a service poll and need to be configured to distribute a traffic evently user, the specific rules we need to automatically updating the routing table and when the server is added or removed, and load
-balancer can redirect the traffic from the failed instance to the healthiest one. One
-the other benefits of the load balancing are ensure ensuring resilience, responsive and the scalability. It help us decoupling the client for the scalability for
-other services and load balancer also help to
-remove the fault tolerance.
-There are two types of things. Are there, server side load balancing and client side load balancing. You
-one by using of in a dependencies, Eureka registry services, we need to use it this dependency and we need to write the configuration in our
-application dot property file so that it will register in our Eureka server. You
-in the distributor microservices architecture, we use the event driven architecture like
-we use about transaction management and rollback mechanism we are going to implement so
-a two stage commit program you are asking,
-two phase, yeah, two phase committer is in the he says it is a like it's a distributed algorithm where it ensure the autumn city across the multiple process in the transaction. It involves the preparing phase where the participants vote to commit or roll back and commit phase where the coordinator
-dictates the final actions.
-This guarantee that there is a data consistency will be there. You
-we are you? Yeah, we are using, often, a JWT token for the authorization and
-and the authentication, also, role
-based authentication. We are implementation. I rotation
-authorization, sorry, it is.
-We are using otter rate of controller advisors, and globally we are going to write exception handlers. Ah,
-ah, JPA,
-sorry, I
-the criteria like, I didn't understand, what is the question?
-JP, IR, we are using which
-caching mechanism we are implementing, like cache at the rate of cacheable we are going to use it.
-Enable caching annotation we are using and we will read it. You.
-Many to one, right? So?
-Okay, so we will use the cascading to
-be used to the propagate change to associated within the entities.
-And you need explanation, like, whatever, how, how I should want to do so one to many mapping otter, rate of many to one annotation is the one entity that represent of many side of a relationship, so many to one annotation, like a like, if they take an example for the student entities that is associated with the department entities. We need to write at the rate of join column, the name of how we are going to join. Join column is nothing but a foreign
-key in the student table that reference the primary key of the department table. So
-yes, cscd pipelines are used with Jenkins. I
-confirmation jobs in Jenkins are
-a deployment like,
-just a second later. So we will write a scripts like generally basic pipeline script we are going to write to automate the production deployment, like we use the groovy syntax to check out coding from the repository, building the application,
-running the test, Test and deployment into the production server. The
-Yes,
-elastic bin stack is in a bin stack in AWS is nothing, but it's a server which help us, developer, deploy and manage web application in AWS cloud. It automate the many deployment details, including capacity provisions, load balancing, auto scaling,
-application, health monitoring and resource provision.
-It simplifies the deployment managing and provision resources you it
-supports to need to scale on the several millions of users. Also, it integrated with Amazon
-relational databases services also like rds, also you can integrate it. Yes,
-yes, I have experience, yes,
-yes, mostly functional. Components rarely use the class components,
-use state,
-use reference. Okay. So, okay, so, fine. The use state is the managing the stateful values that triggers re render when they when they change. But the use reference is nothing but store the mutable values that persist
-across the renders without triggering re renders.
-Custom
-Okay, custom hooks in React, like generally, when is a reusable components, we can use it that can encapsulate the component logic, enhance the code reusability and reduce the redundancy that but it should be named as the use prefix,
-but followed by the let use
-capitalized word.
-One example, you record just a second. Let me think about one example.
-Yeah, let us consider like,
-like, help us in retrieving the values from the local storage. Like, use local storage,
-we can use a use local storage is an A hook which we are going to use it.
-Like, can I explain the code?
-Or like, how I should wanted to utilize that? Hello.
-Whenever, if you using of any local storage hook rich, which recently was created, it retrieves the initial value from the local storage and used to provide a default it syncs the changes the local storage whenever the state is updated. Let us consider a counter component when, when I use the use local storage, the counter comma zero to to store the counter state, persistently clicking the buttons and updating the count and save it is in the local storage
-so that We can use the custom hooks In our React. I
-The reactor, dot memo, no. Use call back.
-Okay, use memo and react away, both the tools which help us to improve the performance by avoiding unnecessary render, re rendering power process So react, dot memo is a higher order component that can prevent unnecessary re renders of entire component. It is a best for the functional component that depends on their props. Use memo a hook that can optimize the performance by caching the result of a function. It is better for
-components with complex internal logic, we can use the use memo.
-So react dot memo wraps the around the component to memorize the RE Render Output. It re renders only when the props passed to the child component changes. But in the case of use, memo store the result of a function and only the reallocates it when it dependence changes, it useful for expensive calculations
-or operation that aren't needed for every rendering you
-use.
-Okay, so use reducer is another tool which is used to it help us to aggregate a multiple states of components in one place, particularly in scenario that it involves in the states changes of multiple nesting levels and originating from the multiple actions types and resources use. Render
-will use the access to the data and action to define in the reactor reducer Hi,
-in the state management in the reactor, We can use the third party libraries that is called Redux. We can use it. State Management is nothing, but you can handle the update data that affect how your components render. So we can use the there are three types of any management with the local state management. We can use the use state hook, sharing the states between the components. We can use the props and context API, context
-API, share the data across the multiple component Without a prop drilling. You
-Yes, I worked on the
-states in Redux.
-So are you okay? I
-ah, resetting in the Redux
-state involves into like there are several approaches we can do it.
-Okay, can I connect just a second? Let me take one example, and I'll explain you.
-So whenever you are wanted to modify the root reducer to handle the global reset actions, we can use this thing reset
-Redux state within the global accents we can be used
-so and resetting of any individual slice in the Redux tool kit. I
-Sorry, can you repeat again? You
-localization in the React, generally,
-it is in a it involves into the
-it's a part. It's a partially important for us whenever web application reactor doesn't provide a built in localization futures, but we can achieve the localization by using library techniques, and internationalization will be helpful to it. So I
-18. N is a I 18 library which we are used.
-Yes, we use for Java, we use a vote of Any JUnit for
-for reactive, we use the gesture you
-react
-fever. Okay, react to fever. I was worked on it.
-It's basically to to provide builder.
-It's a powerful tool to building of a responsive and renderable user
-interfaces in the React application.
-It was a
-It allows the react to split the RE render box into chunks and spread into over the multiple frames i
-Hello, Hello, hello,
-ah,
-Go Wrong
-question,
-complex code only
-coding correctly. Otter,
-result, result,
-my connection
-to Okay, okay, okay,
-okay, okay,
-okay, fine,
-okay. Fine. Okay. Right, right. Thank you.
+1. What is MongoDB journaling?
+Answer:
+Journaling in MongoDB refers to the process that provides a consistent view of data on disk and allows MongoDB to recover from the last checkpoint. If MongoDB exits unexpectedly between checkpoints, journaling is required to recover information that occurred after the last checkpoint. It creates a journal record for each client-initiated write operation, including any internal write operations like document updates that may also modify associated indexes.
+
+2. Why does MongoDB create a single journal record for both update operations and index modifications?
+Answer:
+MongoDB creates a single journal record for both the update operation and index modifications to ensure consistency and atomicity. When a document is updated in a collection, the index might need to be modified as well. By combining these operations into a single journal record, MongoDB ensures that both updates and index changes are logged together, helping in recovery in case of a failure.
+
+3. What is the role of the G1 Garbage Collector in Java 17?
+Answer:
+The G1 Garbage Collector (G1GC) in Java 17 has received several performance enhancements, such as improved memory usage by removing duplicate strings and better performance when dealing with large objects. Additionally, there has been a speed-up in parallel full GC processes, which significantly enhances the application's performance.
+
+4. What are functional interfaces in Java, and what are the different types?
+Answer:
+Functional interfaces in Java are interfaces with a single abstract method. They support lambda expressions and are used primarily for functional programming. The four common types of functional interfaces are:
+
+Predicate: Accepts input and returns a boolean (true or false).
+Consumer: Accepts an argument but does not return a value.
+Supplier: Does not accept any arguments but returns a value.
+Function: Takes an argument and returns a result.
+5. How does Java handle Optional to avoid null pointer exceptions?
+Answer:
+Java Optional is used to handle potential null values in a way that avoids NullPointerExceptions. Methods like orElse provide default values when the value is absent, while ifPresent executes code only if the value is present. The equals method checks equality between Optional objects.
+
+6. What is the difference between fail-fast and fail-safe iterators in Java?
+Answer:
+A fail-fast iterator immediately throws a ConcurrentModificationException if the collection structure is modified while iterating. In contrast, a fail-safe iterator does not throw any exception and can safely handle concurrent modifications during iteration.
+
+7. How to handle concurrent modification in Java collections?
+Answer:
+To handle concurrent modifications, Java provides thread-safe collections, like ConcurrentHashMap. This allows multiple threads to read and write data concurrently. For complex operations, you may need to use methods like compute to ensure data consistency when updating key-value pairs.
+
+8. What is the difference between submit and execute in Executor Services?
+Answer:
+The execute method from the Executor interface simply executes a given Runnable task without returning a result. On the other hand, the submit method returns a Future object that represents the result of the submitted task. This allows the checking of completion, waiting for results, or retrieving the result of the task.
+
+9. How do you transition from a monolithic to a microservices architecture?
+Answer:
+The process involves breaking down a monolithic application into smaller, independent services. Key steps include evaluating the current system, identifying modular components, refactoring the code, splitting databases, and designing communication between services. The architecture must be thoroughly tested, and performance should be monitored during migration.
+
+10. What is the Circuit Breaker design pattern?
+Answer:
+The Circuit Breaker pattern is used for fault tolerance in microservices. It helps prevent failures from propagating between services. The pattern operates in three states:
+
+Closed: The service works normally.
+Open: The service is not functioning, and requests are blocked.
+Half-Open: The service is intermittently tested to see if it is recovering.
+11. What is Load Balancing in microservices?
+Answer:
+Load balancing in microservices distributes traffic across multiple instances of a service to ensure that no single server is overloaded. It improves scalability, fault tolerance, and responsiveness by evenly distributing traffic and rerouting it in case of server failure. There are two types: server-side and client-side load balancing.
+
+12. How does the Two-Phase Commit Protocol work in a distributed system?
+Answer:
+The Two-Phase Commit Protocol ensures consistency across distributed systems. It has two phases:
+
+Prepare Phase: Participants vote to commit or roll back.
+Commit Phase: The coordinator instructs all participants to either commit or roll back based on the votes. It ensures data consistency even across distributed systems.
+13. What is JWT in microservices authentication?
+Answer:
+JWT (JSON Web Token) is used for authentication and authorization in microservices. It is a compact, URL-safe token that is used to verify the identity of the user and to ensure secure communication between services.
+
+14. How does caching work in Spring JPA?
+Answer:
+In Spring JPA, caching is implemented using annotations like @Cacheable. This annotation is applied to methods to cache the results of expensive operations. Caching helps improve performance by avoiding redundant database queries.
+
+15. What is the significance of @ManyToOne and @OneToMany annotations in JPA?
+Answer:
+In JPA, the @ManyToOne annotation represents the "many" side of a relationship, while the @OneToMany represents the "one" side. For example, a Student entity could be associated with a Department entity. The @ManyToOne is used on the Student entity, and the @OneToMany is used on the Department entity.
+
+16. How is localization handled in React?
+Answer:
+Localization in React can be achieved using libraries such as i18n. React doesn't have built-in localization features, but using i18n libraries helps translate UI elements into different languages for better accessibility and internationalization.
+
+17. What is useState vs useRef in React?
+Answer:
+In React, useState is used to manage state values that trigger a re-render when updated, while useRef is used for storing mutable values that persist across renders without triggering re-renders.
+
+18. What is a custom hook in React?
+Answer:
+A custom hook in React is a reusable function that encapsulates logic and can be shared across components. Custom hooks are prefixed with use and help improve code reusability. An example is useLocalStorage, which interacts with the browser's local storage.
+
+19. What is useMemo vs React.memo?
+Answer:
+
+React.memo is a higher-order component that prevents unnecessary re-renders of a functional component if the props haven't changed.
+useMemo is a hook that memoizes the result of a function and only recomputes it when its dependencies change. It is useful for expensive calculations or operations that are not needed on every render.
+20. What is Redux in React?
+Answer:
+Redux is a state management library in React that helps manage the state of an application globally. It allows for consistent and predictable state updates, especially for larger and more complex applications.
+
+21. How do you handle resetting state in Redux?
+Answer:
+Resetting state in Redux can be done by modifying the root reducer to handle a global reset action or by resetting individual slices using Redux Toolkit. The state can be reset to its initial value using action dispatching.
+
+22. What is the purpose of using @Cacheable in Spring?
+Answer:
+The @Cacheable annotation in Spring is used to cache the result of a method, improving performance by storing previously computed values. It avoids repetitive expensive computations or database queries by fetching the result from the cache if available.
