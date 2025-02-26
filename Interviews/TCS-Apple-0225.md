@@ -28,26 +28,31 @@ A10: To balance parentheses, you can use a stack. Push opening parentheses onto 
 Q11: What approach can be used to implement a stack in balancing parentheses?
 A11: A stack-based approach, which works on the principle of Last In, First Out (LIFO), is the best approach for balancing parentheses.
 
-import java.util.*;
-public class Main
-{
-    public static boolean isBalanced(String s){
-        Stack<Character> stack= new Stack<>();
-        Map<Character,Character> bracketmap=Map.of(')','(','{','}',']','[');
-        for (char ch:s.toCharArray()){
-            if(barcketmap.containsValue(ch)){
+public class Main {
+    public static boolean isBalanced(String s) {
+        Stack<Character> stack = new Stack<>();
+        Map<Character, Character> bracketmap = Map.of(')', '(', '}', '{', ']', '[');
+        
+        for (char ch : s.toCharArray()) {
+            // If the character is an opening bracket, push it onto the stack
+            if (bracketmap.containsValue(ch)) {
                 stack.push(ch);
-            }else if(stack.isEmpty()|| stack.pop()!= bracketmap.get(ch)){
-                return false;
+            } 
+            // If the character is a closing bracket, check if it matches the top of the stack
+            else if (bracketmap.containsKey(ch)) {
+                if (stack.isEmpty() || stack.pop() != bracketmap.get(ch)) {
+                    return false;
+                }
             }
-            
+        }
+        
+        return stack.isEmpty();  // If stack is empty, the expression is balanced
     }
-       return stack.isEmpty();
+
+    public static void main(String[] args) {
+        String s = "{()}";
+        System.out.println(isBalanced(s) ? "balanced" : "not balanced");
     }
-	public static void main(String[] args) {
-	    String s="{()}";
-		System.out.println(isBalanced(s)? "balaanced":"not balanced");
-	}
 }
 
 
