@@ -5,17 +5,22 @@ An observer listens to an Observable and reacts when it receives new values. The
 next(): Called when a new value is emitted by the Observable.
 error(): Called when an error occurs.
 complete(): Called when the Observable finishes emitting all values.
-Subscription:
 
+Subscription:
 A subscription represents the execution of the Observable. You need to subscribe to an Observable in order to start receiving its emitted values. The subscription can be used to unsubscribe when you no longer need to listen to the Observable.
 Operators:
 
 RxJS provides a wide range of operators to manipulate Observables. These operators allow you to filter, transform, merge, and combine streams of data in various ways. Common operators include map, filter, mergeMap, switchMap, concatMap, etc.
+
 Hot vs. Cold Observables:
 
-Cold Observables: When an Observable is cold, each time you subscribe to it, it starts emitting values from the beginning. For example, an HTTP request is a cold Observable because each subscriber gets its own request and response.
+Cold Observables: When an Observable is cold, each time you subscribe to it, it starts emitting values from the beginning. 
+For example, an HTTP request is a cold Observable because each subscriber gets its own request and response.
+
 Hot Observables: A hot Observable is one that starts emitting values immediately, even if there are no subscribers. For example, a WebSocket stream can be hot because it continuously emits data whether or not someone is listening.
+
 Example of Using Observables in Angular:
+
 1.Basic Example: Let's consider a simple Observable that emits a sequence of numbers:
 
 import { Observable } from 'rxjs';
