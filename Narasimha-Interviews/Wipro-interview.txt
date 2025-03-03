@@ -1,0 +1,125 @@
+Get it on Google Play
+Download on the App Store
+Download Otter for your meeting notes
+Log in
+Note
+SUMMARY KEYWORDS
+Java expertise, microservices architecture, event-driven, Kafka integration, AWS services, React and Angular, agile methodology, delivery agent, vendor communication, API connectivity, Sprint Retrospective, data management, DDD principle, asynchronous operations, dynamic services
+Multiple times
+you Jason, the
+otter, sure,
+sure. Two Minutes, yeah.
+Hello, Yes, what's the Nicola?
+YouTube. They
+Observe, laptop.
+Yeah, I got it.
+Awesome.
+It's okay, fine. I
+it okay, no issues
+of to follow otter YouTube channel. I
+YouTube channel.
+You could open this,
+make a job. Java, perfect. It's okay, but
+Java Dickie is the boundary.
+Java decay, so he's
+char Bucha next.
+Tech primers.
+Yeah, both. And then a micro front end, yes and don't and a, I'm a into architect, so UI, pinata, back end, Pina, middle where DevOps by now, 30 data integration plan. I five rules. Name, work, Jason, real time, low,
+not into fin to finance.
+The other I think so it's
+empty.
+No, no, no, it will work. It will work. Concert time, but Okay, five minutes.
+No. Okay, okay, fine,
+okay.
+Okay, The company, okay.
+Okay, okay. I
+take primary cutting code with durgish
+that the daily code
+buffer i
+the real time delivery Agent.
+Robotic Amazon
+robotics use this no money. Chaplain, chase an otter. So, done. So, real time. Otter, the end day. So Malachi first. So order, details, Otter, details, Otter, open, Otter. Synchronization, micro services, otter and a payment type, another notification, also the notification Lee, apply the vendor cousin, yesterday, vendor and see the package ready. I paint on a message of, stay up to mana, work, start otter. Vendor is packed so and so. Details on the SO and SO otter, so Arundo details, disconnect delivery agent, communicate of Otter matter, Amazon could deliver agents under so these e data and the delivery agent captured your scone. So tunnel software alone, Otter summons in the user data, delivery here they even though anti avian a delivery each a lucky cow. Kafka services run otter producer ever otter and a delivery micro services is the producer South anti Pratham otter details, who men and such a confirmation details, this confirmation details of the delivery micro services key communicate otter. So from there, delivery, micro services will start working here indeed, communicate system
+on routing, ah,
+web sockets use system and
+routing. Sector, anti, UI, Otter,
+reactor, components,
+roots, roots, antenna,
+services, details, the data and the B agent is A separate portal, a product, one Microsoft is different. You
+and we'll work on the delivery portal for the back end application with micro services architecture, and it is A event driven micro services architecture with Kafka. So
+I Okay,
+so? Coding arena, put a one minute in this container, pending. I
+continue With the browser. I
+The system is under control. Me, name works are typed.
+We are good to Go join You.
+I Hey, I have whatever experience. I
+have good knowledge on Java, Spring, Spring Boot and micro services. And coming to the micro services architecture, I have good knowledge into the event driven micro service architecture, which Kafka and even cloud computing. I have good knowledge into the AWS part and some of the UI technologies, like HTML, CSS and like React and Angular. And coming to the project perspective, I worked on the Amazon, Amazon robotics. Here, I was work for the delivery agent application like Portal. There I wish to micro services architecture, like communicating with the vendors data to the delivery agencies for nearest agents, and we used event driven micro services architecture to communicate with the vendor to the delivery agents.
+We followed the agile methodology, and we are five members in our team. We
+like to s3 ECS, s3 bucket I am and Cognito. You.
+Okay, fine, fine. You.
+Back end, back end, back end,
+and some APIs I can connectivity with the React also some APIs I can connect and I will check the issues. I need to analysis by the where the issues as we forget. Then I will work on the React part.
+Yes, web app, react,
+event driven architecture with Kafka messaging tools and
+it's A micro services
+to micro services applications. I
+to monolithic to micro services architecture, because we need to understand about of the micro services architecture working process like each micro service such should work with the independent databases and overall, connecting with the API gateway and implementation of any tracing system so that each micro services can working process logs, how to identify it,
+scenarios
+and we need to mostly implementation of the about of any so kind of an asynchronous operation, so like,
+Like extracting each component as an a service, separate services based on the priority and business need, focusing of high compactor and the high traffic component first.
+Like suppose we could take an example of domain driven designer. We use DDD principle to ensure each micro services is built around the single business capability has a clear boundaries, and each micro services should has focus purpose with loosely coupled dependencies on the other services. I
+i can tell you one more thing is data management strategy. Also i
+Yes, I have any good idea about of any given it is like Eks cluster I have and
+which we deployed some of the services into.
+Yeah, I will try my level best on this thing.
+Can you repeat the question?
+CLA, only, CLA, CLA, use,
+question, Repeat,
+can you repeat?
+Number of can you name? Space right?
+Literally, let it later. Let's
+just a second, let's just a second, just a second, and jump just a second.
+Command,
+like cube CTL, get namespace,
+get a get a namespace,
+or otherwise, if you, If you want, if you want to the
+Yeah,
+no, yes, sprint retrospect, every, every 15 days we have the Sprint Retrospective. During that call we have, we can analysis the sprint, how it went, very well, what are the challenges that we faced, and how much time we are spending for the each story points, and whether we are facing we are on the track or we need to do some improvements we already we will mention Everything in the retrospective and
+overcome into the next upcoming sprints You
+share you in The screen. Sir, You
+meditation, but again,
+don't worry. No Wait, intention, product, this could an Access and
+load out on Time button.
+Link, literature, Link, links.
+So join us. Say how we should want To join here. Like, Can you?
+Can you give One minute of A Time? I
+there I need to write about it.
+Ramekin Jason And otter.
+I yeah, I was sprinted. I
+The name itself, it is good. Yeah, quick,
+so class name Is solution?
+Yes,
+no, I
+if you could explain, that will be better. I think So. I
+Yes, have some idea. Somehow, Some some idea In some services, I
+Good job.
+Good Nadu Bucha, Tamil
+Nadu by Punjab,
+instead
+Bucha engineering consultant
+and
+milaganina interview consultant, swallina consultant, Santa then on
+Okay, okay,
+okay, okay.
+Okay, fine,
+hopefully you will get a good
+feedback, and hopefully so
+yeah, next, thanks.
+Okay, sure. Sandyana, the dig deep, deep, dynamic,
+sure, sure,
+sure, sure. Pretty big, easy Adam, I
+even tell the code. I
+0:05:12--
+
+
+
+1x

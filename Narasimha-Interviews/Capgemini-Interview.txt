@@ -1,0 +1,232 @@
+Skip to main content
+
+Cloudresources Interviews
+cloudresourcesinterviews@gmail.com
+
+
+Cloudresources
+
+
+Invite teammates
+Home
+
+Otter AI Chat
+New
+My Conversations
+All Conversations
+Apps
+New
+
+More
+CHANNELS
+
+
+Aarush @ Android Developer
+Abdul
+Aniket-Networking
+Ankit Data Engineering
+Brinda Networking
+Brinda Trainee
+Deep Bhalani
+Deepak @ Data Engineer
+deepika Palla Network
+Deepika@Network Engineer
+Devi Prathipati - V
+Devi Sarvani
+devip
+Disha
+Divya
+Dsp
+Firoz @ Dot Net
+General
+Hari Krishna
+Hassan Network
+Jayanth @ Azure Data Engineer
+Kiran Nazir
+Krupal
+madhav
+Madhu Interview
+Madhuri Java
+Mahendra@QA Analyst
+Mahesh
+Mahesh network
+mona
+Monika1
+Mounika Devops
+Muffassil
+musafildevops
+MUSTAFA
+Namrata
+Naveen
+naveentha
+Navya@DevOps
+Nayeem
+Nazim
+Nazim Session2
+Neha
+Network
+noor
+Pooja Devops
+Prajwal
+Pranay DevOps
+Pranay-aws
+pranay-devops
+Prashanth raina
+preeti
+Preeti Interview 1
+Priyanka
+priyanka ancha
+Priyanka Java
+pythondeveloper-veera
+raghavendra-devops
+Rajesh- Charan
+Rakesh
+Ram mohan java
+Ramya @ Network Engineer
+Ranjith
+Renuga
+renuka
+Richa Java
+Rohan Network Engineer
+Rohan Networking
+Rohin
+Sadhana Data Engineer
+Sadhana_Data_Engg
+Sahithi OPT
+Sai danchandar
+Sai Dhanchander
+Sai Dhanchander 2
+sai kumar java
+sai-devops
+sai-devops
+sai-devops-python
+sai-new
+sainath
+Sample
+Sample 2
+Sandeep Data Engineer
+Sarthak
+Sathwik
+Shinu
+silpa
+sowmya
+Sowmya
+Sravani Devops
+Sravani-cloud
+Sravanthi-Java FullStack
+Sravathi Java Fullstack Developer
+Sridhar Data Engineer
+1
+srinivas reddy
+Srinivas Reddy
+Srujuna Network
+sundeep
+Swetha DevOps
+Swetha Jave developer
+Uday DE
+Vaishnavi Java
+Varun Java
+Varun Java
+veera interview 2
+veera-python
+venudhar
+Vibhor
+vijaya
+Vishnu Priya
+Yashwanth Devops
+DIRECT MESSAGES
+
+
+FOLDERS
+
+
+mounika.java
+Pro (Monthly)
+413 of 1200 monthly minutes used
+Minutes reset in 7 days
+
+
+
+
+Note
+
+Narasimha v
+Today at 2:25 pm
+
+Copy Summary
+SummaryTranscript
+Keywords
+Speakers
+Ballet, we actually have market.
+bound day, and we only taste good to but so 20% on the proxy from author. They hope you understand. And then very like this. Coco, now opinion tender Rose mempros Are the pattern Chloe could run them in chairman of ramtament. She made me down bridge. Airports, mute pit could not run in, okay, I have shared the water going into the mute I
+Nino, connect,
+bro, this is
+your screen only, right?
+Okay, I'm typing.
+Okay, now you don't worry.
+Yeah, I'll do that.
+Login, bro, login, I'm going into the mute. Okay, completely order. Communication would be there between you and Me. You
+Java seven And Java 17, so
+like permission space has been removed and meta space has been added, and there is no stop the world effect and memory is divided into the server kind of thing with the block. So these are the major changes you
+Yes. Like, if the linked list size within a bucket course, the RDF point. It would be converted into a tree, kind of structure to.
+optimize, like such performance do? There is no limit, right? So underlyingly, we would be using array, and it would be looking for a continuous memory location. So, because it is a collection, right? It keep on incrementing the size. It is like 65,005 36 is some number would Be there.
+Array. Array is the data structure so
+yes, I'm completely into the hand development. You
+Yeah, Where is it. No, right, it is checking.
+right here. Can you see checking Right? So? Not really right,
+because we are not serializing this, right? We are not serializing. We are not serializing this class. If you serialize it, it will break. See, we are not implementing the Serializable interface. Rate.
+Yes.
+Yes, yes,
+yeah, maybe we have to check for the serial version ID inside the constructor so We can prevent the serialization in the single term. So
+or else we can use the read externalizable interface. We can use and we can override the read resolve method. Actually,
+read resolve method.
+Yes, Java, Singleton is at like object level and spring Singleton is at ID level. If you change the ID, you can create one more you
+copy center,
+we are not giving any alias, right? Only one would be created. If we give any alias names, two would be created. I
+here only one bean would be created, because we are not giving the name for the beans.
+Would you
+Yes,
+but we are giving alias names, right? Like one is with the small a, another one is the small b. That's where we are giving alias names.
+That's where it would break the singletonation.
+It would not it Narasimha.
+VR using the postman and the swagger
+we have web client. We are using the web client. Web client. We are using the web client.
+Yeah, to blocking actually we have to do,
+see, we have to like what to say. We can do a blocking and non blocking calls using the web client, which is part of the web flux module, and we would be having a web client dot get, and then ura would be there. And then we have a retreat would be there. And at the end, we would be using the block So
+using the block
+to Make it synchronous, course and
+that's okay, right? It doesn't matter. We can use the auto wide keyword using the constructor based or the setter based injection, and we would be invoking the get bean only once. That means, in the singleton, we would be having all the time, a single instant of the prototyping bit.
+But we would not be asking for a bean every time, right? We would be asking a single term because it is a singleton bean, right? I
+so we would be going With the Saturn based injection. So
+that's okay, right? Like,
+that's okay, right? Not a problem, right? So we would be having a single instance of the prototype, right?
+So it doesn't matter, right? Like, once you get an instance, right? Like it would be there all The time. It doesn't matter. So
+okay, okay.
+YES. Yes, yes, do yes, I agree with you.
+Yes, in the transaction management, we would be using like, especially when you are creating a proxy object around, like a real object. So we would be able to like intercept before invoking and after returning. So that's how like we can play around.
+Yes, you
+I know I haven't used
+using the spring security and integration with the or 2.0 integration, we are using the internal authorization server,
+command, query, like request segregation. So where in micro services retrieving the data from multiple databases, we would be building a like data, like combined data, for multiple micro services.
+So that is how we would be pulling the data.
+Yeah, Jason Web Tokens, like with the spring. Security integration. It would be having a header section and payload section, and the signature section in the header section, we would be having the algorithm. And in the payload section, we would be having the user details, and the user claims. or the role details and the signature would be having The hash code of the header and the payload you
+1970-01-01T00:24:07+00:00--
+
+
+
+1x
+
+AI Chat
+
+Outline
+Comments
+Ask questions about this conversation
+Get answers from Otter AI Chat or your team
+
+Otter, was I mentioned so far in the meeting?
+
+Otter, what decisions have been made so far?
+
+Otter, catch me up on the conversation.
+
+Request access to ask questions

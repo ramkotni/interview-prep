@@ -1,0 +1,96 @@
+JUnit and Mockito are powerful tools for writing unit tests in Java, allowing developers to test individual components while isolating dependencies. JUnit is the main framework for creating and running tests, while Mockito is used for mocking dependencies, making it easier to test a specific unit without relying on other components.
+
+Example Scenario
+Suppose we have a simple service class called CalculatorService that performs basic arithmetic operations, but it relies on a dependency called MathService.
+
+Step-by-Step Guide to Writing a JUnit Test with Mockito
+1. Set Up Your Service and Dependency Classes
+java
+Copy code
+// MathService.java
+public class MathService {
+    public int add(int a, int b) {
+        return a + b;
+    }
+}
+
+// CalculatorService.java
+public class CalculatorService {
+    private MathService mathService;
+
+    public CalculatorService(MathService mathService) {
+        this.mathService = mathService;
+    }
+
+    public int performAddition(int a, int b) {
+        return mathService.add(a, b);
+    }
+}
+In this example, CalculatorService depends on MathService to perform addition. We’ll test CalculatorService in isolation by mocking MathService.
+
+2. Write a JUnit Test with Mockito
+With Mockito, we’ll create a mock of MathService and configure it to return a specific result when its add method is called.
+
+java
+Copy code
+// CalculatorServiceTest.java
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+
+public class CalculatorServiceTest {
+
+    @Mock
+    private MathService mathService;
+
+    @InjectMocks
+    private CalculatorService calculatorService;
+
+    @BeforeEach
+    public void setUp() {
+        MockitoAnnotations.openMocks(this);
+    }
+
+    @Test
+    public void testPerformAddition() {
+        // Arrange
+        int a = 5;
+        int b = 3;
+        when(mathService.add(a, b)).thenReturn(8);
+
+        // Act
+        int result = calculatorService.performAddition(a, b);
+
+        // Assert
+        assertEquals(8, result);
+        verify(mathService).add(a, b);
+    }
+}
+Explanation of Key Steps
+Annotations:
+
+@Mock creates a mock instance of MathService.
+@InjectMocks injects the mock MathService into CalculatorService.
+Setting Up Mocks:
+
+MockitoAnnotations.openMocks(this); initializes the mocks before each test.
+Configuring Mock Behavior:
+
+when(mathService.add(a, b)).thenReturn(8); sets up MathService to return 8 when the add method is called with the arguments 5 and 3.
+Assertions and Verification:
+
+assertEquals(8, result); verifies the result of performAddition.
+verify(mathService).add(a, b); checks that add was called once with the specified arguments.
+Explanation of Mocking and Verifying
+Mocking allows us to simulate MathService’s behavior without executing its real implementation. This makes the test faster and more isolated.
+Verifying ensures that the mocked method is called as expected, which is especially useful in tests where multiple methods might be called.
+Advantages of Using JUnit with Mockito
+Isolation of Units: Each unit is tested separately, so tests are less dependent on external factors.
+Improved Code Quality: Writing tests encourages developers to follow best practices like dependency injection, which makes the code easier to test and maintain.
+Faster Execution: Mocking dependencies allows tests to run faster, as they don’t rely on actual implementations or external resources.
+This approach is widely applicable across various real-time scenarios, such as ensuring that service components are working correctly without integrating the entire system during unit tests.

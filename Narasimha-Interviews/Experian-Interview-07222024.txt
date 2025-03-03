@@ -1,0 +1,104 @@
+
+
+
+Note
+
+Aston Martin
+Today at 2:24 pm
+
+Copy Summary
+SummaryTranscript
+Keywords
+Speakers
+Speaker 1 (100%)
+Share just there are no remote control
+requests yes or no?
+Plus yes or no aka seconds
+me Group Me group donated invalid shapes
+mutation in the condemning setup elaborate not another not tilde not faster or your pleasure, Andy
+Dunn done yeah I can hear
+a controlled rally do mirror projects
+meeting these Canara
+in already request a center mirror approach a laser focus and multi request system J center altering buttons or a mirror Montana request approval and approval toward this Conroe
+Dan thanks yeah,
+alternate zoom. Chat. Love it. No
+stop one Nikola 100 Faster
+desktop doula turn meeting join Arenado desktop on low mana interview. The
+Zoom join ahead
+desktop to kill desktop to kill the desktop to get this report the
+Yeah, Nino Mu ocasek And as you can use JD just now okay, JT on to simple a
+nice setup. Go ahead and join I'm going on mute by.
+Figure three connect
+Okay.
+Day Sure. Speaking about myself, I'm currently working at Amazon robotics as a lead. I have almost five years of lead experience where I work with both the front end and back end technologies and I helped with project development. Particularly I'm working for the PLM system customization in the current project in order to facilitate the robotic functionalities. And previously I did work for Biogen in order to facilitate the healthcare system
+Sure. I'm actually working as a leader and I have been facilitating the design as well as requirement gathering. Currently I am creating the PLM system, which is the product lifecycle management system for our agile. Instead of using JIRA and other things we need to have a separate system because we have same tickets and we have a separate pattern and we are creating our own system to handle the robotics part. Because we have different kinds of requirement and also they follow agile their way of tracking is different and they collaborate with multiple people. So I'm currently facilitating the features management as well. As creating different components for these.
+We have 12 people.
+With respect to that, basically we have a lot of requirements and we also support the robotics team. So, the way we have the product lifecycle management system is completely different and since we are developing this system for multiple teams at Amazon, so based upon these there will be a lot of difficult requirements that we would be receiving and versatility or in order to facilitate those feature tracking and other stuff.
+Particularly when working with these task related activities, we are trying to automate the system basically depending upon the tags that are associated to the stories, we are creating a product lifecycle management system so the feature is to dynamically add them to the developers depending upon the previous tags that they have word. So we have to create a history of the stories that they word and depending upon the transactions or the stories that they were. It has to identify the stories in the sprint and it should automate the system as soon as it is getting scheduled. So for that reasons, it was a little difficult because every team has their own tag. So initially, when they asked us we created our own tags and developed it but because of the user requirements, we had to facilitate creation of custom tags. But once we provisioned that, it became a lot difficult to manage basically, because our systems have customization. But users had a lot of variety and based upon that these tags were not associated to one another. So at the end of the sprint they will find out the many stories that are not assigned and missing.
+Yes, as part of this technical challenge, and the requirement that I received, I have actually worked on a feature where we were grieving custom tags for the application. So as part of that, we were having stories that get created and we assigned the tags and based upon the history of the tags that a developer has worked. It would assign those.
+Docker is actually used for creating a box of our application. Basically they are closely related concepts I would say. But a Docker is the open source platform which you use to create containerization for our application. So it has components like the Docker engine or the command line interface and Docker hub. So all of these work together in order to generate the images and help in deployment. Basically, when you call containerization, Docker will package the application and the dependencies needed into the container. And it will help us to have a consistent environment for the application in different environments like test UHT
+and all.
+So basically,
+if we want to containers on the same machine, and both containers need to listen to the same port, you cannot directly bind them together to the same host port because only one process can listen. So usually you need to map the container ports to different host ports and container one will be mapped to 8080 and yeah.
+Scaling in the sense if you have clusters that are deployed, you will be increasing the number of the clusters basically to manage the capacity or to handle the traffic and other things. There will be vertical scaling as well as horizontal scaling which is all so called as scaling up and scaling out. So scaling up is nothing but you will be adding resources to single instance, like you will increase the server or you will increase the CPU utilization or RAM utilization. So you don't need to manage multiple instances. But when you talk about horizontal scaling, you will be adding more instances to distribute the load I can say basically when you have increased traffic, depending upon the load balancers, they will communicate to the auto scaling groups and the auto scaling groups will increase the clusters and the high availability is about having multiple instances or components that will take over in case of a failover scenario. Like you will have multiple web servers behind the load balancers and automatically switch as a standby
+for the primary system.
+High Availability is about having a failover scenario where you will have automatically switch to the replicas. Basically when you have two or more multiple servers or instances, then the load balancers will come in place and they will navigate the traffic to the healthy clusters. So there will be multiple web servers behind the load balancers and the system will automatically switch to the replicas from the failing servers.
+No, I'm actually talking about having a separate failover scenario. It's not about increasing the number of clusters or number of instances that are available or increasing the resources. You will already have the alternate servers which are existing and in case the primary server will fail you will switch to the secondary servers.
+That is about horizontal scaling. If you are increasing the number of clusters or number of instances then
+nodes are basically representation of.
+Cluster is basically a group of nodes that actually work together I can say in short basically in Kubernetes you will have a cluster that has multiple nodes and you will have resources that will provide to run those containerized applications. So it will manage the resource pool and it will take care of high availability and scalability. I would say
+yes.
+Cluster is not to distribute the load but load balancers will actually distribute the load
+depending upon whether the cluster is healthy or not the traffic will be routed.
+Basically, you can create the auto scaling groups and there you will be creating threshold values. So, it will continuously monitor our applications as well as the clusters. So depending upon the primary methods, so the Auto Scaling group
+will increase the number of instances
+so, there you will have to create the launch configuration or template where you will see phi the minimum number and maximum number of instances that can run at a time.
+What is the basis in the sense basically, you will have the functional interfaces and from that you will be developing the lambda expression so, basically the functional interface will have only one functionality. And similarly lambda expression will actually be used for the same purpose and you will combine them with stream operations in most of the scenarios or you will write an expression that looks like a lambda syntax and you will use it to operate on something
+functional interface
+functional interface functional interface functional interface functional interface
+so, yeah basically we will be writing that in a normal scenario for some retry logic or
+basically when we have one single functionality we will be writing so, there I was actually working for the PLM system as part of that I had to develop a functionality to handle data validation and perform few checks before it handles the lifecycle. So, for that I
+had to write the custom functional interface and
+basically, I have created the functional interface and sent the product data in order to handle the lifecycle then I have implemented the validation logic. So, the only functionality it was it was to validate the product data it was to validate the product data basically it contains a few validation checks
+No, it actually takes the product data and it performs the validation checks.
+So, basically, we needed to define our own logic and I had to write the lambda expression. So we get the data from the API s and it would contain multiple products and I had to use the stream operation and I had to pass each product into the lambda expression and perform the execution. So the main reason was to pass the data into the stream operation and execute this lambda expression and validation check on each of the product. So I had to write the functional interface and pass the data using the streams and execute that logic on each and every element.
+No, it is not actually part of the functional interface but basically we will write the functional interface and then we will implement that
+yeah we will be writing the implementation logic over that.
+So basically there will be a validate method which will be a boolean and we will override it
+Yeah, right
+it was implemented in the class
+how is it based in the sense the functional interface actually uses a single abstract method that means it has only one functionality. So that will help Lambda expressions to have the type context and have one functionality depending upon the target types.
+So lambda will have only one functionality. Similarly, functional interface will have only one functionality. So it will be useful.
+No functional interface will not have the implementation class. For example, in the custom logic I have written I have defined a product validation interface and then I injected that or used it as a structure for the class for the product data. So that way, I was able to send the product data into the functional interface and write the validation logic as part of the class.
+It was written in the product data validator class
+Yes, yeah, we will write a functional interface and we will use it in a class in order to implement the logic basically, you don't use the implements keyword.
+I did not use the implements keyword and implement the functional interface I have implemented the logic for the method that is in the functional interface. So the normal function will be referring to a method in the class and the functional interface will be having only one abstract method. So the abstract method will not have any implementation. So you will implement them as part of the Lambda expressions or method references.
+You're in the Dockerfile we will be writing the base image and we will provide the commands that we need to copy to the container or run any scripts and also any ports that we want to export or the container to listen for. Like as we just discussed about the 8080 port and any environment variables that we want to set. So we will provide all that kind of information in the Docker file.
+So for that, we will have to handle it
+by writing some Docker Swarm or as part of the Kubernetes clusters that we are creating. So there will be node selectors and other things. And also since we are using auto scaling groups for these containers to replicate and stuff, we will use a spread placement group. So as part of that the instances that get created are not placed in the same hardware. So the auto scaling groups will automatically create a separate group and spread them.
+Should I would like to know how about the team structure as well as the environment and what kind of project?
+Hello, yeah, okay good eyebrow answer sir.
+Mirror can show maybe ticker Jeptha bond doesn't canta middle content. Algo. Jeff tomorrow we never look only like this contract interview situation. Okay. Yeah. Nagomi Kiba nanpi stitch Apprendi improvers Kurashiki.
+1970-01-01T00:33:07+00:00--
+
+
+
+1x
+
+
+AI Chat
+
+Outline
+Comments
+Ask questions about this conversation
+Get answers from Otter AI Chat or your team
+
+Otter how will the custom tags in the PLM system help different Amazon teams manage their products?
+
+Otter what are some best practices for implementing horizontal scaling in Kubernetes clusters to ensure high availability?
+
+Otter could the validation logic developed using functional interfaces be reused for other types of data validation in the PLM system?
+
+Request access to ask questions
+By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+Cookies Settings Reject All Accept All Cookies
