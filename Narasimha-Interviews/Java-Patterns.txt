@@ -1,0 +1,151 @@
+Let’s go over some of these fundamental design patterns in Java with explanations, examples, and real-world applications.
+
+1. Singleton Pattern
+Definition: The Singleton pattern ensures that only one instance of a class is created and provides a global point of access to that instance.
+Implementation:
+java
+Copy code
+public class Singleton {
+    private static Singleton instance;
+    
+    private Singleton() {} // Private constructor
+
+    public static Singleton getInstance() {
+        if (instance == null) {
+            instance = new Singleton();
+        }
+        return instance;
+    }
+}
+Real-World Usage:
+Logging frameworks (where only one instance of a logger is needed across an application).
+Database connections (to prevent multiple connections consuming excessive resources).
+2. Prototype Pattern
+Definition: This pattern allows the creation of new objects by copying an existing instance (a prototype) rather than creating new instances from scratch.
+Implementation:
+java
+Copy code
+public class Prototype implements Cloneable {
+    public Prototype clone() throws CloneNotSupportedException {
+        return (Prototype) super.clone();
+    }
+}
+Real-World Usage:
+In situations where creating a new object is costly (e.g., initializing a complex object graph or large datasets).
+Graphic applications, where a prototype of a shape or object can be duplicated without rebuilding.
+3. Observer Pattern
+Definition: The Observer pattern establishes a dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
+Implementation:
+java
+Copy code
+public class Subject {
+    private List<Observer> observers = new ArrayList<>();
+    
+    public void attach(Observer observer) {
+        observers.add(observer);
+    }
+    
+    public void notifyAllObservers() {
+        for (Observer observer : observers) {
+            observer.update();
+        }
+    }
+}
+
+public interface Observer {
+    void update();
+}
+Real-World Usage:
+Event-handling systems, such as GUI components, where a change in one element updates all related elements.
+Social media platforms, where a user’s updates (subject) notify all followers (observers).
+4. Factory Pattern
+Definition: The Factory pattern provides an interface for creating instances of a class, with the specific type being determined by subclasses.
+Implementation:
+java
+Copy code
+public interface Product {
+    void create();
+}
+
+public class ProductA implements Product {
+    public void create() {
+        System.out.println("Product A created");
+    }
+}
+
+public class Factory {
+    public Product createProduct(String type) {
+        if (type.equals("A")) {
+            return new ProductA();
+        }
+        return null;
+    }
+}
+Real-World Usage:
+In applications where object creation requires a lot of processing logic or is prone to change frequently.
+Payment gateways, where different payment methods (credit card, PayPal, etc.) require distinct processing steps.
+5. Decorator Pattern
+Definition: The Decorator pattern allows behavior to be added to individual objects, either statically or dynamically, without affecting other objects of the same class.
+Implementation:
+java
+Copy code
+public interface Coffee {
+    double cost();
+}
+
+public class BasicCoffee implements Coffee {
+    public double cost() {
+        return 5;
+    }
+}
+
+public class MilkDecorator implements Coffee {
+    private Coffee coffee;
+    
+    public MilkDecorator(Coffee coffee) {
+        this.coffee = coffee;
+    }
+    
+    public double cost() {
+        return coffee.cost() + 1.5;
+    }
+}
+Real-World Usage:
+When additional functionalities or responsibilities need to be added to objects at runtime, like adding extra features (milk, sugar) to a coffee order.
+Stream processing libraries, where data streams can be decorated with filters, transformations, and logging.
+6. Strategy Pattern
+Definition: The Strategy pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable within that family, allowing the algorithm to vary independently from the clients that use it.
+Implementation:
+java
+Copy code
+public interface PaymentStrategy {
+    void pay(double amount);
+}
+
+public class CreditCardStrategy implements PaymentStrategy {
+    public void pay(double amount) {
+        System.out.println("Paid with credit card: " + amount);
+    }
+}
+
+public class ShoppingCart {
+    private PaymentStrategy paymentStrategy;
+    
+    public ShoppingCart(PaymentStrategy strategy) {
+        this.paymentStrategy = strategy;
+    }
+    
+    public void checkout(double amount) {
+        paymentStrategy.pay(amount);
+    }
+}
+Real-World Usage:
+Payment processing systems, where users can choose between different payment options (credit card, PayPal, crypto).
+Sorting algorithms in libraries where clients can select sorting strategies based on data types.
+Each of these design patterns serves distinct purposes but contributes to writing flexible, maintainable code that adapts well to changing requirements.
+
+
+
+
+
+

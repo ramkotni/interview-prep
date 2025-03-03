@@ -1,0 +1,178 @@
+The SOLID principles are five design principles that help developers create more maintainable, understandable, and flexible software. They form a guide to object-oriented design and are commonly applied to make code modular and improve the software development process. Here’s a breakdown of each principle with examples:
+
+1. Single Responsibility Principle (SRP)
+Definition: A class should have only one reason to change, meaning it should have only one responsibility.
+
+Example: Suppose we have a Book class. Initially, it contains methods for book details and methods to save book data to a file:
+
+java
+Copy code
+public class Book {
+    public String getTitle() { /*...*/ }
+    public String getAuthor() { /*...*/ }
+    public void saveToFile(String fileName) { /*...*/ }
+}
+Problem: The Book class has two responsibilities—managing book details and handling file operations.
+
+Solution: Separate responsibilities by moving the file-related method to a new class:
+
+java
+Copy code
+public class Book {
+    public String getTitle() { /*...*/ }
+    public String getAuthor() { /*...*/ }
+}
+
+public class BookPersistence {
+    public void saveToFile(Book book, String fileName) { /*...*/ }
+}
+This way, if we need to change how books are saved, we only modify BookPersistence.
+
+2. Open/Closed Principle (OCP)
+Definition: Software entities (classes, modules, functions) should be open for extension but closed for modification.
+Example: Imagine we have a Shape class with a method to calculate the area. Adding new shapes would require modifying the original Shape class.
+java
+Copy code
+public class Shape {
+    public double calculateArea(String shapeType) { /*...*/ }
+}
+Solution: Apply OCP by creating a Shape interface and extending it with specific shapes:
+java
+Copy code
+public interface Shape {
+    double calculateArea();
+}
+
+public class Circle implements Shape {
+    private double radius;
+    public double calculateArea() {
+        return Math.PI * radius * radius;
+    }
+}
+
+public class Rectangle implements Shape {
+    private double length, width;
+    public double calculateArea() {
+        return length * width;
+    }
+}
+New shapes can be added without changing existing code.
+3. Liskov Substitution Principle (LSP)
+Definition: Subtypes must be substitutable for their base types without altering the correctness of the program.
+
+Example: Let’s say we have a Bird class with a fly method and create a Penguin subclass:
+
+java
+Copy code
+public class Bird {
+    public void fly() { /*...*/ }
+}
+
+public class Penguin extends Bird {
+    public void fly() { throw new UnsupportedOperationException(); }
+}
+Problem: Since penguins can’t fly, using Penguin in place of Bird violates LSP.
+
+Solution: Create a separate Bird interface and avoid forcing subclasses into incompatible behavior:
+
+java
+Copy code
+public interface Bird {
+    void eat();
+}
+
+public interface FlyingBird extends Bird {
+    void fly();
+}
+
+public class Sparrow implements FlyingBird {
+    public void fly() { /*...*/ }
+    public void eat() { /*...*/ }
+}
+
+public class Penguin implements Bird {
+    public void eat() { /*...*/ }
+}
+4. Interface Segregation Principle (ISP)
+Definition: Clients should not be forced to depend on interfaces they do not use. Instead, split interfaces into more specific ones.
+Example: Suppose we have a Worker interface that requires methods not relevant to all worker types:
+java
+Copy code
+public interface Worker {
+    void work();
+    void eat();
+}
+
+public class RobotWorker implements Worker {
+    public void work() { /*...*/ }
+    public void eat() { /*...*/ }  // Not applicable to robots
+}
+Solution: Split Worker into specific interfaces:
+java
+Copy code
+public interface Workable {
+    void work();
+}
+
+public interface Eatable {
+    void eat();
+}
+
+public class HumanWorker implements Workable, Eatable {
+    public void work() { /*...*/ }
+    public void eat() { /*...*/ }
+}
+
+public class RobotWorker implements Workable {
+    public void work() { /*...*/ }
+}
+Now, each class only implements interfaces it requires.
+5. Dependency Inversion Principle (DIP)
+Definition: High-level modules should not depend on low-level modules; both should depend on abstractions. Abstractions should not depend on details.
+
+Example: Consider a LightSwitch class directly depending on a LightBulb class:
+
+java
+Copy code
+public class LightSwitch {
+    private LightBulb bulb;
+    public void turnOn() { bulb.on(); }
+}
+Problem: If we want to switch other types of devices, we need to change LightSwitch.
+
+Solution: Introduce an interface:
+
+java
+Copy code
+public interface Switchable {
+    void turnOn();
+    void turnOff();
+}
+
+public class LightBulb implements Switchable {
+    public void turnOn() { /*...*/ }
+    public void turnOff() { /*...*/ }
+}
+
+public class LightSwitch {
+    private Switchable device;
+    public LightSwitch(Switchable device) {
+        this.device = device;
+    }
+    public void operate() { device.turnOn(); }
+}
+Now LightSwitch works with any Switchable device, reducing dependency on specific implementations.
+
+Summary
+These SOLID principles improve code readability, maintainability, and flexibility by focusing on cohesive class design and effective abstraction. By following these principles, code becomes easier to scale and adapt, particularly in complex applications.
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,94 @@
+Get it on Google Play
+Download on the App Store
+Download Otter for your meeting notes
+Log in
+Note
+SUMMARY KEYWORDS
+Java, Spring Boot, microservices, MySQL, MongoDB, HTML, CSS, JavaScript, Angular, Amazon Robotics, Agile methodology, Kafka, DynamoDB, AWS Lambda, file upload
+Yeah, hi, RAM, am I audible? Is it for
+same company or a different company? It is
+fiddly. It is second round. Okay,
+so We prove what happened. Okay.
+Uh Huh. Company I
+Okay, I
+here? Oh, no, yes, I
+notification services and delivery services. I
+Okay, thing.
+Okay.
+Okay, okay, Okay, Thank You.
+Okay, I
+yeah, you can proceed. You can join. You.
+Joined by the Computer I
+I'm learning
+connection. I
+Ramachari, Randy Tom, I Know,
+coming to the technical skills are good knowledge on Java, JK 17 version and spring and spring boot version and microservices architecture. And coming to the databases I was good at in the MySQL and MongoDB, coming to the UI technologies I have good knowledge in the HTML, CSS, JavaScript and Angular, 17 version. Coming to the project prospective I was working in the Amazon robotics. So in the Amazon robotics, I as, worked as an a Senior Principal architector. Here I was working mainly on to the delivery team. So basically, I was dealing for the delivery applications, for the E commerce applications, and we are the we are following Agile methodology, and we are about of 10 members in our team, And I'm the leading of the whole The team. You
+previous project to chirp
+yeah, see AWS cloud VGS. I like easy to ECS, ECR, Eks, and for like serverless architecture, lambda and like notification services, like SNS, SQS, also are used next.
+Oh, okay, coming to the robotics application. It is an event driven micro services application. It is basically dealing with the Spring Boot framework, and we use the Kafka is a messaging tools like whenever a customer was when the when the customer was order, the order application. The Order application will send a notifications to the vendor, so vendor, when the vendor services, uh, utilize the order services, and should be informed to the the logistic departments. Of the logistic department will be and will segregate the orders. We are need to segregate, as per the locations and these locations. These locations need to be nearest, availability, delivery, voices, we need to be connected. It is in a high level application. So these all are connected with the help of Kafka. Services are running, and the databases which we are using is DynamoDB, and application is developed in the Amazon lambda you
+so we are mean The main agenda is nothing, but we are optimizing the code, and we need to make sure that the delivering of in the products and on time and There should not be any delay In the applications you
+and
+architecture i
+Yes, sir, React js, I have
+both. And it's a micro front end application. It's a microphone. I roughly,
+we use the both the services in both like
+front input,
+so I'm I'm not, I'm not a right, sorry, I worked, but I'm not a full fledged development but I was working on to the Only API prospective, like, whenever, whenever we are proper API triggerings and the proper processing is doing or by using of Access Framework, which we are using to connect to the front end to the back end application, and we are using of reverse proxy servers, nginx server is using From front end to the back end, applica server, to connect to the front end, and we implemented of in a Auto Scaling group so that we can scale off our applications in the back end part While coming to the income request From the UI. So
+Oh, like coming to the micro frontends the microphone, like, it allows to the largest team to split into the development responsibility. Like, like we have the each team. So each team has an independent development for the specific future or component which stepping into the each on their application like we can do with the help of a parallel development. Also we are developing like we can different teams can develop on the test and deploy their parts of the front end in independently reducing of bottleneck and enabling the more parallel flow workflows you
+Yes, we use the SDKs And the servers or
+nginx servers, which we use. I
+uh, imagine, okay,
+so well like
+so, let us consider, imagine that Amazon Robotics has a large web application like we will dealing with the warehouse operation dashboard. These dashboard is used various teams to monitor and control the different aspects of the warehouse. Each specific responsibilities are there, like micro frontend approach is breakdowns into the dashboard into distinct modules and each managed by the separate teams. Like in our application, we have the about of three. So first thing is robot status and the control pan. And the second team is nothing but warehouse mapping and navigations, and third is inventory and stock levels. And fifth team is maintenance and alert systems, and sixth team is performing the analytics and the reporting. So
+yeah, I
+uh, Amazon Cognito we are using
+so we have the fully authentication control over to our cloud services only, we cannot we are not developing any kind of a especially we have a separate team for security engineering, so they will Take care about of our application
+authentication and authorization. So
+no, we are
+no, we are you sure? Any? Yes,
+in coming to the front end part, we use the just and coming to the back end part,
+back end part is, we use Marketo
+and JUnit,
+and we you, we are basically following the TTD approach, test driven development. You.
+See coming to the front end part, basically we will create a file upload component. So in the File Upload component, we will will create a input type is equals to file, so the it allows the user to select the Excel files, implement the file validation and ensuring that only the Excel file, typically dot x, l, s, x or dot Excel can be uploaded, we use the React hooks to manage the file state here and second part is nothing but form submission. So when the submission the package selected file from the form data object, and it will handle the binary data and the meta data, like file names. So we will send HTTP POST to requesters, and the content type will be the multi part and the form data. So we use the Axios to handle the File Upload with error handling and success notification like in the feedbacks, once the showing the indicator that file is upload, uploaded is in progress, display the success or error messages inform the users to the result I
+Axios framework we are Using I
+now. So in the back end part, like in the controller class, we can handle the file uploaded. So suppose at the rate of request Param. So in the request param will handling the file, so this annotation will bind to the Upload File from the request. So we can do the file processing. We use the Apache, poi, another Excel processing libraries to read and the process uploaded Excel data. So next, we will validate the content has needed like ensuring all the correct columns names and the specific value formats are there, and we'll extract the data and save it in the databases as perform of any other actions are required, we can write here itself in the service layer implementation, the handling process of the Excel data will keeping controller into the light weight and validate and transfer the data needed before saving into the databases. And we will respond handling like in return the response indicator success or a failure with the meaningful messages for the front end To display so
+we use the JPA or another.
+We will implement the validation logic in the service layer or a controller to catch the issues like missing fields in correct data format or duplicate before insertion you
+Just a second and Japan,
+okay, in case of large Excel files, the statistic approach is essential,
+ensuring efficiency and responsive should be there
+to handle the large data set. I it.
+By using of streaming approaches, we can process the large file without loading them entirely into the memory you
+if large uploaders, if you take a while, you need to consider a vote of a Server Sent Events To provide a client with real time progress updates. Do
+so we need to set up API endpoint in the springboard so that can generate a pre signed URL when a request is made by the Client. You
+pre assigned Japanese or pre assigned URL. You
+so,
+so the process of large data like we'll set up s3 trigger even triggers for that fires when the file is uploaded to the bucket. The trigger can invoke the AWS lambda function to start the processing of the file immediately. This lambda function can handle the initial data validation, pressing and potential store data into the databases. So for extensive processing, the lambda function could trigger the further process services or batch jobs.
+Additionally, we can, optionally, we can Use the batch processing in Spring Boot.
+If you wanted to upload the PDF documentation, right?
+I never used to put
+a okay. So in case of in a PDF documentation, if you wanted to process applied the file validation only allows the dot pdf, like when you are user input. Input type should be file and accepting in the format of in a PDF only to restrict the file selection in the PDF file picker dialog, and so form data like PDF POST request, we will send to the back end, and we'll set up the content type in the form data by using of Axios framework, and in the back end, part same like we are handle the PDF documentation by using of a request param in the file, multi file sanitation. We will use it so to accept the PDF process, we use the PDF processing library like Apache PDF box or it text to read the manipulate the PDF content if needed. And we you depend on the requirement. You can extract the text, images or metadata from the PDF. If PDF is just stored without processing, save it directly to the databases or a file storage location. So we can do it so
+we will implement.
+So we will implement a service layer right to handle any processing like text extraction validation network required for the particular PDF content. So
+you mean basically how the
+or s3 bucket, s3 bucket,
+if the data Inception is acquired while processing gracefully. We ensure that good user experience like we need to design a proper back end and front end to handle the network interruption during the File Upload efficiently. You
+so retry mechanism we need to implement. So implementing of retry mechanism that can attempts the re upload or the file if request fails due to the network issues, you can use the Axios retry or you can implement the custom literary logic to your component. You can do, use and timeout handlings. Also you can do, you can set the reasonable time timeout for the upload request. If the timeout is exceeded, display an error messages and give the proper user and option to the retry. And we can use the chunk uploaded. It's an option. We can use it for large files, considering splitting the files into smaller chunks and uploading each chunk separately. If chunk fails uploaded, the only the part needed to be retried, and reducing the time and bandwidth required to recover for the interruption. React doesn't handle the chunking natively, but we can use the React uploadly and custom logic with the form data and Blom slicing enable its futures. And in coming to the back end part, we can use the other rate of retry able from the spring retry library, resilience for J retry mechanism we will use and we configure it automatically retry failed operations like due To the Network interruptions. You
+so Question or
+so when you are managing updating the databases For large number of desktop application the goal is that we need to ensure all the application are in sync with the largest data with minimal description. So which we can use that push the notification for the data updates, set up a server that can notify the each application when there is a update in the database, use a message brokers like Kafka to send a message about changes. Each desktop application could subscribe of this notification and update its data accordingly. This will work if you need a real time synchronization and the desktop application can handle the background updates. Second thing is you can do polling for changes. Each desktop application could periodically checks the changes in the database by curing the server. For instances, an application could poll the server every minute or hours depends on the frequency of the updates. This approach is less complex, but may lead for the delay between the updates also
+No,
+no because less complex but,
+but it's complex is Larry less
+the approach is less complex, But may lead to the delay between The updates. I updates
+didn't Get
+i Okay, Let's Do
+So I
+if you can explain the bit About of technology that will be Good You.
+Thank You. Thanks.
+Congratulations. Tom for next one.
+00:0058:22
+
+
+
+1x

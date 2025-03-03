@@ -1,0 +1,77 @@
+Get it on Google Play
+Download on the App Store
+Download Otter for your meeting notes
+Log in
+Note
+SUMMARY KEYWORDS
+fidelity approved, strategic pattern, insertion order, duplicate elements, performance optimization, ArrayList, linked list, Java generics, immutable objects, Comparable interface, custom sorting, map operation, flat map, dependency injection
+A fidelity.
+Fidelity approved the money next to call Friday,
+the final call. Technically otter final call is a technical, or Just normal technical, only
+30 minutes you 30
+Minutes.
+Mobile, YouTube, places and sound. Mobile speaker, formulating,
+yeah, me, chance. Okay,
+question, Yeah,
+actually, I
+A otter, yeah, okay.
+Strategic pattern, if each report format has significantly different generation strategy you could use also the strategic pattern in this pattern also allows you to define the family of algorithm, in this case, report generation for each format and make them interchangeable. So
+the vendor Call, vendor Call. Vendor
+volley
+My name Is Dr.
+What is it?
+Can you repeat the question once? I
+Yeah, so list is nothing but a insertion order, but insertion insertion order, but the set is not a insertion order. So the list to maintain the order of the element and they they are added, and allows to the elements their indexes. Set does not maintain the particular order of the element. So list allow the duplicate elements, but set does not allow the duplicate elements. Performance wise, generally, list is in a faster access by the indexes its order nature, but generally optimized of the search operation, especially has set is used. Used. List is nothing but ArrayList and linked list, set, example, has set and the linked has set.
+Yes, you
+okay, so it will check that whenever
+the whether the element is present in the
+present in the list collection or not. In case of object, it will, it will create a new object only. It will create a new object because the memory address will be different.
+Set this to
+allow allow the duplicate
+so but means like set a insertion lead does not allow the duplicate runs when you attempt to add a duplicate elements to the set it is simply won't add it, and add method will return as in a false.
+Analyst is a good for the searching and the sorting purpose. And linked list is used for the insertion, for the and if you are free. So because ArrayList is a way compare, analyst is a faster compared to the linked list
+compared to the linked
+so whenever, if you are if you are using the ArrayList for the list for the insertion or deleting that so the indexing will be changed.
+Yes.
+Insertion and deletion.
+ArrayList used to arrest to store the elements. Linked list used to doubly linked list structure with nodes contain the data and reference to the next and the previous nodes. All
+the elements in ArrayList are located to the next to each other, so other in the same memory spaces. This is why retrieving the element from ArrayList is so faster the given location the start from ArrayList, you can know exactly where the element is located in the memory linked list, another hand used for non continuous memory.
+Java. Generics are nothing, but it was introduced in the 1.5 so it is. Generics are the paramised type, the idea how to allow the type, like integer, strings or user different types. I
+so the see generics enable to use the stronger type checking and the eliminating The cast and ability to develop the generic algorithm you
+so like two major benefits that the generics in the Java what is reducing the number of cast in your program, thus reduce the number of potential bucks In your program, and improve the code quality clarity. So immutable objects are the objects are that once you created, you are not able to modifiable. That is called the immutable object. So example, strings are the immutable objects in Java. So, so Immutables are useful in the situation where the state of object should not be changed, such as in multi threading environments. They also simpler to understand and the reason about To offering high security than the mutal object you
+COVID That will
+Can you repeat the question once more? Please. Simple class, person, having the instance, The string type the string, person, you
+otter,
+See, suppose you have like simple Java class named Person with the two instance variable name and string type. Another is an age the Age field use the integer from Java dot util,
+so the we need to
+so what is your question Like?
+What is your question like? What you required? It?
+Sick, coastal final outputting, our country. Final output, what you required? It
+so comparable and the comparator,
+okay, so Comparable interface, the Comparable interface can be used to provide a single way of sorting, where the comparable comparator interface used to provide the different ways of the sorting for using of comparable classes need to be implemented where, for using of comparator, we don't need to make any changes in the class comparable interfaces in the Java you
+uh, if the sorting of objects need to be Based on the natural order, then use the comparable
+I. You mean that any example, real time example you are expecting.
+Okay, let us consider one example.
+So so, like comparable interfaces is used to define the natural ordering of an object the class can implement comparable must override to the compare to method which compares the current object with the another object. So, like imagine you have a book class. Each book class has a title, otter and the price. You might want to order the books by their title has the natural ordering you
+on the net. So
+So comparator is a interfaces which used to define the custom sorting logic, which can be implemented outside of the class. It allows the multiple different ways of sorting same type of object by defining custom comparison rules. Let us take example. Suppose you wanted to sort a book object by author or by the price, in addition to sort by title, you
+so map versus and the flat maps, so map, map is nothing, but just generally we used to it's applied a function each element of the stream transform into the new element is the resultant in the streams of transformed elements, where each element is transformed independently while Coming to the flat map. Flat map is a method used to each method in the stream might produce the multiple elements, typically because it contains the collections, like a list within a list, flat map is flattens the structure and taking each element and mapping into any stream, the flattening those multiple streams into any single continuous stream, I
+Okay, Like, consider about of any if I have the I uh, one list. So if this list, I wanted to square the like, if I the list I wanted to square double. So in that case, what you need to do streams, dot, map and list, we are going to pass a lambda expression, and we are going to write a logic for the the how to square the for the square the particular list. And we will collect in the form of any list that is called a map operation that we can do it so mapping is nothing but something, operation that you are performing against of the list
+next,
+flat map we are using of a list of list I
+like map operation only, We need to use the streams dot map method. I
+a list of strings or list of integers i
+So Dependency injection is nothing, but there are three Types of dependency injection are there in a word spring? Are you talking about the solid principle, or you're talking about of the
+dependency injection is in a concept of the software that align the closely with the principles of solid design principles da help us to achieve the loose coupling between the components by injecting the dependencies from the outside rather than the hard coding them within a class.
+So loose coupling is nothing but like, consider about of a one class. The class is a person. So this class Person has seen about of a, maybe the Job, Job,
+depending of the job,
+and about a family, about a family class,
+and the let's let takes the some list of the
+take the elements. So Dependency injection is the or otherwise I can take with online shopping. Example, let's take it. Let's take about of it. Take about the online shopping example. Scenario, suppose we have an E commerce application where customers can pay the various payments, such as credit card, PayPal, go pay Google Pay a payment service is a class is responsible to handle the payments, but it should have, should haven't, shouldn't have to know about the details of each payment method implementation, like using of any dependency injection. Here we can refactor the code making the payment services more flexible by depending on the interfaces instead of concrete implementations, We can do with help.
+Yeah, I said, Look question. Luna kardovid, I and
+otter telephonical canny, a COVID, India, low mana, window, Tamara, compulsory, me calling this COVID Awesome. Lady together, dictionary. Wanna help. Jealous. You.
+0:02:47--
+
+
+
+1x
