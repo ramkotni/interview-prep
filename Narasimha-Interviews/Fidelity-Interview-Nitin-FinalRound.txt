@@ -1,115 +1,56 @@
-Get it on Google Play
-Download on the App Store
-Download Otter for your meeting notes
-+2
-Log in
-Note
-SUMMARY KEYWORDS
-Helidon SE, microservices architecture, Spring Boot, AWS, HTML CSS, React JS, Kafka, Saga pattern, route optimization, lambda expressions, stream API, default methods, immutable list, callable interface, consumer group
-Picture I
-it's started, I think so.
-Filter is a cloud native and open source set of Java liabilities for writing of micro services that can run on the fast web code powered by the Java Virtual threads you it's
-it sit on
-The Okay, so
-sorry. Sentence, South,
-set up without a CLI using of a Maven architect. If you prefer not to use the Helidon CLI, you can write you can create a helium se project manually with Maven. Use the Maven archetype. Run the following Maven commands to generate the halidone Se Project.
-Helium,
-script, Okay,
-Mother, interaction,
-I Do what up and Drop?
-Sai chauci,
-spring, the spring boot and micro services architecture. I have a boot of a nearly cloud computing cart AWS part also, and I have good knowledge on HTML, CSS and JavaScript and even React js concept and recent project which I was working on the Amazon robotics mainly, I was developing of a delivery services application. It's a micro services event driven micro services architecture, where we use the port of saga design pattern for our probastic application, and we use the Kafka and some other rest APS creation part coming to the my day to day life, I have a creating of restroom APs And mainly focusing on to the delivery agents and I
-the delivery agent, micro services, Amazon system work in the modular distribution manner to ensure that packages are delivered to the customer efficiently. These micro services handle the various process from assigning a delivery to managing the route and tracking packages status, which is order placement, inventory checks and fulfillment of various management and delivery assignments like this, micro services will be doing with the delivery task to the nearest availability of the delivery agent, Agent matching algorithm, like focusing more on to the factors such as logation proximity on the package And the workloads are used to find the Best Shooter agent to do the task You
-a delivery agent,
-the work, workloads, modular distributions. Major, major work is the modular and distributed manner to ensure that all the packages are delivered to the customer efficiently. These micro services want to handle the various process from assigning of delivery to managing the routes and tracking packages status, like majorly ideals with otter placed inventory check and fulfillment of warehouse management and delivery assignment micro services and Route Optimization and the planning micro services, and majorly now Dealing with last mile delivery and real time tracking. So
-provide once the delivery is assigned, the service optimization the agent route based On the factors like distance, traffic and priority orders. So
-and Amazon logic 66 network is highly sophisticated process like route planning services will optimize the path of each delivery agent by dynamically considering a multiple real time factors. So like traffic, weather, distance and the package priorities,
-Kafka instances only we are used
-like various integrations are happening. I
-I will be managing this.
-Yes, you
-Yeah, I have an experience in
-That is I
-Okay, solid principles is nothing but a
-just it's a four, five crowns like yes, he stands for the solid responsibility principle. And OE stands for the open, closed principle. S, E stands for L, E stands for the liskova substitution principle, liskova substitution ie stands for the interface segregation principle
-and dependency inversion principle.
-Single responsibility principle is nothing but every Java class must perform a single functionality.
-Open, Closed is nothing but a basically the application or a module, methods, functions or variables open close to principle states that, according to the new requirement, the module should be open for extension but closed for the modification. We
-So Java eight are nothing but a lambda, expressions, stream, APIs, functional interface, default method, optional classes and data and data and time. API,
-lambda, lambda expression is nothing but a it's a short form of returning of a code, like a functional way of like a functional way of writing of an apple. Lambda expression is used to provide the implementation of a interface that has a functional interfaces. It saved a lot of code. In case of lambda expression, we no need to define the method again for providing implementation here, we will write implementation code itself.
-There are two types of operations in streams. There are intermediate operations and terminal operations.
-So it will not give the output. It will not give the output, but it will. It will. It will modify it, but it will not give the any output end result. Will. Intermediate operations are nothing but a map, filter, like map, filter, reduce, reduce, modify the data like what as per your requirement, it will modify,
-unless, until, if you are Giving of thermal operators.
-The Other
-now you wanted to you so Can you repeat the question once More? Please?
-Market, same address, yes,
-give me one minute,
-yeah, to get the list of address of all the managers.
-So first we need to filter out
-by applying of a streams,
-like employees dot stream like, first thing is, we will do that. Yes, employees, dot stream, stream, dot filter. You
-want Coronavirus?
-Dot stream method we will use dot filter. Dot filter
-and employee colon. Colon is manager.
-It is a method reference. We are using method
-reference and dot map.
-Employee, get address. Employee get ad, get address, get address. It's a method reference for the address, and will collect in the form of a list
-by using
-So default method, if you are writing in the interfaces, the implementation class can be implement or not that is up to the class.
-Write a extending of interfaces. A
-but in earlier in Java seven, if you are writing something in the interfaces that must time should be implemented in our classes or otherwise, we need to extend the interfaces default method. We can write a default method so that we can, we can implement or a not In the child classes or not, or not.
-Charity classes,
-here are you talking of which list are
-you talking about? List
-of off method was introduced in Java, eight, I
-it will throw The it will throw the unsupported operation exception, right? So?
-Immutable list. It is yes, yes.
-You need To create a new array list. You
-okay, callable interfaces,
-interfaces, which we is, is similar to the runnable interfaces only, but interface, the callable cannot return a result where the runnable cannot callable return A result, so callable can throw the checkered exception. I
-in Kafka you're talking.
-In Kafka you're talking I
-Okay, like,
-okay, I can, I can implement by using of blocking queue with executor services
-queue, executers Are reserves.
-Okay, we can use a compatible future, okay?
-Or otherwise we can use the reactive Framework also that is also will help us. I
-The Rest Controller.
-So because it is a single term scope, right? Because, by default, is spring created the controllers as a singleton beams. This means single instance of control is shared among all the requests with the control methods being is concurrently by the multiple threads. So
-is, is a thread safe? Is a thread safe?
-Yes, it is a thread safe. You
-saga.
-Saga design pattern. Saga design pattern is basically used for the event driven micro services architecture. So in Saga, we have the two types that is called the choreography and as well as the orchestration, design patterns are there. It is a powerful way to manage the distributed transaction in micro services architecture, especially when you need to maintain the data consistency across the multiple services without the support of centralized Transaction Manager. Saga are the particular useful in scenario where you have a long running workflows or need to provide avoid potential issues like distributed deadlocks when so
-yes, I used Yes, command, query, responsibility, segregation, principle,
-Based on the it is a pattern is designed that separately read and write operation. They are used to Singleton, prototype, factor, factory, factory, observable, observable and decorator. So
-sorry, can you repeat again?
-Can you repeat again? Question? I
-But then we need to just a second.
-So if you find seen The lot of strategy pattern i
-So are you talking about of like first we will do the will go to the spring initializer, and we initializer. We had the dependencies. We will install like spring web dependency and connecting with the databases, we will use the MySQL database, MySQL database and and data JPA, like we will for ORM tool and logbook is for the boilerplate port
-and we have the project structures. Like
-project structures are controller class, service class, repository classes. Controller class is responsibility for the writing of the endpoints, for endpoints, and service class is basically used for the logic, business logic. And the repository class is persistent the data into any databases, and model class is nothing but a entity of our table. So
-now application dot, property file, we are going to write it.
-Database information so
-like a four methods we have the POST method is for the Create so POST method is for creating the data and get is nothing but retrieving the data. Retrieving the data and put is nothing but updating the data, updating and the D is for the deleting, for deleting the data
-by Using of a Mockito you
-one. Let me think on Japan. Definition around,
-yes, yes, we used i
-Okay. Kafka is nothing, but
-Okay, so, okay. Kafka is be distributed messaging platform. It's primarily used to for building of real time data pipelines and streaming application. It allows the application publish and consume the large volume of data quickly and efficiently.
-Consumer group, right? You are asking, I?
-Okay, consumer group is nothing but a it allows the multiple consumer to read the messages from the Kafka topic in parallel, while ensuring that each message is processed by only one consumer within the group. Consumer group, help us to achieve the scalability and falter tolerance for the message consumption?
-Yes. Jenkins, Docker, Kubernetes, Docker, also
-I have an idea, but,
-yes, I
-we have separate system like in,
-Yes, Vault, Yes, Sorry, KRW,
-No, I
-said, I Gotta
-idea
-Ramar Ramadi.
-0:40:07--
+Q1: What is Helidon SE?
+A1: Helidon SE is a cloud-native, open-source set of Java libraries designed for writing microservices. It is powered by Java Virtual Threads and provides fast web code execution. It allows developers to create microservices without a CLI by using Maven. You can generate a Helidon SE project manually using Maven by running specific commands.
 
+Q2: Can you describe your experience with microservices architecture?
+A2: I have experience with microservices architecture, specifically with Spring Boot and AWS. In my recent project with Amazon Robotics, I developed a delivery services application using event-driven microservices architecture. The system used the Saga pattern, Kafka for event handling, and REST APIs to create a modular and scalable delivery solution. I worked on features like agent matching, route optimization, and real-time tracking.
 
+Q3: How do microservices in Amazon Robotics’ delivery system operate?
+A3: In Amazon Robotics, microservices operate in a modular, distributed manner. These microservices handle various processes such as assigning deliveries, managing routes, and tracking package statuses. They focus on tasks like order placement, inventory checks, and fulfillment. The system uses a delivery agent matching algorithm, which considers factors like location proximity, package priority, and workload to assign tasks efficiently.
 
-1x
+Q4: How is route optimization handled in Amazon Robotics’ system?
+A4: Route optimization is managed by a service that adjusts the delivery agent’s path based on factors like distance, traffic, weather, and priority orders. The system dynamically optimizes delivery routes, considering real-time data to ensure the most efficient path is selected for each delivery.
+
+Q5: What is the Saga design pattern, and how is it used in event-driven microservices?
+A5: The Saga design pattern is used to manage distributed transactions in microservices, particularly in event-driven architectures. It helps maintain data consistency across multiple services without a centralized transaction manager. In Amazon Robotics, Saga helps coordinate long-running workflows while avoiding issues like distributed deadlocks. There are two types of Saga patterns: choreography and orchestration.
+
+Q6: What are the SOLID principles in software development?
+A6: The SOLID principles are a set of five design principles used to create more maintainable and understandable software:
+
+Single Responsibility Principle (SRP): A class should have only one reason to change, meaning it should only have one job or responsibility.
+Open/Closed Principle (OCP): Software entities should be open for extension but closed for modification.
+Liskov Substitution Principle (LSP): Objects of a superclass should be replaceable with objects of its subclasses without affecting the correctness of the program.
+Interface Segregation Principle (ISP): Clients should not be forced to depend on interfaces they do not use.
+Dependency Inversion Principle (DIP): High-level modules should not depend on low-level modules. Both should depend on abstractions.
+Q7: Can you explain some key features of Java 8?
+A7: Java 8 introduced several key features:
+
+Lambda Expressions: A way to provide the implementation of a functional interface, making code shorter and easier to read.
+Stream API: A new abstraction for processing sequences of elements (like collections), supporting functional-style operations like map, filter, and reduce.
+Default Methods: Methods that can be defined in interfaces, allowing for backward compatibility without affecting implementing classes.
+Optional Class: A container object that may or may not contain a value, used to avoid null checks.
+Date and Time API: New APIs for handling date and time, providing better accuracy and readability.
+Q8: How are Java 8 streams classified?
+A8: Java 8 streams are classified into two types of operations:
+
+Intermediate Operations: These operations transform the stream into another stream (e.g., map, filter, reduce). They are lazy and do not produce an immediate result.
+Terminal Operations: These operations produce a result or a side-effect (e.g., collect, forEach). Once a terminal operation is invoked, the stream is consumed, and no further operations can be performed on it.
+Q9: What is the difference between the Runnable and Callable interfaces in Java?
+A9: The Runnable interface is used for tasks that do not return a result, whereas the Callable interface can return a result and throw checked exceptions. Callable is often used with ExecutorService to submit tasks that need to return a value or throw exceptions.
+
+Q10: What is Kafka, and how does the Consumer Group work?
+A10: Kafka is a distributed messaging platform used for building real-time data pipelines and streaming applications. A Consumer Group in Kafka allows multiple consumers to read messages from a Kafka topic in parallel. Each message is processed by only one consumer within the group, ensuring message processing scalability and fault tolerance.
+
+Q11: What is the purpose of the "consumer group" in Kafka?
+A11: A consumer group in Kafka allows multiple consumers to read messages from a topic in parallel. Each message in the topic is processed by only one consumer in the group, helping to achieve scalability and fault tolerance by balancing the workload across multiple consumers.
+
+Q12: How do you ensure thread safety in Spring controllers?
+A12: Spring controllers are by default singleton beans, meaning only one instance of the controller is shared across all requests. Since Spring ensures that each request is processed in isolation, the controller methods can be thread-safe, provided that the methods do not modify shared state.
+
+Q13: Can you explain the Command Query Responsibility Segregation (CQRS) pattern?
+A13: CQRS is a design pattern that separates read and write operations into different models. The write model handles commands (e.g., creating or updating data), and the read model handles queries (e.g., retrieving data). This pattern helps optimize performance, scalability, and security, particularly in systems where read and write operations have very different requirements.
+
+Q14: How does Kafka help in real-time data processing?
+A14: Kafka is used to publish and consume large volumes of data quickly and efficiently. It supports real-time data streaming and enables systems to handle high-throughput data pipelines. Kafka's distributed architecture and consumer group capabilities provide fault tolerance, scalability, and high availability.
+
+Q15: What is the difference between Singleton and Prototype beans in Spring?
+A15: A Singleton bean in Spring is created only once per application context, and the same instance is shared across all requests. A Prototype bean, on the other hand, is created every time it is requested, allowing for a fresh instance with each request.
