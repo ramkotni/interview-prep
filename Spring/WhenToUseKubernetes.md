@@ -42,3 +42,33 @@ Kubernetes is a powerful container orchestration platform designed to automate t
 
 ### **Conclusion:**
    Kubernetes is ideal when you have complex, containerized applications that require high availability, scalability, and automation. It's especially valuable for managing microservices, implementing CI/CD pipelines, and running workloads in hybrid or multi-cloud environments. However, for smaller, simpler applications, using Kubernetes may be unnecessary.
+
+
+# Java Full-Stack Application Deployment in Kubernetes
+
+## Question: How do you deploy a Java Full-Stack Application in Kubernetes?
+
+### **Answer:**
+Deploying a Java Full-Stack Application (consisting of a frontend, backend, and database) in Kubernetes involves several steps. Below is a general workflow for deploying such an application.
+
+### **1. Prepare Your Java Application:**
+   - **Backend (Spring Boot/Java)**: Ensure that your Java backend (e.g., Spring Boot application) is containerized. You need to create a `Dockerfile` to build the backend container.
+   - **Frontend (React/Angular)**: Similarly, for a frontend application, you need to create a separate Docker container for the frontend (e.g., React, Angular).
+   - **Database**: The database can also be containerized using Docker, or you can use an external database service (e.g., PostgreSQL, MySQL).
+
+### **2. Dockerize Your Java Application (Backend and Frontend):**
+
+**For Backend (Spring Boot) - Dockerfile:**
+```dockerfile
+# Use an official OpenJDK runtime as a parent image
+FROM openjdk:11-jre-slim
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the executable JAR file to the container
+COPY target/my-app.jar /app/my-app.jar
+
+# Run the JAR file
+ENTRYPOINT ["java", "-jar", "my-app.jar"]
+
