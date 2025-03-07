@@ -72,3 +72,241 @@ COPY target/my-app.jar /app/my-app.jar
 # Run the JAR file
 ENTRYPOINT ["java", "-jar", "my-app.jar"]
 
+For Frontend (React) - Dockerfile:
+
+# Use an official Node.js image
+FROM node:14
+
+# Set the working directory
+WORKDIR /app
+
+# Install dependencies
+COPY package.json package-lock.json ./
+RUN npm install
+
+# Copy the rest of the application
+COPY . .
+
+# Build the application
+RUN npm run build
+
+# Serve the React app on port 3000
+CMD ["npm", "start"]
+
+
+3. Build the Docker Images:
+Build the Docker images for both the backend and frontend:
+
+docker build -t my-backend-app .
+docker build -t my-frontend-app .
+
+4. Push the Docker Images to a Registry:
+You can push your images to a public registry like Docker Hub or a private registry like Google Container Registry (GCR) or AWS Elastic Container Registry (ECR).
+
+docker tag my-backend-app mydockerhubusername/my-backend-app:latest
+docker push mydockerhubusername/my-backend-app:latest
+
+docker tag my-frontend-app mydockerhubusername/my-frontend-app:latest
+docker push mydockerhubusername/my-frontend-app:latest
+
+5. Define Kubernetes Deployments:
+Create a Kubernetes Deployment to manage the backend, frontend, and database containers.
+
+Backend Deployment (backend-deployment.yaml):
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+        - name: backend
+          image: mydockerhubusername/my-backend-app:latest
+          ports:
+            - containerPort: 8080
+
+Frontend Deployment (frontend-deployment.yaml):
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+        - name: frontend
+          image: mydockerhubusername/my-frontend-app:latest
+          ports:
+            - containerPort: 3000
+
+Database Deployment (database-deployment.yaml): If you are using a database like MySQL, the deployment could look like:
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mysql
+  template:
+    metadata:
+      labels:
+        app: mysql
+    spec:
+      containers:
+        - name: mysql
+          image: mysql:5.7
+          env:
+            - name: MYSQL_ROOT_PASSWORD
+              value: "password"
+          ports:
+            - containerPort: 3306
+
+6. Define Kubernetes Services:
+To expose the applications (backend, frontend, and database) in the cluster, you’ll need Kubernetes Services.
+
+Backend Service (backend-service.yaml):
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-service
+spec:
+  selector:
+    app: backend
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+  type: ClusterIP
+
+Frontend Service (frontend-service.yaml):
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend-service
+spec:
+  selector:
+    app: frontend
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
+  type: LoadBalancer
+
+Database Service (database-service.yaml):
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql-service
+spec:
+  selector:
+    app: mysql
+  ports:
+    - protocol: TCP
+      port: 3306
+  type: ClusterIP
+
+7. Apply Kubernetes Configurations:
+After defining all the deployments and services, apply them to the Kubernetes cluster using kubectl:
+
+kubectl apply -f backend-deployment.yaml
+kubectl apply -f frontend-deployment.yaml
+kubectl apply -f database-deployment.yaml
+kubectl apply -f backend-service.yaml
+kubectl apply -f frontend-service.yaml
+kubectl apply -f database-service.yaml
+
+8. Verify the Deployment:
+To ensure everything is running correctly, use the following commands:
+
+kubectl get pods
+kubectl get services
+
+9. Expose the Application (Optional):
+If you are using a LoadBalancer service for the frontend, it will automatically expose the application externally. You can check the external IP address using:
+
+kubectl get svc
+
+Companies Using Kubernetes in the Industry
+Question: Who is using Kubernetes in real-time and what are their use cases?
+Answer:
+Many large-scale organizations are using Kubernetes for container orchestration and managing microservices-based applications. Below are some of the notable companies and their use cases:
+
+1. Google:
+Use Case: Google developed Kubernetes and uses it extensively for managing containerized applications across its cloud infrastructure. Google Cloud offers Kubernetes Engine (GKE) as a managed service.
+Application: Kubernetes powers Google’s cloud-native services, automating scaling, monitoring, and deployment of containerized workloads.
+2. Netflix:
+Use Case: Netflix uses Kubernetes to manage its microservices architecture at scale. Kubernetes helps in handling the high throughput of video streaming and dynamic scaling of services.
+Application: Kubernetes is part of their Continuous Delivery (CD) pipeline to deploy microservices efficiently and reliably.
+3. Airbnb:
+Use Case: Airbnb uses Kubernetes to deploy and manage a large-scale microservices-based system. Kubernetes helps them manage their backend services and ensures resilience.
+Application: Kubernetes is used to maintain their complex application stack that handles millions of transactions per day.
+4. Spotify:
+Use Case: Spotify leverages Kubernetes for running its microservices architecture in a highly scalable and efficient manner.
+Application: Kubernetes helps Spotify scale backend services efficiently and manage real-time music streaming.
+5. Shopify:
+Use Case: Shopify uses Kubernetes to run thousands of applications and services in a microservices-based environment. It helps them manage e-commerce platforms and backend services in a scalable way.
+Application: Kubernetes allows Shopify to efficiently scale services during high-traffic periods (e.g., Black Friday).
+Creating a Service in Kubernetes
+Question: How do you create a service in Kubernetes?
+Answer:
+A Kubernetes Service is used to expose an application running on a set of Pods as a network service. You can define a Service to expose your application and allow it to be accessed both inside and outside the Kubernetes cluster.
+
+Steps to Create a Service in Kubernetes:
+1. Define the Service YAML File:
+A service definition in Kubernetes is typically done using a YAML file. Below is an example of a simple ClusterIP service that exposes a backend deployment internally:
+
+yaml
+Copy
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-service
+spec:
+  selector:
+    app: backend
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+  type: ClusterIP
+port: The port on which the service will be exposed inside the cluster.
+targetPort: The port on which the application container is listening.
+type: The type of service (ClusterIP, NodePort, LoadBalancer).
+2. Apply the Service:
+After creating the YAML definition for the service, you can apply it using the following command:
+
+bash
+Copy
+kubectl apply -f backend-service.yaml
+3. Verify the Service:
+After creating the service, you can verify it by running:
+
+bash
+Copy
+kubectl get svc
+This will show all the services and their associated information (e.g., IPs, Ports).
+
+This concludes the explanation of deploying a Java Full-Stack Application in Kubernetes, real-time industry examples, and how to create a service in Kubernetes.
