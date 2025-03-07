@@ -30,6 +30,49 @@
 | **What is a Kafka Topic?**                              | A Kafka topic is a category to which messages are sent. Producers write to topics, and consumers read from topics. Topics can be partitioned for parallel processing.                                                                                                              |
 | **What is the role of Consumer Group in Kafka?**        | A Kafka consumer group consists of multiple consumers that divide the load of reading messages from topics. Each consumer in the group reads from a different partition to parallelize the work. Consumer groups help Kafka scale horizontally.                                       |
 
+# Kafka - Leader and Follower
+
+## Question: What is the role of Leader and Follower in Kafka?
+
+### **Answer:**
+
+In Kafka, **Leader** and **Follower** refer to the roles assigned to the replicas of a Kafka **Partition**. Each partition has one leader and one or more followers, and their roles are crucial for data replication, availability, and fault tolerance.
+
+### **Leader:**
+- **Role**: The leader is the Kafka broker responsible for handling all **reads** and **writes** for a specific partition.
+- **Responsibilities**:
+  - The leader is the **only broker** that allows **producers** to write data to the partition.
+  - It serves data when **consumers** request messages from that partition.
+  - The leader coordinates the replication process to ensure all **follower replicas** are synchronized with it.
+  - It keeps track of the latest offset (position) of the partition and responds with the correct data to consumers.
+
+### **Follower:**
+- **Role**: Followers are Kafka brokers that replicate data from the leader to ensure **fault tolerance** and **data availability**.
+- **Responsibilities**:
+  - Followers do not handle read or write requests directly. They simply replicate data from the leader.
+  - They periodically fetch the latest data from the leader to maintain an up-to-date copy of the partition.
+  - If the leader fails, one of the followers is elected to become the new leader through a process called **leader election**.
+  - Followers must stay in sync with the leader to ensure data consistency. If a follower falls too far behind, it might be removed from replication.
+
+### **How Leader and Follower Work Together:**
+1. **Replication**: Each Kafka partition can have multiple replicas. One replica is the leader, and the rest are followers. The leader handles all write operations and serves as the point of contact for consumers.
+2. **Fault Tolerance**: If the leader broker fails, one of the followers automatically takes over as the new leader. This ensures that Kafka remains available with minimal downtime.
+3. **Consistency**: Kafka ensures that once a message is written to the partition, it is replicated to the followers. As long as the majority of replicas (including the leader) have the message, it is considered committed and available to consumers.
+
+### Example Scenario:
+- Imagine a Kafka topic with one partition (`p1`), and this partition is replicated across three brokers.
+  - Broker 1 holds the **leader** replica.
+  - Broker 2 and Broker 3 hold the **follower** replicas.
+- Producers send messages to Broker 1 (the **leader**).
+- Consumers can read from Broker 1 (the **leader**). If Broker 1 goes down, either Broker 2 or Broker 3 (the **followers**) will take over as the new leader, and consumers can still read data from them.
+
+### **Why is this Important?**
+- **Leader**: Ensures data consistency and coordinates the replication process.
+- **Follower**: Ensures high availability and fault tolerance. If the leader fails, one of the followers can take over, minimizing downtime.
+
+
+
+
 ---
 
 ## Kubernetes
