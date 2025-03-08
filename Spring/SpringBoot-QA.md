@@ -1,3 +1,26 @@
+Interview Prep Material
+
+Spring Boot
+
+InterviewBit's Spring Boot Interview Questions
+Guru99's Spring Boot Interview Questions
+Baeldung's Spring Boot Interview Questions
+ 
+
+React
+
+InterviewBit's React Interview Questions
+GreatFrontend's React Interview Questions
+GeeksforGeeks' React Interview Questions
+ 
+
+Distributed Systems
+
+ProjectPractical's Top 25 Distributed Systems Interview Questions and Answers: This resource covers a wide range of questions, from basic concepts to advanced topics, and provides detailed answers to help you understand the key principles of distributed systems
+InterviewBaba's Distributed Systems Interview Questions: A comprehensive guide featuring key questions and insightful answers to help you prepare effectively for your interview
+ClimbTheLadder's Distributed Systems Interview Questions: This article offers a curated selection of questions designed to test and enhance your knowledge of distributed systems
+
+
 # Spring Boot Interview Questions and Answers
 
 | **Question**                                                                    | **Answer**                                                                                                                                                                                                                                                                                                                                 |
