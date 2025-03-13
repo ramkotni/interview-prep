@@ -1,3 +1,7 @@
+This pattern prevents service failure by providing a fallback mechanism when a service is unreachable or fails. It monitors service calls and "breaks" the circuit to prevent further calls when failures exceed a threshold.
+
+A travel booking system where multiple external services (airline, hotel, car rental) are integrated. If one service is slow or fails, the circuit breaker prevents cascading failures and provides a default response to maintain system stability.
+
 What is Circuit Breaker Pattern in Microservices?
 
 The Circuit Breaker pattern is a design pattern used in microservices to enhance system resilience and fault tolerance. It acts like an electrical circuit breaker by preventing an application from repeatedly trying to execute an operation that is likely to fail, which can lead to cascading failures across the system.
