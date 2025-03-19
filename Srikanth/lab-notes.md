@@ -8,3 +8,8 @@ rest api url :
 
 https://restcountries.com/v3.1/all
 
+ng new countries-app
+
+ng generate component country
+ng generate service country
+
