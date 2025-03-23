@@ -36,33 +36,36 @@ public class NumArray
 Problem Description:
 Given a binary array, find the maximum length of a contiguous subarray with an equal number of 0's and 1's.
 
-Java Solution:
 import java.util.HashMap;
 import java.util.Map;
 
-class Solution {
-    public int findMaxLength(int[] nums) {
-        Map<Integer, Integer> map = new HashMap<>();
-        map.put(0, -1); // This is to handle the case when a subarray starts from the first element
-        int maxLength = 0;
-        int sum = 0;
+class Solution525 
+{
+	public int findMaxLength(int[] nums) {
+		Map<Integer, Integer> map = new HashMap<>();
+		map.put(0, -1); // This is to handle the case when a subarray starts from the first element
+		int maxLength = 0;
+		int sum = 0;
 
-        for (int i = 0; i < nums.length; i++) {
-            sum += nums[i] == 0 ? -1 : 1;
+		for (int i = 0; i < nums.length; i++) {
+			sum += nums[i] == 0 ? -1 : 1;
 
-            if (map.containsKey(sum)) {
-                maxLength = Math.max(maxLength, i - map.get(sum));
-            } else {
-                map.put(sum, i);
-            }
-        }
+			if (map.containsKey(sum)) {
+				maxLength = Math.max(maxLength, i - map.get(sum));
+			} else {
+				map.put(sum, i);
+			}
+		}
 
-        return maxLength;
-    }
+		return maxLength;
+	}
+	
+	public static void main(String[] args) {
+		Solution525 sol = new Solution525();
+		int[] nums = {0, 1, 0, 1, 0, 1};
+		System.out.println(sol.findMaxLength(nums)); // Output: 6
+	}
 }
-Solution sol = new Solution();
-int[] nums = [0, 1, 0, 1, 0, 1];
-System.out.println(sol.findMaxLength(nums)); // Output: 6
 
 3. Subarray Sum Equals K (LeetCode #560)
 Problem Description:
