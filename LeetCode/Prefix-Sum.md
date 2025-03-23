@@ -3,28 +3,34 @@ Problem Description:
 You are given an integer array nums and you need to implement a method to calculate the sum of elements between indices i and j for multiple queries. The array is immutable.
 
 Java Solution:
-class NumArray {
-    private int[] prefix;
+public class NumArray 
+{
+	private int[] prefixSum;
 
-    public NumArray(int[] nums) {
-        prefix = new int[nums.length + 1];
-        // Precompute the prefix sum
-        for (int i = 0; i < nums.length; i++) {
-            prefix[i + 1] = prefix[i] + nums[i];
-        }
-    }
+	// Constructor to initialize the prefixSum array
+	public NumArray(int[] nums) {
+		prefixSum = new int[nums.length + 1]; // +1 to handle sum from index 0 correctly
+		for (int i = 0; i < nums.length; i++) {
+			prefixSum[i + 1] = prefixSum[i] + nums[i]; // Build the prefix sum array
+		}
+	}
 
-    // Returns the sum of elements between indices left and right (inclusive)
-    public int sumRange(int left, int right) {
-        return prefix[right + 1] - prefix[left];
-    }
+	// sumRange method to get the sum of elements between indices i and j
+	// (inclusive)
+	public int sumRange(int i, int j) {
+		return prefixSum[j + 1] - prefixSum[i]; // O(1) time complexity for each query
+	}
+	
+	
+	public static void main(String[] args) {
+		int[] nums = {-2, 0, 3, -5, 2, -1}; 
+		NumArray numArray = new NumArray(nums); 
+		System.out.println(numArray.sumRange(0, 2)); // Output: 1
+		System.out.println(numArray.sumRange(2, 5)); // Output: -1 
+		System.out.println(numArray.sumRange(0, 5)); // Output: -3
+	}
+	
 }
-
-int[] nums = [-2, 0, 3, -5, 2, -1];
-NumArray numArray = new NumArray(nums);
-System.out.println(numArray.sumRange(0, 2)); // Output: 1
-System.out.println(numArray.sumRange(2, 5)); // Output: -1
-System.out.println(numArray.sumRange(0, 5)); // Output: -3
 
 2. Contiguous Array (LeetCode #525)
 Problem Description:
