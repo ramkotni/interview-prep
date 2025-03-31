@@ -1,0 +1,149 @@
+1. Two Sum (LeetCode #1)
+Type: Array, HashMap
+
+Description: Given an array of integers, return the indices of the two numbers that add up to a specific target.
+
+2. Add Two Numbers (LeetCode #2)
+Type: Linked List, Math
+
+Description: Add two numbers represented by linked lists and return the sum as a linked list.
+
+3. Longest Substring Without Repeating Characters (LeetCode #3)
+Type: String, Sliding Window, HashMap
+
+Description: Find the length of the longest substring without repeating characters in a string.
+
+4. Median of Two Sorted Arrays (LeetCode #4)
+Type: Array, Binary Search
+
+Description: Find the median of two sorted arrays of different sizes in O(log(min(n, m))) time.
+
+5. Longest Palindromic Substring (LeetCode #5)
+Type: String, Dynamic Programming, Expand Around Center
+
+Description: Given a string, find the longest palindromic substring.
+
+6. Zigzag Conversion (LeetCode #6)
+Type: String
+
+Description: Convert a string into a zigzag pattern on a given number of rows.
+
+7. Reverse Integer (LeetCode #7)
+Type: Math
+
+Description: Reverse the digits of an integer.
+
+8. String to Integer (atoi) (LeetCode #8)
+Type: String, Math
+
+Description: Implement the function atoi that converts a string to an integer.
+
+9. Container With Most Water (LeetCode #11)
+Type: Array, Two Pointers
+
+Description: Find two lines that together with the x-axis form a container that holds the most water.
+
+10. 3Sum (LeetCode #15)
+Type: Array, Two Pointers, Sorting
+
+Description: Find all unique triplets in an array that sum up to zero.
+
+11. 4Sum (LeetCode #18)
+Type: Array, Sorting
+
+Description: Find all unique quadruplets in an array that sum up to a given target.
+
+12. Search in Rotated Sorted Array (LeetCode #33)
+Type: Binary Search, Array
+
+Description: Search for an element in a rotated sorted array.
+
+13. Merge Intervals (LeetCode #56)
+Type: Array, Sorting
+
+Description: Merge overlapping intervals.
+
+14. Group Anagrams (LeetCode #49)
+Type: String, HashMap
+
+Description: Given a list of strings, group anagrams together.
+
+15. Valid Parentheses (LeetCode #20)
+Type: Stack, String
+
+Description: Check if a given string containing parentheses is valid.
+
+16. Maximum Subarray (LeetCode #53)
+Type: Array, Dynamic Programming
+
+Description: Find the contiguous subarray with the largest sum.
+
+17. Climbing Stairs (LeetCode #70)
+Type: Dynamic Programming
+
+Description: Count the number of ways to reach the top of a staircase given that you can climb either 1 or 2 steps at a time.
+
+18. House Robber (LeetCode #198)
+Type: Dynamic Programming
+
+Description: Find the maximum amount of money you can rob tonight without alerting the police (no two adjacent houses can be robbed).
+
+19. Palindrome Linked List (LeetCode #234)
+Type: Linked List, Two Pointers
+
+Description: Determine whether a singly linked list is a palindrome.
+
+20. Detect Cycle in a Linked List (LeetCode #141)
+Type: Linked List, Floyd’s Cycle Detection
+
+Description: Determine if a linked list has a cycle.
+
+21. LRU Cache (LeetCode #146)
+Type: Design, HashMap, Doubly Linked List
+
+Description: Design and implement an LRU (Least Recently Used) cache.
+
+22. Merge k Sorted Lists (LeetCode #23)
+Type: Linked List, Divide and Conquer, Heap
+
+Description: Merge k sorted linked lists into one sorted list.
+
+23. Minimum Path Sum (LeetCode #64)
+Type: Dynamic Programming, Grid
+
+Description: Find the minimum path sum in a grid from top-left to bottom-right, only moving down or right.
+
+24. Find First and Last Position of Element in Sorted Array (LeetCode #34)
+Type: Binary Search, Array
+
+Description: Find the first and last position of a given element in a sorted array.
+
+25. Jump Game (LeetCode #55)
+Type: Greedy, Dynamic Programming
+
+Description: Given an array, determine if you can reach the last index.
+
+Key Themes:
+Array: Problems involving sorting, searching, and finding subarrays.
+
+String: Problems focusing on string manipulation, pattern matching, and dynamic programming.
+
+Dynamic Programming: Problems that involve finding the optimal solution over subproblems (e.g., Maximum Subarray, Climbing Stairs).
+
+Backtracking: Problems where you need to try all possibilities and backtrack if a solution doesn’t work (e.g., Subsets, Permutations).
+
+Linked List: Many problems involving operations on singly or doubly linked lists (e.g., Merge Intervals, Detect Cycle).
+
+Binary Search: Problems that can be solved using binary search, often with sorted arrays or matrices (e.g., Search in Rotated Sorted Array).
+
+Why These Problems Are Repeated:
+Conceptual Coverage: These problems cover important algorithms and data structures like arrays, strings, dynamic programming, binary search, hashmaps, linked lists, etc.
+
+Practicality: These are commonly encountered in real-world systems and applications, which makes them useful to test during interviews.
+
+Problem-Solving Skills: These problems test your ability to break down a complex problem into smaller, manageable parts while using efficient algorithms.
+
+By practicing these common LeetCode problems, you'll be well-prepared for the types of questions you might face in FAANG interviews.
+
+
+
