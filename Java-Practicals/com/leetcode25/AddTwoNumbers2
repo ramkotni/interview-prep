@@ -1,0 +1,111 @@
+package com.leetcode25;
+
+/**
+ * The Add Two Numbers problem (LeetCode #2) asks you to add two numbers that are represented by linked lists, where each node contains a single digit. The digits are stored in reverse order, meaning that the 1's place is at the head of the list.
+Problem Statement:
+You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contains a single digit. Add the two numbers and return it as a linked list.
+You can assume that neither of the numbers will have leading zeros, except the number 0 itself.
+Example:
+Input:
+l1 = [2,4,3] (represents the number 342)
+l2 = [5,6,4] (represents the number 465)
+Output:
+[7,0,8] (represents the number 807)
+Approach:
+We will traverse both linked lists, adding the corresponding digits along with any carry from the previous addition. If the sum of two digits exceeds 9, we'll set the carry for the next iteration.
+Steps:
+Initialize a dummy node to help easily return the result.
+Use a carry variable to store the carry from each addition.
+Traverse both linked lists while there are still digits to process in either list.
+Add the digits from the current nodes of both lists along with the carry.
+If the sum is 10 or greater, update the carry and store the remainder in the result list.
+After the traversal, if there's any remaining carry, append it as a new node.
+Explanation of the Code:
+ListNode class: This is a standard definition of a linked list node with an integer value and a reference to the next node.
+addTwoNumbers function:
+We create a dummy node to simplify the process of returning the result. The dummy node will be the starting point of the result list, and we use the current pointer to construct the list.
+We traverse the linked lists l1 and l2 until we reach the end of both lists.
+For each node, we add the corresponding digits from l1 and l2, along with any carry from the previous step.
+We create a new node with the sum's last digit (i.e., sum % 10) and move the current pointer.
+If there is a carry left after the loop finishes, we add a new node for the carry.
+Main method:
+We create two example linked lists l1 and l2, representing the numbers 342 and 465.
+We call the addTwoNumbers method and print the result list.
+Time Complexity:
+O(n) where n is the length of the longer linked list. We only traverse each list once.
+Space Complexity:
+O(n) where n is the number of digits in the result list, which is at most the length of the longer input list plus one for the carry.
+Example Walkthrough:
+Input:
+l1 = [2,4,3] (represents 342)
+l2 = [5,6,4] (represents 465)
+Process:
+Add 2 (from l1) + 5 (from l2) + carry (0) = 7. Carry = 0, Result = [7].
+Add 4 (from l1) + 6 (from l2) + carry (0) = 10. Carry = 1, Result = [7, 0].
+Add 3 (from l1) + 4 (from l2) + carry (1) = 8. Carry = 0, Result = [7, 0, 8].
+Output:
+Result = [7, 0, 8] which represents the number 807.
+This solution efficiently solves the problem with the correct handling of carry and linked list traversal!
+ * 
+*/
+
+class ListNode {
+    int val;
+    ListNode next;
+    ListNode(int x) { val = x; }
+}
+
+public class AddTwoNumbers2 {
+
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode dummy = new ListNode(0);  // Create a dummy node to simplify result construction.
+        ListNode current = dummy;  // Pointer to build the result list.
+        int carry = 0;  // Initialize carry to 0.
+        
+        // Traverse both lists while either l1 or l2 is not null.
+        while (l1 != null || l2 != null) {
+            // Get the current values (0 if the list is already exhausted).
+            int val1 = (l1 != null) ? l1.val : 0;
+            int val2 = (l2 != null) ? l2.val : 0;
+            
+            // Calculate sum of current digits plus carry.
+            int sum = val1 + val2 + carry;
+            carry = sum / 10;  // Update carry for next addition.
+            current.next = new ListNode(sum % 10);  // Create a new node with the digit value.
+            
+            current = current.next;  // Move the pointer to the next node.
+            
+            // Move to the next nodes in l1 and l2 (if possible).
+            if (l1 != null) l1 = l1.next;
+            if (l2 != null) l2 = l2.next;
+        }
+        
+        // If there's any carry left, create a new node with the carry value.
+        if (carry > 0) {
+            current.next = new ListNode(carry);
+        }
+        
+        return dummy.next;  // Return the next node of the dummy (skip the dummy node).
+    }
+
+    public static void main(String[] args) {
+        AddTwoNumbers2 solution = new AddTwoNumbers2();
+        
+        // Example: l1 = [2,4,3] -> 342, l2 = [5,6,4] -> 465
+        ListNode l1 = new ListNode(2);
+        l1.next = new ListNode(4);
+        l1.next.next = new ListNode(3);
+        
+        ListNode l2 = new ListNode(5);
+        l2.next = new ListNode(6);
+        l2.next.next = new ListNode(4);
+        
+        ListNode result = solution.addTwoNumbers(l1, l2);
+        
+        // Print result: [7,0,8] -> 807
+        while (result != null) {
+            System.out.print(result.val + " ");
+            result = result.next;
+        }
+    }
+}
