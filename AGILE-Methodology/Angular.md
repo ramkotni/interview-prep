@@ -319,3 +319,34 @@ Summary
 Spring Boot backend exposes GET /api/items returning JSON list.
 
 Angular frontend calls this API and shows the list.
+
+Filter on Angular side using RxJS map operator in service
+You can keep your backend API unchanged and fetch all data, then filter inside Angular service using RxJS map.
+
+Angular service example:
+typescript
+Copy
+Edit
+import { map } from 'rxjs/operators';
+
+getFilteredItems(filter: string): Observable<string[]> {
+  return this.http.get<string[]>(this.apiUrl).pipe(
+    map(items =>
+      items.filter(item =>
+        item.toLowerCase().includes(filter.toLowerCase())
+      )
+    )
+  );
+}
+Angular component example:
+typescript
+Copy
+Edit
+filterText: string = '';
+items: string[] = [];
+
+search() {
+  this.itemService.getFilteredItems(this.filterText).subscribe(data => {
+    this.items = data;
+  });
+}
