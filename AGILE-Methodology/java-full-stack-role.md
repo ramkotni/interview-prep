@@ -199,7 +199,7 @@ That way, you’ll sound structured and confident.
 (Objective: Give the interviewer a “map” of your journey before diving deep.)
 
 “I’ve been working in IT for 17 years, progressing from a Java Developer to Senior Developer, Technical Lead, and currently an Application Architect.
-I’ve delivered enterprise-grade Java full stack applications across domains like e-commerce, banking, healthcare, robotics, and cloud platforms.
+I’ve delivered enterprise-grade Java full stack applications across domains like e-commerce, banking, hi-tech, healthcare, robotics, and cloud platforms.
 My experience spans end-to-end software delivery — from requirements gathering, design, coding, testing, deployment, to post-production support — while ensuring performance, scalability, and reliability.
 I’ll walk you through my journey role by role, with real-world project examples, and then I’ll describe how I typically approach an end-to-end Java full stack implementation.”
 
