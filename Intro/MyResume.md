@@ -31,15 +31,31 @@ Technical Skills
 •	Cloud Technologies: AWS (EC2, S3, Lambda, CodePipeline, CloudWatch), Google Cloud Platform (GCP) (GKE, Pub/Sub, Firestore), PCF, Kubernetes, Docker 
 •	Version Control & CI/CD: Git, GitLab, Bitbucket, Jenkins, Maven, Docker, Kubernetes 
 •	Testing & Validation: JUnit, Postman
-•	Tools: JIRA, SonarQube, Postman, Swagger, Elasticsearch, Tableau
+•	Tools: JIRA, Ansible, SonarQube, Postman, Swagger, Elasticsearch, Tableau
 •	Logging & Monitoring: Log4j, SLF4J, Elasticsearch, Kibana, Splunk 
 •	IDE & Development Tools: Spring STS, Eclipse, IntelliJ IDEA, Visual Studio Code, NetBeans, MyEclipse 
 •	Operating Systems: Windows, Unix/Linux, Solaris
 
 Professional Experience:
 
+Electric Reliability Council of Texas (ERCOT), Taylor, TX, US
+Sr. Java Full Stack Developer | Apr 2025 – Present
+
+Responsibilities:
+
+•	Delivered 100% functional PROD INR email notification system, ensuring timely communication for critical operations.
+•	Refactored and integrated common code for 10+ entities (Breaker Switch, Generators, Lines, Load Resources, etc.), improving code reusability and reducing redundancy by 30%.
+•	Designed and implemented 10+ backend APIs for Wind Generators and Wind Turbines, enhancing system capabilities.
+•	Integrated URL changes into Angular code, ensuring seamless navigation across 10+ application routes.
+•	Debugged and resolved issues in 10+ frontend and backend projects, deploying code to higher environments using Ansible with zero downtime.
+•	Created and executed 20+ test API calls for backend API testing, ensuring 99% reliability.
+•	Resolved 25+ production issues, achieving a 95% resolution rate within SLA timelines.
+•	Addressed 50+ data correction tickets, ensuring 100% data accuracy in production systems.
+•	Contributed to the development of 5+ single schema projects, optimizing database design and performance.
+•	Investigated and resolved file attachment issues, identifying limitations in the Lastline API for unsupported file types like. dyr, improving file handling efficiency by 20%. 
+
 Amazon Robotics, Boston, US
-Sr. Java Full Stack Developer | Feb 2023 – Present
+Sr. Java Full Stack Developer | Feb 2023 – Mar 2025
 
 Responsibilities:
 
