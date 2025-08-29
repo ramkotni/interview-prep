@@ -1,0 +1,35 @@
+Hi Rajini,
+
+Greetings of the day!!
+
+Please find attached my resume and DL copy for your reference. If you have any additional questions, feel free to reach out.
+
+Full Name as per Records: Rammohanrao Kotni
+16 years of experience
+Looking for Full Time position as a JAVA FULL STACK DEVELOPER
+Current location: Austin, TX
+Phone: 603.858.7546
+Email: mohankotni77@gmail.com
+Visa Status : Green Card
+Linked In : https://www.linkedin.com/in/ramkotni/
+Interview Availability: 10am-12 CST
+Date of Birth: 08/01
+
+Thank you in advance for considering my profile.
+
+Regards,
+Ram Kotni.
+
+=============
+1.Chandra
+Phone:4088380662 
+Email ID: csudatha@gmail.com
+2.Aditya
+Phone: 4695885533chibhotla@gmail.com
+3.Vinay
+phone:8067734534
+EmailID: vinaykumarba9@gmail.com 
+Email ID: aditya.kan
+
+=================
+
