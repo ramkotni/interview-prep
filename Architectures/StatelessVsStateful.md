@@ -320,3 +320,169 @@ You can say this in interviews:
 “REST is a lightweight, scalable, stateless architectural style mainly used for web and mobile applications.
 SOAP is a protocol that uses XML and formal contracts (WSDL) and is ideal for enterprise-level, secure, transactional operations.
 REST is preferred for modern microservices due to its simplicity and performance, whereas SOAP is used in systems requiring strict security or guaranteed delivery.”
+
+✅ SOAP Architecture
+
+SOAP = Simple Object Access Protocol
+It is a protocol-based architecture for building web services.
+
+⭐ Key Characteristics of SOAP
+1. Strict Protocol
+
+SOAP uses XML as the message format.
+
+It follows a strict messaging structure (Envelope, Header, Body).
+
+2. Formal Contracts (WSDL)
+
+SOAP services require a WSDL (Web Service Definition Language) file.
+
+WSDL defines:
+
+Endpoints
+
+Methods
+
+Input/output XML schemas
+
+3. Highly Secure & Reliable
+
+Supports WS-Security, encryption, signatures.
+
+Supports transaction management, ACID, reliable messaging.
+
+4. Transport Independent
+
+SOAP works over:
+
+HTTP
+
+HTTPS
+
+JMS
+
+SMTP
+
+5. Standardized
+
+Used in industries requiring strict compliance:
+
+Banking
+
+Telecom
+
+Healthcare
+
+Government systems
+
+⭐ When SOAP Is Used
+
+✔ Financial transactions (Bank-to-Bank)
+✔ Payment gateways
+✔ Highly regulated industries
+✔ Enterprise internal integrations
+✔ Scenarios requiring strict contracts
+
+⭐ Example SOAP Use Case
+
+Bank sending transaction information to another bank with guaranteed delivery and encryption.
+
+🟥 Summary of SOAP
+
+XML only
+
+Heavy & strict
+
+Highly secure
+
+Contract-first
+
+Enterprise-grade
+
+🟢 REST Architecture
+
+REST = REpresentational State Transfer
+REST is an architectural style, not a protocol.
+
+⭐ Key Characteristics of REST
+1. Resource-Based
+
+Everything is treated as a resource, identified by a URI.
+Example:
+
+/users/123
+/orders/987
+/products/45
+
+2. Uses Standard HTTP Methods
+
+GET
+
+POST
+
+PUT
+
+DELETE
+
+PATCH
+
+3. Lightweight
+
+Supports multiple formats:
+
+JSON (most common)
+
+XML
+
+Text
+
+HTML
+
+4. Stateless
+
+Each request contains everything needed.
+
+5. Scalable
+
+Perfect for:
+
+Cloud
+
+Microservices
+
+Mobile apps
+
+Web apps
+
+⭐ When REST Is Used
+
+✔ Frontend → Backend communication
+✔ Mobile applications
+✔ Microservices architecture
+✔ Public APIs (Google, Facebook, Amazon)
+✔ High-scale systems
+
+⭐ Example REST Use Case
+
+E-commerce platform retrieving product list:
+
+GET /products
+
+🟧 SOAP vs REST — Key Differences (Interview Table)
+Feature	REST	SOAP
+Type	Architectural style	Protocol
+Format	JSON, XML, etc.	XML only
+Message Size	Lightweight	Heavy
+State	Stateless	Can be stateful or stateless
+Security	Basic, OAuth, JWT	WS-Security (very strong)
+Speed	Faster	Slower
+Contract	Optional	Strict WSDL
+Transport	HTTP/HTTPS only	Multiple protocols
+Best For	Microservices, mobile, public APIs	Banking, enterprise, secure systems
+🧑‍🏫 Interview-Ready Explanation
+
+You can say this in interviews:
+
+“REST is a lightweight, scalable, stateless architectural style mainly used for web and mobile applications.
+SOAP is a protocol that uses XML and formal contracts (WSDL) and is ideal for enterprise-level, secure, transactional operations.
+REST is preferred for modern microservices due to its simplicity and performance, whereas SOAP is used in systems requiring strict security or guaranteed delivery.”
