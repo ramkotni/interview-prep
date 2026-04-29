@@ -2,6 +2,14 @@
 
 Use this checklist before every application to reduce rejection risk.
 
+## 0) Corrected Resume Versions in `resumework`
+- `Ram-Kotni-Resume-ATS-2026.md` (general ATS-friendly version)
+- `Ram-Kotni-Resume-Java-FullStack-Lead-2026.md` (primary Java full-stack roles)
+- `Ram-Kotni-Resume-Python-FullStack-Lead-2026.md` (Python + Java roles)
+- `Ram-Kotni-Resume-AgilePLM-Architect-2026.md` (Agile PLM/integration architect roles)
+
+Use one primary version per application and customize only that version for the target job.
+
 ## 1) ATS and Formatting
 - Keep resume to 1.5 to 2 pages for 15+ years profile.
 - Use standard headings: Summary, Skills, Experience, Education, Certifications.
