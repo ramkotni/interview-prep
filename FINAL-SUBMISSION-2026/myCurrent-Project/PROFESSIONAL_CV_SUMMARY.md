@@ -1,0 +1,188 @@
+# Rammohanrao Kotni
+**Senior Full-Stack Engineer | Grid Operations & Renewable Energy Systems**
+
+---
+
+## Professional Summary
+
+Results-driven Senior Full-Stack Engineer with 10+ years of experience architecting and developing mission-critical web applications for renewable energy resource management. Specialized in cloud containerization, complex data migrations, API design, and production support for ERCOT's grid operations platform. Proven expertise in managing end-to-end software lifecycle—from system design and full-stack development through CI/CD automation, performance optimization, and incident resolution in highly regulated environments.
+
+---
+
+## Core Technical Competencies
+
+**Languages & Frameworks:**
+- Java 17 (Spring, Jersey REST, Hibernate ORM)
+- TypeScript/Angular 19 (RxJS, reactive forms, Akita state management)
+- Oracle PL/SQL (complex migrations, optimization, stored procedures)
+- Python/Shell scripting (DevOps automation)
+
+**Architecture & Design Patterns:**
+- Microservices & layered architecture
+- RESTful API design & documentation
+- Multi-schema database architecture (GINR, RARFSTG, RARF)
+- Event-driven workflows & state machines
+- SOLID principles, design patterns, clean code
+
+**DevOps & Infrastructure:**
+- Docker & Docker Compose (container orchestration)
+- Kubernetes deployments
+- Maven & build automation (multi-module projects)
+- CI/CD pipelines (Git → Build → Test → Deploy)
+- Oracle database (JDBC, connection pooling, optimization)
+
+**Observability & Support:**
+- Application performance monitoring & troubleshooting
+- Structured logging (SLF4J/Logback, ELK stack)
+- Root cause analysis & incident resolution
+- Database query optimization & execution plan analysis
+
+---
+
+## Professional Experience
+
+### ERCOT (Electric Reliability Council of Texas) | Senior Full-Stack Engineer
+**RARF Project: Renewable Energy Resources & Facilities Platform**
+**Duration:** 3+ years | Current
+
+#### System Design & Architecture
+- **Multi-Schema Architecture:** Designed and documented three-schema migration pattern (GINR Request → RARFSTG Staging → RARF Production) enabling seamless asset progression from registration through graduation
+- **Multi-Tech Consolidation:** Architected complex consolidation logic combining up to 5 single-tech substations (solar, wind, ESR, combined cycle) into unified multi-tech substation
+- **API Layer Design:** Designed 50+ RESTful endpoints supporting dual workflows (create/staging vs. update/processing) with conditional business logic
+- **Data Model:** Modeled complex entity relationships including ownership, asset-to-substation linking, INR-to-substation references across three Oracle schemas
+
+#### Full-Stack Development
+- **Backend Services (Java):** Implemented 30+ service classes handling substation CRUD, asset lifecycle, validation orchestration, and workflow management
+- **REST APIs (Jersey):** Built 50+ REST controller endpoints with proper request/response marshalling, error handling, and role-based access control
+- **Frontend (Angular):** Developed responsive dashboard with real-time INR status tracking, multi-step asset registration wizard, dynamic forms with async validators
+- **Database Layer (Hibernate):** Designed 100+ JPA entity mappings with complex relationships, cascade behaviors, and query optimization
+
+#### Graduation Engine Implementation
+- **Service Architecture:** Implemented comprehensive graduation service (7,600+ LOC) handling 40+ asset types with parent-child relationship processing
+- **Batch Processing:** Engineered efficient batch graduation logic supporting 1,000+ substation processing in 2-5 minutes
+- **Validation Framework:** Built multi-layer validation (UI → API → database) preventing constraint violations and data integrity issues
+- **Error Recovery:** Implemented transaction rollback and error logging enabling precise root cause analysis of graduation failures
+
+#### Migration & Data Integration
+- **Schema Migration:** Developed production migration scripts consolidating RARFSTG data into RARF while maintaining referential integrity
+- **Pre-Migration Validation:** Engineered pre-flight checks detecting duplicates, constraint violations, and ownership conflicts before migration
+- **Duplicate Handling:** Designed algorithms detecting/resolving duplicate records during consolidation (e.g., same asset code in multiple substations)
+- **Audit Trail:** Implemented comprehensive change tracking for compliance audit requirements
+
+#### Performance Optimization
+- **Query Optimization:** Added DISTINCT filtering to JPA queries eliminating ownership-based row multiplication (2 duplicate rows → 1 unique row)
+- **API Response Times:** Optimized complex queries reducing latency from 800ms → 200ms through proper indexing and query rewriting
+- **Pagination:** Implemented cursor-based pagination enabling efficient handling of 10,000+ record datasets
+- **Frontend Performance:** Applied virtual scrolling in data tables, change detection optimization, and Akita entity caching
+
+#### Production Support & Incident Management
+- **RCA & Troubleshooting:** Conducted root cause analysis on production incidents including NULL pointer exceptions, graduation failures, constraint violations
+- **Database Diagnosis:** Analyzed Oracle execution plans, identified missing indexes, optimized slow queries
+- **Monitoring & Alerting:** Implemented structured logging, metrics collection, and threshold-based alerting for proactive issue detection
+- **Issue Resolution:** Fixed critical issues including duplicate API responses (ownership JOIN problem), form initialization timing bugs, migration blocking issues
+
+#### Refactoring & Code Quality
+- **Load Resources Optimization:** Led refactoring renaming RID → LR_RID column to enable Oracle Flashback Data Archive (FDA) across backend, frontend, database layers
+- **Ownership Deduplication:** Diagnosed and fixed duplicate ESR charging detail responses caused by multiple active ownership records, coordinated with business on resolution
+- **Code Review:** Conducted peer reviews, identified code smells, enforced SOLID principles and design patterns
+
+#### Cross-Functional Collaboration
+- **DevOps Integration:** Collaborated with infrastructure team on Docker/Kubernetes deployment, CI/CD pipeline optimization
+- **DBA Coordination:** Provided SQL migration scripts, coordinated schema changes, participated in query optimization sessions
+- **Business Translation:** Worked with product owners translating requirements into technical specifications, validated API response structures
+
+---
+
+### Key Achievements & Impact
+
+**High-Impact Deliverables:**
+✅ Architected multi-schema migration framework enabling seamless asset progression from request through production (supporting 5,000+ substations)  
+✅ Implemented graduation engine processing 40+ asset types with 99.5% success rate, zero data loss  
+✅ Resolved critical duplicate row issue in API responses by identifying ownership JOIN problem and implementing DISTINCT filtering  
+✅ Optimized API response latency by 75% through query optimization and database tuning  
+✅ Designed and implemented change request workflow supporting full CR lifecycle from validation through implementation  
+✅ Containerized monolithic application enabling 10x faster local development setup via Docker Compose  
+✅ Built comprehensive multi-tenant access control ensuring data isolation for 100+ market participants  
+✅ Mentored junior developers on Angular/Java best practices, complex workflow patterns, troubleshooting techniques  
+
+---
+
+## Technical Projects & Implementations
+
+### 1. Multi-Tech Substation Consolidation (RIOO-5300, RIOO-5301)
+**Challenge:** Consolidate 5 separate single-tech INRs into unified multi-tech substation  
+**Solution:** Designed consolidation algorithm updating 30+ tables across three schemas, handling duplicate assets, resolving ownership conflicts  
+**Result:** Successfully consolidated CMPD_SL1, CMPD_SL2, GAIA_SL1, GAIA_SLR, Z01, Z0 substations into unified records
+
+### 2. RID → LR_RID Column Migration (RIOO-5127)
+**Challenge:** Oracle FDA requirement to rename reserved column name across database and application layers  
+**Solution:** Coordinated database schema changes, updated Hibernate entity mappings, refactored Angular VO models  
+**Result:** Enabled FDA activation, improved data archival compliance
+
+### 3. ESR Charging Details Deduplication (RIOO-5084)
+**Challenge:** API returning duplicate rows due to multiple active ownership records  
+**Solution:** Diagnosed ownership table having 2 active owners, implemented DISTINCT filtering in JPA queries, validated with business  
+**Result:** Eliminated duplicate rows, verified API response structure matches expected output
+
+### 4. Graduation Failures - Transformer Taps (Complex Bug Fix)
+**Challenge:** Transformer taps not graduating (null idRarf values)  
+**Root Cause:** Record status filtering excluding child objects from graduation  
+**Solution:** Updated graduation logic to include both status 1 and 2 for child entity processing  
+**Result:** 100% graduation success rate, zero data loss
+
+### 5. Change Request Data Model Enhancement
+**Challenge:** Support full CR lifecycle tracking before/after values for audit compliance  
+**Solution:** Designed CHANGE_REQUEST_DATA table structure capturing table name, column name, old/new values, timestamps  
+**Result:** Full change auditing capability, 100% traceability for compliance requirements
+
+---
+
+## Tools & Technologies
+
+**Programming:** Java 17 • TypeScript • Oracle PL/SQL • Python • Shell Script  
+**Frameworks:** Spring • Jersey • Hibernate • Angular 19 • RxJS • Akita  
+**Databases:** Oracle 19c • SQL optimization • JDBC • JPA/Hibernate  
+**DevOps:** Docker • Docker Compose • Kubernetes • Maven • Git  
+**Tools:** IntelliJ IDEA • VS Code • SQL Developer • Chrome DevTools • Postman  
+**Testing:** JUnit • Jasmine/Karma • Mockito • SonarQube  
+**Methodologies:** Agile/Scrum • Code review • SOLID principles • TDD  
+
+---
+
+## Certifications & Education
+
+- **Bachelor of Engineering** - Computer Science (relevant coursework: database design, software architecture, distributed systems)
+- Continuous professional development in Java, Angular, cloud technologies
+
+---
+
+## Notable Challenges & Problem-Solving
+
+**Complex Problem:** Ownership-based duplicate rows in API responses  
+**Investigation:** Analyzed SQL join logic, identified WHERE clause missing DISTINCT  
+**Solution:** Updated JPA query with DISTINCT, tested with multiple ownership scenarios  
+**Impact:** Eliminated duplicate rows, improved API reliability
+
+**Complex Problem:** Graduation service failing on constraint violations  
+**Investigation:** Analyzed batch update exception logs, identified missing pre-validation  
+**Solution:** Implemented pre-flight validation before batch operations, added transaction rollback handling  
+**Impact:** 99.5% graduation success rate, eliminated operational blockers
+
+**Complex Problem:** Multi-tech substation consolidation with duplicate asset codes  
+**Investigation:** Analyzed records across three schemas, identified conflicting ownership  
+**Solution:** Designed consolidation algorithm, coordinated with business on priority, implemented cleanup scripts  
+**Impact:** Successfully consolidated 5 INRs into unified substation
+
+---
+
+## References & Recommendation
+
+Available upon request. References from:
+- ERCOT Project Management Office
+- Senior Architects & Technical Leads
+- Cross-functional team members
+
+---
+
+*Last Updated: May 2026 | Version: 1.0*
+
