@@ -215,6 +215,178 @@ Here’s the “interview‑ready” version tailored to your background:
 
 On the robotics side, Amazon uses a Java microservices architecture for fleet management, traffic control, task orchestration, and telemetry processing. Robots send real‑time data to cloud services, which coordinate movement, optimize pod storage, and integrate with warehouse execution systems.
 
+Angular is used primarily for front‑end applications that support:
+
+Engineering workflows
+
+PLM/ERP/MES integrations
+
+Robot fleet dashboards
+
+Telemetry visualization
+
+Warehouse operations UI
+
+Internal tooling for robotics teams
+
+Here’s the architecture layer where Angular sits:
+
+Code
+Robots + Sensors
+        ↑
+Robot Control Layer (C++/ROS-like)
+        ↑
+Java Microservices (Fleet, Traffic, Telemetry)
+        ↑
+Angular Front-End Apps (Dashboards, Tools, UI)
+        ↑
+Engineers, Operators, Technicians
+Angular is the UI layer on top of the Java microservices you worked with.
+
+🟦 1. Engineering & PLM Tools (Your Area)
+Angular is used to build:
+
+PLM dashboards
+
+ECO approval UI
+
+BOM comparison tools
+
+Part metadata editors
+
+Manufacturing readiness UI
+
+Supplier/AML management screens
+
+These apps talk to:
+
+Agile PLM REST APIs
+
+Java integration services
+
+Internal metadata services
+
+This is the closest match to your Agile PLM + Java background.
+
+🟧 2. Robot Fleet Management UI
+Amazon Robotics has a massive internal UI for:
+
+Viewing robot positions
+
+Monitoring pod movements
+
+Checking robot health
+
+Viewing alerts/faults
+
+Assigning tasks
+
+Running simulations
+
+This UI is built using Angular + TypeScript.
+
+It communicates with:
+
+Fleet Manager (Java)
+
+Traffic Control (Java)
+
+Telemetry Services (Java/Kinesis)
+
+🟩 3. Warehouse Operations Dashboards
+Angular powers UIs used by:
+
+Pick station operators
+
+Pack station operators
+
+Problem-solve stations
+
+Maintenance technicians
+
+Examples:
+
+“Robot R‑204 battery low”
+
+“Pod 18A stuck in aisle 12”
+
+“Pick station throughput metrics”
+
+“Inbound/outbound flow dashboards”
+
+These apps consume REST APIs from Java microservices.
+
+🟪 4. Telemetry & Diagnostics UI
+Robots send telemetry every 100–200 ms:
+
+Battery
+
+Motor temperature
+
+Wheel slip
+
+LIDAR health
+
+Navigation errors
+
+Angular dashboards visualize:
+
+Real‑time robot health
+
+Heatmaps
+
+Alerts
+
+Fault logs
+
+Sensor diagnostics
+
+This is heavily used by robotics engineers and support teams.
+
+🟫 5. Simulation & Digital Twin UI
+Amazon Robotics has simulation tools that:
+
+Recreate warehouse layouts
+
+Simulate robot traffic
+
+Test new algorithms
+
+Validate firmware updates
+
+Angular is used for:
+
+Visualization
+
+Scenario setup
+
+Playback controls
+
+Metrics dashboards
+
+🧩 How Angular, Java, and PLM Fit Together (Your Flow)
+Here’s the flow that matches your experience:
+
+Code
+Agile PLM (BOMs, ECOs, AML)
+        ↓
+Java Integration Services
+        ↓
+Manufacturing + Robotics Metadata Services
+        ↓
+Angular UI (Engineering Tools)
+        ↓
+Engineers / Ops Teams
+You were in the Java + PLM layer.
+Angular sits one layer above, providing the UI for those services.
+
+🎯 Super‑Simple Summary (Interview‑Ready)
+Here’s the clean version you can use in interviews:
+
+“Angular is used at Amazon Robotics to build internal UIs for engineering, PLM workflows, robot fleet dashboards, telemetry visualization, and warehouse operations. These Angular apps sit on top of Java microservices — the same services that integrate with Agile PLM and manufacturing systems.
+
+My work in Agile PLM and Java fits directly into this architecture, because Angular front‑ends consume the APIs and data pipelines we built.”
+
 End‑to‑end, the flow is: engineering → PLM → manufacturing → firmware/software → fleet orchestration → warehouse operations.”
 
 This is exactly how Amazon Robotics works internally — and it aligns perfectly with your experience.
