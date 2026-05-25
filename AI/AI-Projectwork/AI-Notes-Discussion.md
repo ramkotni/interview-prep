@@ -96,6 +96,39 @@ Risk/Approval Score
        ↓
 ERCOT Operations Dashboard
 
+Notes:
+	hours	attendance	prev_score	pass
+0	2	60	40	0
+1	5	80	65	1
+2	7	90	70	1
+3	1	50	30	0
+4	4	70	55	1
+5	6	85	68	1
+6	3	65	50	0
+<img width="321" height="164" alt="image" src="https://github.com/user-attachments/assets/1f03ffc3-eda5-4725-9104-9f9565905b3d" />
+Input --> x is always inputs ...
+1346 --> x train - X_train
+025 --> x test -- X_test
+
+output --> y is always output
+
+1 - 1, 3- 0, 4 - 1, 6 - 0 >> Y_Train results ...
+
+Y test ... is x test results ...
+
+
+Model fit ... we are training the model with x train and y train ...data ...
+
+
+now predict the result with x test ...
+
+
+then test accuracy ....
+
+
+
+
+
 
 
 Predictive Settlement Risk
