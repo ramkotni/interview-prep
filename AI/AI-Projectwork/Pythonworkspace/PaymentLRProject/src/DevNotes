@@ -1,0 +1,253 @@
+Target Column
+Column	Meaning
+payment_status	0 = Success
+payment_status	1 = Failed
+
+This is your Logistic Regression target variable.
+
+Important Features
+Feature	Why It Matters
+credit_score	Financial strength
+prior_defaults	Historical risk
+missing_documents	Submission quality
+market_price	ERCOT volatility
+bank_balance_million	Liquidity
+transaction_retry_count	Payment instability
+application_completion_pct	Submission completeness
+Logistic Regression Objective
+
+Predict:
+
+P(Payment Failure)
+
+Example High-Risk Record
+Feature	Value
+Credit Score	455
+Prior Defaults	Yes
+Missing Documents	Yes
+Bank Balance	0.3M
+Retry Count	6
+
+Prediction:
+
+High Probability of Payment Failure
+
+Generator Portal
+      ↓
+Spring Boot API
+      ↓
+Kafka Stream
+      ↓
+Python ML Model
+      ↓
+Risk Prediction
+      ↓
+Finance Alert System
+
+“We developed a real-time AI-based payment risk prediction system for ERCOT generator submissions. Using Logistic Regression, the platform predicted generator payment failures using participant financial history, submission quality metrics, and market volatility indicators. The system integrated Kafka streaming, Spring Boot microservices, and Python ML services to provide real-time operational risk alerts.”
+
+
+Step 1 — Activate Your Virtual Environment
+
+Go to your project folder:
+
+cd C:\RamKotni\GitHub\interview-prep\AI\AI-Projectwork\Pythonworkspace\Logistic-Regression-Project
+
+Activate venv:
+
+.venv\Scripts\activate
+
+You should see:
+
+(.venv)
+
+at the beginning of terminal line.
+
+Step 2 — Install Uvicorn
+
+Run:
+
+pip install uvicorn fastapi
+
+You should see:
+
+Successfully installed uvicorn fastapi
+Step 3 — Verify Installation
+
+Run:
+
+pip show uvicorn
+
+If installed correctly:
+
+Name: uvicorn
+Version: ...
+Step 4 — Run FastAPI Application
+
+Now run:
+
+python -m uvicorn app:app --reload
+
+Use this command instead of only uvicorn.
+
+This works reliably on Windows.
+
+Expected Output
+INFO:     Uvicorn running on http://127.0.0.1:8000
+INFO:     Started reloader process
+Step 5 — Open Swagger UI
+
+Open browser:
+
+http://127.0.0.1:8000/docs
+
+You will see:
+
+FastAPI Swagger UI
+/predict endpoint
+Common Windows Issue
+
+If still failing:
+
+python --version
+pip --version
+
+Sometimes multiple Python installations cause PATH problems.
+
+Then install again using:
+
+python -m pip install uvicorn fastapi
+Recommended Full Install
+
+Install all required packages together:
+
+pip install pandas scikit-learn fastapi uvicorn joblib
+Recommended Project Structure
+Logistic-Regression-Project/
+│
+├── .venv/
+├── app.py
+├── train_model.py
+├── ercot_generator_payment_data.csv
+├── ercot_payment_model.pkl
+After It Starts Successfully
+
+Test API using Swagger UI or Postman.
+
+Sample request:
+
+{
+  "credit_score": 450,
+  "prior_defaults": 1,
+  "missing_documents": 1,
+  "duplicate_submission": 1,
+  "market_price": 210,
+  "application_completion_pct": 55,
+  "bank_balance_million": 0.5,
+  "transaction_retry_count": 5
+}
+
+Expected response:
+
+{
+  "risk_probability": 0.94,
+  "prediction": "HIGH_RISK"
+}
+
+====
+Step 1 — Install Required Package
+
+Run:
+
+pip install secure-smtplib
+
+Actually Python already includes smtplib, so this is optional.
+
+Step 2 — Gmail App Password
+
+For Gmail:
+
+Enable 2-factor authentication
+Generate App Password
+
+Open:
+
+Google App Passwords
+
+Example:
+
+abcd efgh ijkl mnop
+
+Use this instead of your real Gmail password.
+
+Step 5 — Run FastAPI
+python -m uvicorn app:app --reload
+Step 6 — Open Swagger UI
+
+Open:
+
+http://127.0.0.1:8000/docs
+Step 7 — Test API
+
+Click:
+
+POST /predict
+Try it out
+
+Use:
+
+{
+  "credit_score": 450,
+  "prior_defaults": 1,
+  "missing_documents": 1,
+  "duplicate_submission": 1,
+  "market_price": 210,
+  "application_completion_pct": 55,
+  "bank_balance_million": 0.5,
+  "transaction_retry_count": 5
+}
+Expected Response
+{
+  "risk_probability": 0.92,
+  "prediction": "HIGH_RISK"
+}
+Email Automatically Sent
+
+Finance alert email triggers immediately.
+
+Example email:
+
+High Risk Payment Detected
+
+Risk Probability: 0.92
+
+Reasons:
+
+Prior defaults detected
+Missing documents
+Financial risk identified
+
+Recommended Action:
+
+Manual Review Required
+What is this?
+Next Step (Very Important)
+
+Right now:
+
+risk is hardcoded (0.92)
+
+Next you replace:
+
+risk_probability = 0.92
+
+with your actual Logistic Regression model prediction.
+
+Then:
+
+real ML prediction,
+real email alerts,
+complete AI payment risk system.
+
+That becomes a very strong end-to-end AI project.
+

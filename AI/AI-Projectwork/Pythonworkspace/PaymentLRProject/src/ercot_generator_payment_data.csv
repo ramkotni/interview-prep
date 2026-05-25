@@ -1,0 +1,22 @@
+submission_id,generator_company,region,generator_type,capacity_mw,payment_amount,payment_method,credit_score,prior_defaults,missing_documents,duplicate_submission,market_price,weather_alert,submission_hour,settlement_delay_history,application_completion_pct,bank_balance_million,transaction_retry_count,payment_status
+
+GINR1001,LoneStar Energy,Houston,Solar,250,15000,ACH,720,0,0,0,45,0,10,0,100,12.5,0,0
+GINR1002,Texas Grid Power,Dallas,Wind,500,15000,Wire,580,1,1,0,120,1,15,1,72,2.1,2,1
+GINR1003,BlueSky Generation,Austin,Gas,300,15000,ACH,640,0,0,0,55,0,9,0,95,8.7,0,0
+GINR1004,ERC Power Systems,Corpus Christi,Solar,700,15000,ACH,510,1,1,1,160,1,18,1,65,1.4,3,1
+GINR1005,GreenVolt Energy,San Antonio,Wind,450,15000,Wire,690,0,0,0,60,0,11,0,98,10.3,0,0
+GINR1006,FutureGrid Energy,Houston,Battery,900,15000,ACH,470,1,1,1,200,1,20,1,55,0.9,4,1
+GINR1007,SunWave Electric,Dallas,Solar,350,15000,Wire,710,0,0,0,48,0,13,0,97,11.2,0,0
+GINR1008,NextEra Grid,Austin,Wind,600,15000,ACH,530,1,1,0,145,1,17,1,70,1.8,2,1
+GINR1009,Prime Texas Energy,Houston,Gas,275,15000,Wire,760,0,0,0,50,0,8,0,99,15.6,0,0
+GINR1010,Western Grid Corp,Midland,Solar,800,15000,ACH,490,1,1,1,180,1,19,1,60,0.7,5,1
+GINR1011,UltraGrid Texas,Dallas,Battery,950,15000,Wire,505,1,1,1,210,1,21,1,52,0.5,4,1
+GINR1012,Clean Horizon Energy,Houston,Solar,400,15000,ACH,735,0,0,0,58,0,10,0,96,13.8,0,0
+GINR1013,NorthWind Power,Austin,Wind,520,15000,Wire,615,0,1,0,110,0,14,0,80,5.4,1,0
+GINR1014,Delta Generation,Corpus Christi,Gas,780,15000,ACH,455,1,1,1,230,1,22,1,48,0.3,6,1
+GINR1015,Texas Renewable Grid,San Antonio,Solar,310,15000,Wire,745,0,0,0,52,0,9,0,99,14.7,0,0
+GINR1016,Pioneer Energy Systems,Midland,Gas,660,15000,ACH,525,1,0,1,175,1,18,1,68,1.1,3,1
+GINR1017,EverGreen Utilities,Dallas,Wind,430,15000,Wire,700,0,0,0,62,0,11,0,97,9.8,0,0
+GINR1018,VisionGrid Energy,Houston,Battery,890,15000,ACH,485,1,1,1,240,1,23,1,50,0.4,5,1
+GINR1019,Liberty Electric,Austin,Solar,370,15000,Wire,680,0,0,0,57,0,12,0,95,8.9,0,0
+GINR1020,Metro Power Group,Corpus Christi,Gas,720,15000,ACH,510,1,1,1,190,1,20,1,63,0.8,4,1

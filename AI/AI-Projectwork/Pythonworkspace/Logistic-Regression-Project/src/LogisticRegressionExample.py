@@ -16,10 +16,21 @@ y = data['pass_exam']
 
 # Split data
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
+# print(X_train)
+#
+# print(X_test)
+#
+# print(y_train)
+#
+# print(y_test)
 
 # Train model
 model = LogisticRegression()
 model.fit(X_train, y_train)
+
+print(model.coef_)
+
+print(model.classes_)
 
 # Predict
 pred = model.predict(X_test)
