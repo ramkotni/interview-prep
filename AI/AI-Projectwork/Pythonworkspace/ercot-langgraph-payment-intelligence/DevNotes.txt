@@ -1,0 +1,243 @@
+pip install -r requirements.txt
+
+Project Notes:
+
+Recommended folder structure:
+
+ercot-langgraph-payment-intelligence/
+│
+├── data/
+│   └── payment_ml_dataset_10000_records.csv
+│
+├── output/
+│   ├── payment_risk_predictions.csv
+│   └── monthly_report.txt
+│
+├── models/
+│   └── logistic_model.pkl
+│
+├── agents/
+│   ├── data_loader_agent.py
+│   ├── prediction_agent.py
+│   ├── root_cause_agent.py
+│   ├── trend_analysis_agent.py
+│   ├── recommendation_agent.py
+│   ├── report_agent.py
+│   └── email_agent.py
+│
+├── graph/
+│   └── payment_graph.py
+│
+├── main.py
+│
+└── requirements.txt
+
+Step 1 — Define Shared State
+
+graph/state.py
+
+Step 2 — Data Loader Agent
+
+agents/data_loader_agent.py
+
+Step 3 — Prediction Agent
+
+agents/prediction_agent.py
+
+Step 4 — Root Cause Agent
+
+agents/root_cause_agent.py
+
+Step 5 — Recommendation Agent
+
+agents/recommendation_agent.py
+
+Step 6 — Executive Report Agent
+
+agents/report_agent.py
+
+Step 7 — Email Agent
+
+agents/email_agent.py
+
+Step 8 — LangGraph Workflow
+
+graph/payment_graph.py
+
+Step 9 — Main Program
+
+Final Result
+
+Your AI system now:
+
+✅ predicts failures
+✅ calculates risk probability
+✅ analyzes root causes
+✅ generates recommendations
+✅ creates executive reports
+✅ emails management automatically
+✅ orchestrates everything with AI agents
+
+Enterprise-Level Next Improvements
+Enhancement	Benefit
+SHAP explainability	Exact feature-level reasoning
+Multi-agent supervisor	Autonomous decision routing
+Kafka integration	Real-time streaming
+Vector DB	Historical RCA memory
+RAG architecture	Search previous incidents
+Human approval agent	Governance
+Power BI integration	Dashboards
+FastAPI	Real-time APIs
+Neo4j graph analysis	Relationship fraud detection
+This Is Essentially Building
+AI-Powered ERCOT Payment Intelligence Platform
+
+Very similar to enterprise systems used in:
+
+financial risk systems
+fraud platforms
+payment gateways
+banking AI operations
+autonomous finance analytics
+
+====
+Here is the complete step-by-step process to run your LangGraph AI payment root-cause analysis framework on Windows.
+
+1. Create Project Folder
+
+Create this structure:
+
+ercot-langgraph-payment-intelligence/
+│
+├── agents/
+├── graph/
+├── data/
+├── models/
+├── output/
+├── reports/
+│
+├── main.py
+├── requirements.txt
+2. Copy Your Dataset
+
+Put your CSV here:
+
+data/payment_ml_dataset_10000_records.csv
+3. Create Python Virtual Environment
+
+Open terminal inside project folder.
+
+Windows
+python -m venv .venv
+
+Activate:
+
+.venv\Scripts\activate
+
+You should see:
+
+(.venv)
+4. Install Dependencies
+
+Create:
+
+requirements.txt
+
+Add:
+
+langgraph
+langchain
+langchain-community
+ollama
+pandas
+numpy
+scikit-learn
+joblib
+
+Install:
+
+pip install -r requirements.txt
+5. Install Ollama
+
+Install Ollama
+
+After installation:
+
+ollama run gemma3:1b
+
+This downloads the model locally.
+
+You can also use:
+
+llama3
+phi3
+mistral
+6. Create All Python Files
+
+Create these files exactly:
+
+agents/
+│
+├── data_loader_agent.py
+├── prediction_agent.py
+├── root_cause_agent.py
+├── recommendation_agent.py
+├── report_agent.py
+└── email_agent.py
+
+and:
+
+graph/
+│
+├── state.py
+└── payment_graph.py
+
+Then paste the code I provided earlier.
+
+7. Train Model First
+
+Before LangGraph workflow runs, you need:
+
+models/logistic_model.pkl
+
+Run your ML training program first:
+
+python payment_failure_prediction.py
+
+This creates:
+
+models/logistic_model.pkl
+8. Start Ollama Server
+
+VERY IMPORTANT.
+
+Open another terminal:
+
+ollama serve
+
+Keep it running.
+
+9. Run Main Program
+
+Inside project folder:
+
+python main.py
+10. What Happens Internally
+
+Workflow executes:
+
+Load CSV
+   ↓
+Predict Payment Risk
+   ↓
+Analyze Root Causes
+   ↓
+Generate AI Recommendations
+   ↓
+Create Executive Report
+   ↓
+Send Email
+11. Expected Console O
+
+
+

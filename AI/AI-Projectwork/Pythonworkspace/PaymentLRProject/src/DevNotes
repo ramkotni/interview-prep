@@ -180,7 +180,7 @@ abcd efgh ijkl mnop
 
 Use this instead of your real Gmail password.
 
-Step 5 — Run FastAPI
+Step 5 — Run FastAPI ****
 python -m uvicorn app:app --reload
 Step 6 — Open Swagger UI
 

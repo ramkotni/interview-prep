@@ -1,0 +1,36 @@
+Step 1 — Install Ollama
+
+Download:
+
+Ollama Official Site
+
+Step 2 — Pull Small Model
+
+Since your laptop has 8GB RAM, use:
+
+ollama pull phi3
+
+Run test:
+
+ollama run phi3
+
+Test prompt:
+
+Generate finance summary email
+Step 3 — Install Python Packages
+pip install pandas ollama
+Step 4 — Example Dataset
+
+File:
+
+ercot_payment_failures.csv
+
+Example:
+
+submission_id,region,payment_status,risk_probability
+GINR1001,Houston,FAILED,0.91
+GINR1002,Dallas,SUCCESS,0.20
+GINR1003,Houston,FAILED,0.87
+GINR1004,Austin,SUCCESS,0.15
+GINR1005,Houston,FAILED,0.95
+

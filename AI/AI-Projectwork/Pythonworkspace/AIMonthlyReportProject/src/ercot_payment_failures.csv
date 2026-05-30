@@ -1,0 +1,6 @@
+submission_id,region,payment_status,risk_probability
+GINR1001,Houston,FAILED,0.91
+GINR1002,Dallas,SUCCESS,0.20
+GINR1003,Houston,FAILED,0.87
+GINR1004,Austin,SUCCESS,0.15
+GINR1005,Houston,FAILED,0.95

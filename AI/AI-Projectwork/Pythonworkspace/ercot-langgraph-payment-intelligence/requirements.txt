@@ -1,0 +1,9 @@
+# AI Frameworks & Agents
+langgraph
+langchain
+ollama
+
+# Data Science & Machine Learning
+pandas
+scikit-learn
+joblib
