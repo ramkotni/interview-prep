@@ -125,6 +125,92 @@ now predict the result with x test ...
 
 then test accuracy ....
 
+05/30/26
+=========
+
+Action Items
+1. Use Case Revision
+
+The payment failure prediction use case is not convincing enough from an interview perspective. We need a stronger, business-driven use case that demonstrates clear value and technical depth.
+
+I found a potential feasibility study using ERCOT data. Please work on this assignment and identify a compelling AI/Agentic AI use case that can be discussed confidently during interviews. The use case should highlight:
+
+Real business problem
+Data sources and challenges
+AI/ML or Agentic AI solution
+Measurable business impact
+Scalable architecture
+2. LangGraph – Deep Understanding
+
+Develop a strong understanding of LangGraph concepts, architecture, and implementation patterns.
+
+Complete the following course:
+https://academy.langchain.com/courses/building-reliable-agents
+
+Focus on:
+
+Agent workflows
+State management
+Multi-agent systems
+Human-in-the-loop patterns
+Tool calling
+Production-ready agent design
+
+Be prepared to explain end-to-end implementations during interviews.
+
+3. RAG (Retrieval-Augmented Generation)
+
+Gain a deep understanding of RAG, its purpose, and architecture.
+
+Although many organizations are moving toward Agentic AI solutions, interviewers frequently ask candidates about RAG fundamentals.
+
+Prepare to discuss:
+
+Why RAG is needed
+RAG architecture and workflow
+Embeddings and vector databases
+Retrieval strategies
+Chunking techniques
+Limitations of RAG
+RAG vs Agentic AI
+When to use RAG and when not to use it
+4. Resume Enhancement
+
+Update your resume to include:
+
+ERCOT AI/Agentic AI project
+LangGraph project implementation
+RAG-based project
+LLM and Generative AI experience
+Agentic AI architecture and orchestration
+
+Ensure each project clearly highlights:
+
+Business problem
+Architecture
+Technologies used
+Your responsibilities
+Quantifiable impact
+5. Resume Formatting
+
+Reformat your resume using a professional one-page technical resume style similar to the following template:
+
+https://www.overleaf.com/latex/templates/deedy-cv/bjryvfsjdyxz
+
+Focus on:
+
+Strong professional summary
+Technical skills section
+Impact-driven experience bullets
+Relevant AI/ML and Agentic AI projects
+Clean and concise formatting suitable for senior-level interviews
+
+
+
+
+
+
+
 
 
 
