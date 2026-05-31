@@ -1,0 +1,16 @@
+[
+  {
+    "version": "1.0",
+    "trained_at": "2026-05-31T14:44:18.982755",
+    "roc_auc": 0.9826,
+    "avg_precision": 0.9858,
+    "cv_auc_mean": 0.9965,
+    "cv_auc_std": 0.0069,
+    "train_rows": 240,
+    "test_rows": 60,
+    "label_distribution": {
+      "1": 180,
+      "0": 120
+    }
+  }
+]
