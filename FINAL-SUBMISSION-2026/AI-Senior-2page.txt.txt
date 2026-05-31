@@ -1,0 +1,164 @@
+# RAM MOHAN KOTNI
+
+Austin, TX | 603-858-7546 | [ramkotni@gmail.com](mailto:ramkotni@gmail.com) | LinkedIn
+
+## APPLICATION ARCHITECT | AI ENGINEER | CLOUD ARCHITECT
+
+### PROFESSIONAL SUMMARY
+
+Application Architect and AI Engineer with 18+ years of experience designing and delivering enterprise-scale applications across Energy, Robotics, Healthcare, Financial Services, and Supply Chain domains.
+
+Expertise in Java, Spring Boot, Microservices, Cloud Architecture (AWS/GCP), Kubernetes, Angular, Python, and AI-driven automation solutions. Recently focused on Agentic AI, predictive analytics, intelligent workflow automation, and enterprise AI adoption using LLM-powered systems.
+
+Proven success leading cloud migrations, modernizing monolithic platforms, building scalable microservices, implementing DevOps practices, and delivering mission-critical applications supporting thousands of users and business-critical operations.
+
+---
+
+## CORE SKILLS
+
+### Architecture & Design
+
+Enterprise Architecture, Solution Architecture, Microservices, Event-Driven Architecture, Distributed Systems, API Design, Domain-Driven Design
+
+### AI / GenAI
+
+Agentic AI, LangGraph, LangChain, Retrieval-Augmented Generation (RAG), OpenAI APIs, Prompt Engineering, Predictive Analytics, Scikit-Learn, AI Automation
+
+### Backend
+
+Java 8–17, Spring Boot, JAX-RS, Hibernate, JPA, Python, Flask, FastAPI, REST APIs
+
+### Frontend
+
+Angular, TypeScript, JavaScript, HTML5, CSS3, Bootstrap
+
+### Cloud & DevOps
+
+AWS, GCP, Kubernetes, Docker, Jenkins, GitHub Actions, Ansible
+
+### Data & Messaging
+
+Oracle, PostgreSQL, MongoDB, Redis, Kafka, RabbitMQ
+
+---
+
+## PROFESSIONAL EXPERIENCE
+
+### ERCOT – Senior AI Engineer
+
+Apr 2025 – Present
+
+#### AI-Driven Payment Intelligence & Grid Reliability Platform
+
+* Designed and implemented enterprise-grade microservices supporting resource onboarding and grid reliability operations.
+* Built RESTful APIs using Java 17, JAX-RS, Spring Boot, Hibernate, and Oracle.
+* Developed Angular-based operational dashboards supporting critical reliability workflows.
+* Refactored shared services across multiple resource entities, reducing code duplication by 30%.
+* Implemented automated deployments using Ansible and CI/CD best practices.
+
+##### AI Project: GINR Feasibility Screening Platform
+
+* Designed and deployed a machine learning platform predicting GINR feasibility outcomes using data from 16 Oracle source tables.
+* Engineered 20+ business and operational features to improve prediction accuracy.
+* Developed a Scikit-Learn Logistic Regression pipeline achieving ROC-AUC greater than 0.85.
+* Built Flask-based prediction APIs integrated with enterprise Spring Boot applications.
+* Implemented model lifecycle management including audit logging, drift monitoring, and automated retraining workflows.
+
+##### AI Project: Payment Intelligence Automation Platform
+
+* Designed and implemented a Python-based payment monitoring platform automating detection of operational payment failures.
+* Automated identification of unpaid fees, payment synchronization issues, duplicate transactions, stale workflows, and financial anomalies.
+* Built scheduling framework using APScheduler and Oracle integrations.
+* Generated automated executive reports with severity-based prioritization and operational insights.
+* Reduced manual review effort and improved operational response times.
+
+### Amazon Robotics – Senior Software Engineer
+
+Feb 2023 – Mar 2025
+
+* Architected cloud-native Spring Boot microservices supporting manufacturing and warehouse automation.
+* Implemented Kafka-driven event architecture reducing inter-service latency by 40%.
+* Designed scalable solutions deployed on AWS and GCP achieving 99.9% availability.
+* Built CI/CD pipelines reducing deployment times by 60%.
+* Developed operational dashboards providing real-time visibility into production and delivery metrics.
+
+### Biogen – Lead Full Stack Developer
+
+Jun 2022 – Jan 2023
+
+* Designed secure supply-chain microservices supporting pharmaceutical compliance and traceability.
+* Delivered Angular-based dashboards improving visibility into logistics and inventory operations.
+* Implemented HIPAA, FDA, and GDPR compliance controls.
+* Deployed cloud-native applications on AWS with automated monitoring and alerting.
+
+### Dell Technologies – Application Architect
+
+Jul 2015 – May 2022
+
+* Led enterprise modernization initiatives migrating monolithic applications to microservices architecture.
+* Designed cloud-native deployment architectures leveraging Kubernetes and PCF.
+* Established CI/CD pipelines increasing deployment frequency by 50%.
+* Improved platform scalability, maintainability, and operational resilience.
+* Led data migration initiatives and mentored engineering teams across multiple projects.
+
+### Earlier Experience
+
+#### IBM – Senior Java Developer
+
+2012 – 2015
+
+* Delivered enterprise eCommerce modernization solutions.
+* Developed Angular and REST-based integrations supporting large-scale customer platforms.
+
+#### Innominds – Java Developer
+
+2009 – 2012
+
+* Designed Queue Service Framework improving enterprise workflow processing efficiency.
+* Built integration utilities and Agile PLM extensions.
+
+#### Wells Fargo – Java Developer
+
+2007 – 2009
+
+* Developed payment processing and financial workflow systems.
+* Improved transaction processing efficiency and enterprise integration capabilities.
+
+---
+
+## AI / GENAI PROJECTS
+
+### AI-Driven Payment Intelligence Platform
+
+* Enterprise AI platform for payment anomaly detection and operational intelligence.
+* Automated monitoring, validation, reporting, and escalation workflows.
+* Built using Python, Oracle, APScheduler, pandas, and enterprise reporting pipelines.
+
+### Predictive Feasibility Screening Platform
+
+* Machine learning platform delivering real-time feasibility recommendations.
+* Integrated predictive scoring APIs with enterprise applications.
+* Implemented monitoring, drift detection, and auditability controls.
+
+### Agentic AI Engineering Initiatives
+
+* Applied AI-assisted development practices using GitHub Copilot.
+* Evaluated LangGraph, LangChain, and RAG architectures for enterprise use cases.
+* Built automation workflows combining data ingestion, analysis, reporting, and notification systems.
+
+---
+
+## EDUCATION
+
+Master of Computer Applications (MCA)
+MK University
+
+Bachelor of Science – Mathematics
+Andhra University
+
+---
+
+## CERTIFICATIONS
+
+* Oracle Certified Professional – Java SE
+* Certified Scrum Master

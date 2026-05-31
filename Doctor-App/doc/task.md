@@ -1,0 +1,36 @@
+# Project Execution Roadmap
+
+- `[x]` **Phase 1: Architecture & DB Design**
+    - `[x]` Set up project root structure and configurations
+    - `[x]` Build backend settings, base DB models, and core configuration
+    - `[x]` Implement complete SQLAlchemy database models
+    - `[x]` Configure Alembic migrations and generate initial migration
+- `[x]` **Phase 2: Backend Foundation**
+    - `[x]` Set up security module (JWT auth, refresh tokens, password hashing, and role checks)
+    - `[x]` Build repository layers (Generic repo, User repo, Doctor repo, Appointment repo)
+    - `[x]` Implement Pydantic input/output schemas (DTOs)
+    - `[x]` Implement basic routers: Auth (SignUp, Login, Refresh, Google Auth mock) and User Profiles
+- `[/]` **Phase 3: Frontend Foundation** (Current)
+    - `[ ]` Bootstrap Vite React + TypeScript app in `frontend/`
+    - `[ ]` Configure Material UI, Tailwind CSS, and Theme Switcher (Dark Mode)
+    - `[ ]` Set up Zustand store, Axios services, Router and Auth layout/guards
+    - `[ ]` Implement Auth screens (Login, Signup, OTP Verify)
+- `[ ]` **Phase 4: Appointment Management**
+    - `[ ]` Create Doctor Availability slots generator backend logic
+    - `[ ]` Build Patient Search interface & Booking Calendar frontend components
+    - `[ ]` Implement Doctor scheduling & Appointment confirmation/rejection workflow
+    - `[ ]` Create Consultation Notes & Digital Prescription PDF generator API
+- `[ ]` **Phase 5: Payments & Notifications**
+    - `[ ]` Implement mock Stripe payment workflow (Checkouts, Invoices, Webhooks, SaaS Plans)
+    - `[ ]` Build Notification service (emails/SMS/push logged in development mode)
+    - `[ ]` Add Family Member registry and profiles management
+- `[ ]` **Phase 6: Admin Dashboard**
+    - `[ ]` Build Admin analytical endpoints (Revenue, appointments count, active users)
+    - `[ ]` Implement Frontend Admin panel: User tables, billing ledgers, refund action buttons
+- `[ ]` **Phase 7: Testing Suite**
+    - `[ ]` Write Pytest test suites for key backend service layers
+    - `[ ]` Write Vitest test suites for critical frontend stores & hooks
+- `[ ]` **Phase 8: Deployment & Docs**
+    - `[ ]` Write multi-container `docker-compose.yml` and `nginx.conf` proxy files
+    - `[ ]` Generate mobile application instructions (`mobile/README.md`)
+    - `[ ]` Finalize walkthrough.md and root setup guides
