@@ -1,0 +1,326 @@
+https://www.linkedin.com/jobs/view/4419625104/?trackingId=QSWzZVhoT5ifkTb4fQAIig%3D%3D
+
+can you write question and answers in below folder for cloud engineer .. kubernetes, oracle cloud, aws, main procedures or activities in cloud infrastructure, example
+application deployment, kubernetes configuration and deployment, please explain all the topics whatever is mentioned in my cloud engineer resume in the form of question
+and answers ..
+C:\RamKotni\Personal\interview-prep\Technology-Wise
+
+
+Read all my resumes here : C:\RamKotni\Personal\interview-prep\FINAL-SUBMISSION-2026
+
+Based on below Cloud engineer, please write Sr Cloud Engineer resume here C:\RamKotni\Personal\interview-prep\FINAL-SUBMISSION-2026\CloudEngineer\RamKotni-Cloud-Engineer
+
+About the job
+Job Summary
+
+The Senior Cloud Platform Engineer leads the strategic design, development, and operation of scalable, secure and resilient enterprise platforms across on-premises and cloud environments. Partnering with Architecture, Engineering, Infrastructure and Security teams, this role drives platform reliability, scalability and operational excellence through modern DevOps pipelines, container orchestration, backup and disaster recovery strategies and infrastructure automation. Responsibilities include capacity planning, incident response, root cause analysis and continuous improvement initiatives that enable high-performing engineering teams and a secure, highly available, and future-ready technology ecosystem.
+
+WHAT YOU WILL BE DOING:
+
+Own and Operate the Enterprise Platform: Maintain technical ownership of enterprise platforms across on-premises and cloud environments (AWS and Oracle Cloud), including container orchestration, middleware, platform services, lambdas, and event processors. Partner with the IT Infrastructure team to ensure a reliable, secure, and scalable platform foundation.
+Lead Low-Level and Domain-Centric Design: Translate high-level architectural direction from the Enterprise Architecture team into detailed, domain-specific platform designs. Own low-level design decisions across platform services, container networking, storage abstractions, and cloud-native components, ensuring solutions are practical, scalable, and aligned with EA standards.
+Integrate Cloud-Native and Platform Security: Partner with Information Security to implement and maintain security controls across cloud-native and SaaS platform components, including container security, serverless functions (Lambda), CI/CD pipeline integrity, event streaming, and access management for modern cloud services and database platforms. Ensure compliance with organizational and regulatory standards across all platform-layer services.
+Lead Incident Response: Lead identification, triage, and resolution of platform-related incidents, coordinating with IT Infrastructure, Help Desk, and Information Security to minimize downtime, restore services swiftly, and implement preventive measures to enhance resilience.
+Provide Technical Leadership and Mentorship: Guide platform team technical decisions, mentor team members, and drive a culture of excellence through knowledge sharing, best practices, and strategic direction.
+Monitor and Optimize Platform Performance: Proactively monitor and optimize platform-layer performance, including container workloads, cloud services, event pipelines, and application-facing infrastructure, diagnosing and resolving complex issues to maintain high availability and efficiency. Define and meet availability SLAs/SLOs, RTO/RPO targets, and uptime commitments for platform services and supported databases, reporting against these targets on a regular cadence.
+Drive Automation and Infrastructure as Code: Champion platform automation through infrastructure as code (IaC), scripting, configuration management (e.g. Ansible) and tooling to streamline operations, reduce manual effort, and improve infrastructure efficiency and consistency.
+Build and Manage CI/CD Pipelines: Design, implement, and maintain CI/CD pipelines and automation frameworks that enable reliable, repeatable software delivery across engineering teams.
+Steward Event-Driven Platform Capabilities: Own the design, operation, and reliability of event-driven and streaming platform components, including Kafka-based architectures, ensuring scalability and performance for dependent applications.
+Enable Developer Self-Service: Build and maintain internal platform tooling, paved paths, and self-service capabilities that improve developer productivity and reduce friction for software and data engineering teams.
+Define Capacity Requirements: Forecast platform capacity needs and define infrastructure requirements in partnership with IT Infrastructure, who executes provisioning. Analyze performance metrics to ensure current and future business demands are met while optimizing costs.
+Lead Disaster Recovery and Continuity Planning: Design and lead disaster recovery and business continuity strategies for platform operations in partnership with IT Infrastructure, ensuring resilient backup, storage, failover, and recovery capabilities. Oversee DevOps pipeline architecture, capacity planning, incident response, and root cause analysis to minimize operational disruption and strengthen platform reliability.
+Maintain Platform Documentation: Ensure comprehensive, current documentation of platform configurations, processes, and procedures to support knowledge transfer, compliance, and operational continuity.
+
+WHAT IS REQUIRED:
+
+Bachelor's Degree in Information Technology, Computer Science, or a related field; or equivalent combination of education and/or experience. 
+6 years of progressive experience in platform engineering, cloud infrastructure, or distributed systems architecture. 
+Expert-level understanding of modern platform engineering principles, including infrastructure as code (IaC), automation, scalability, reliability engineering, performance optimization, and disaster recovery design. 
+Demonstrated expertise with public cloud platforms. 
+Experience designing and operating serverless architectures and event-driven platforms using technologies such as Confluent Kafka. 
+Proven experience building and managing CI/CD pipelines and automation frameworks using tools such as GitLab and Jenkins. 
+Hands-on experience implementing observability and monitoring solutions using tools such as Dynatrace, CloudWatch and Grafana. 
+Experience designing and implementing storage, backup, disaster recovery (DR), and failover strategies to ensure high availability and business continuity. 
+Experience with containerization and orchestration technologies and modern platform tooling (e.g. Docker, Fargate).
+Strong Hands-on experience with infrastructure as code tools such as Terraform, AWS CloudFormation, OpenTofu or equivalent. 
+
+PREFERRED QUALIFICATIONS:
+
+Hands on experience with AWS and Oracle Cloud Infrastructure (OCI), as well as experience with Oracle Exascale or comparable high-performance infrastructure environments. 
+Deep knowledge of networking concepts as they relate to cloud and platform environments, including security, encryption, identity and access management, and service connectivity across hybrid architectures. 
+Proven expertise of database platforms and data technologies, including relational and NoSQL databases, cloud-native database services (e.g., Oracle, AWS RDS, Aurora), and experience supporting database platform operations, performance, and availability within a cloud or hybrid environment. 
+Proficiency in Linux-based systems and scripting or programming languages commonly used for automation, including Python and Bash.
+
+Your Name
+
+Email + Phone
+
+Education (school, degree, graduation date)
+
+Experience (job titles, companies, dates, bullet points)
+
+Skills
+
+Projects (optional)
+
+Awards (optional)
+
+Links (GitHub, LinkedIn, portfolio)
+
+===
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy CV/Resume
+% XeLaTeX Template
+% Version 1.0 (5/5/2014)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Debarghya Das (http://www.debarghyadas.com)
+% With extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\lastupdated % Print the Last Updated text at the top right
+
+\namesection{Rammohan}{Kotni}{ % Your name
+\href{mailto:chrisliow@gmail.com}{ramkotni@gmail.com} | 603.858.7546 % Your contact information
+}
+
+%----------------------------------------------------------------------------------------
+%	LEFT COLUMN
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+
+%------------------------------------------------
+% Education
+%------------------------------------------------
+
+\section{Education} 
+
+\subsection{MK University}
+
+\descript{Master’s in Computer Applications 2001}
+
+
+\sectionspace % Some whitespace after the section
+
+\descript{Bachelor’s in Science - Mathematics }
+\location{Andhra University} 
+
+
+
+\sectionspace % Some whitespace after the section
+
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Skills
+%------------------------------------------------
+
+\section{Technical Skills}
+
+\subsection{Cloud}
+AWS (EC2, ECS, Lambda, S3, RDS, IAM, CloudWatch) \textbullet{} Oracle Cloud (OCI)
+
+\sectionspace
+
+\subsection{Infrastructure as Code}
+Terraform \textbullet{} CloudFormation \textbullet{} Ansible
+
+\sectionspace
+
+\subsection{Containers \& Orchestration}
+Kubernetes \textbullet{} Docker \textbullet{} ECS \textbullet{} Fargate
+
+\sectionspace
+
+\subsection{CI/CD \& DevOps}
+Jenkins \textbullet{} GitLab CI/CD \textbullet{} AWS CodePipeline \textbullet{} Git \textbullet{} GitHub
+
+\sectionspace
+
+\subsection{Programming}
+Java \textbullet{} Python \textbullet{} Bash \textbullet{} Spring Boot
+
+\sectionspace
+
+\subsection{Messaging}
+Kafka \textbullet{} JMS \textbullet{} MQ \textbullet{} SQS \textbullet{} SNS
+
+\sectionspace
+
+\subsection{Databases}
+Oracle \textbullet{} PostgreSQL \textbullet{} MySQL \textbullet{} MongoDB \textbullet{} Cassandra \textbullet{} DynamoDB
+
+\sectionspace
+
+\subsection{Monitoring}
+CloudWatch \textbullet{} Grafana \textbullet{} Prometheus \textbullet{} ELK \textbullet{} Splunk \textbullet{} Dynatrace
+
+\sectionspace
+
+\subsection{Operating Systems}
+Linux \textbullet{} Unix \textbullet{} Windows
+
+
+\sectionspace % Some whitespace after the section
+%------------------------------------------------
+% Links
+%------------------------------------------------
+
+\section{Links} 
+
+LinkedIn: linkedin.com/in/ramkotni \\
+
+
+\sectionspace % Some whitespace after the section
+
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % The end of the left column
+\hfill
+%
+%----------------------------------------------------------------------------------------
+%	RIGHT COLUMN
+%----------------------------------------------------------------------------------------
+%
+\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+%------------------------------------------------
+% Experience
+%------------------------------------------------
+\section{Experience}
+
+\runsubsection{ERCOT}
+\descript{| Senior Cloud Platform Engineer}
+\location{Apr 2025 – Present | Taylor, TX}
+\begin{tightitemize}
+\item Engineer and automate cloud/on‑prem platforms using Terraform, Ansible, and Kubernetes.
+\item Manage CI/CD pipelines and cloud‑native services supporting critical energy systems.
+\item Implement monitoring and incident response with CloudWatch, Grafana, and Prometheus.
+\item Support Kafka‑based microservices and improve platform reliability and scalability.
+\end{tightitemize}
+
+\sectionspace
+
+\runsubsection{Amazon Robotics}
+\descript{| Senior Cloud Infrastructure Engineer}
+\location{Feb 2023 – Mar 2025 | North Reading, MA}
+\begin{tightitemize}
+\item Designed AWS infrastructure for large‑scale microservices and robotics platforms.
+\item Built Terraform IaC and managed ECS/Fargate container workloads.
+\item Developed CI/CD pipelines using Jenkins and AWS native services.
+\item Improved system performance through monitoring, logging, and cost optimization.
+\end{tightitemize}
+
+\sectionspace
+
+\runsubsection{Biogen}
+\descript{| Cloud Infrastructure Lead}
+\location{Jun 2022 – Jan 2023 | Cambridge, MA}
+\begin{tightitemize}
+\item Led AWS cloud migration and infrastructure modernization initiatives.
+\item Automated infrastructure with Terraform and built CI/CD pipelines.
+\item Supported Kubernetes deployments and cloud security/compliance requirements.
+\end{tightitemize}
+
+\sectionspace
+
+\runsubsection{Dell Technologies}
+\descript{| Application Architect / DevOps Lead}
+\location{Jul 2015 – May 2022 | Austin, TX}
+\begin{tightitemize}
+\item Designed and delivered cloud‑based microservices using Java, Spring Boot, and AWS.
+\item Led migration from monolithic systems to scalable cloud architectures.
+\item Built CI/CD pipelines, automated deployments, and API integrations.
+\item Worked with Kafka, REST APIs, and cloud‑native DevOps tooling.
+\end{tightitemize}
+
+\sectionspace
+
+\runsubsection{IBM}
+\descript{| Senior Infrastructure Engineer}
+\location{May 2012 – Jul 2015 | Raleigh, NC}
+\begin{tightitemize}
+\item Managed Linux enterprise infrastructure and automated operational workflows.
+\item Implemented monitoring, automation, and disaster recovery solutions.
+\item Supported Oracle and DB2 databases and middleware platforms.
+\end{tightitemize}
+
+\sectionspace
+
+\runsubsection{Innominds \& Wells Fargo}
+\descript{| Software Engineer / Infrastructure Engineer}
+\location{Nov 2007 – Mar 2012 | Hyderabad, India \& Charlotte, NC}
+\begin{tightitemize}
+\item Developed Java/J2EE enterprise applications and automation tools.
+\item Supported CI/CD, deployments, and infrastructure operations.
+\item Worked with Linux, databases, and enterprise integration technologies.
+\end{tightitemize}
+
+
+%------------------------------------------------
+% Awards
+%------------------------------------------------
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Societies
+%------------------------------------------------
+
+%\section{Membership} 
+
+%\begin{tabular}{rll}
+%2011-2015 & Alpha Kappa Lambda Fraternity\\
+
+%\end{tabular}
+
+%\sectionspace % Some whitespace after the section
+
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+%	SECOND PAGE (EXAMPLE)
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+
+%\section{Example Section}
+
+%\end{minipage} % The end of the left column
+%\hfill
+%\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+%\section{Example Section 2}
+
+%\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
+===
+
