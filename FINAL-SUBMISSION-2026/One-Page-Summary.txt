@@ -1,0 +1,50 @@
+Ram Mohan Kotni
+
+Senior AI Engineer | Full Stack Architect | Cloud & Agentic AI Engineer
+Austin, TX | 603-858-7546 | ramkotni@gmail.com
+
+Professional Summary
+
+Senior AI Engineer and Full Stack Architect with 18+ years of experience designing, developing, and modernizing enterprise applications across cloud, microservices, AI, and full-stack technologies. Proven expertise in Java, Spring Boot, Python, Angular, AWS, GCP, Kubernetes, and DevOps practices. Recently focused on Agentic AI, LLM-powered automation, machine learning, and intelligent workflow orchestration, delivering predictive analytics and automated decision-making solutions for mission-critical business systems.
+
+Core Expertise
+AI & Agentic AI: OpenAI, LangChain, GitHub Copilot, Machine Learning, Predictive Analytics, Intelligent Automation, APScheduler, Pandas, Scikit-Learn
+Backend Development: Java 17+, Spring Boot, Microservices, REST APIs, JAX-RS, Hibernate, Secure Coding
+Cloud & DevOps: AWS, GCP, Kubernetes, Docker, Jenkins, GitHub Actions, Ansible, CI/CD
+Frontend Development: Angular, TypeScript, JavaScript, Responsive UI Design
+Data & Integration: Oracle, PostgreSQL, MongoDB, Kafka, RabbitMQ, Redis
+Professional Highlights
+ERCOT | Senior AI Engineer (2025–Present)
+Built an AI-powered feasibility screening platform using Machine Learning and Flask APIs, achieving ROC-AUC > 0.85 and automating resource onboarding decisions.
+Developed a Python-based payment monitoring solution using APScheduler and Pandas that automatically detects payment failures and generates actionable operational reports.
+Modernized grid reliability applications using Java, Spring Boot, Angular, REST APIs, and Ansible-based deployments.
+Integrated AI-driven workflows into existing enterprise systems, reducing manual analysis and improving operational efficiency.
+Amazon Robotics | Senior Full Stack Developer (2023–2025)
+Architected cloud-native microservices and Angular applications supporting robotics manufacturing and warehouse operations.
+Implemented Kafka-based event-driven architecture and deployed solutions on AWS and GCP.
+Improved scalability, reliability, and deployment speed through Kubernetes, CI/CD, and cloud automation.
+Biogen | Lead Full Stack Developer (2022–2023)
+Delivered secure supply-chain management solutions using Spring Boot, Angular, AWS, and cloud-native architectures.
+Implemented compliance-focused systems supporting HIPAA, GDPR, and FDA regulations.
+Dell Technologies | Application Architect (2015–2022)
+Led large-scale migration of monolithic applications to cloud-native microservices.
+Designed enterprise architectures leveraging Spring Boot, Kubernetes, Angular, PostgreSQL, MongoDB, and CI/CD pipelines.
+Mentored development teams and drove cloud transformation initiatives.
+Earlier Experience
+IBM, Innominds, and Wells Fargo: Delivered enterprise-scale solutions in eCommerce, financial services, PLM systems, and workflow automation using Java technologies, SOA, Spring, and web services.
+Key Achievements
+Developed an AI-based feasibility prediction system replacing manual pre-screening processes.
+Automated payment failure detection and reporting using Python and Machine Learning technologies.
+Delivered enterprise cloud migrations and microservices transformations across multiple Fortune 500 organizations.
+Achieved 99.9% application availability through cloud-native architectures and DevOps automation.
+Reduced deployment times by up to 60% through CI/CD implementation and infrastructure automation.
+Education & Certifications
+Master of Computer Applications (MCA), MK University
+Bachelor of Science (Mathematics), Andhra University
+Oracle Certified Professional (Java)
+Agile Scrum Master Certified
+Technologies
+
+Java | Spring Boot | Python | Agentic AI | OpenAI | LangChain | Angular | TypeScript | AWS | GCP | Kubernetes | Docker | Jenkins | GitHub Actions | Kafka | Oracle | PostgreSQL | MongoDB | REST APIs | Microservices | DevOps | Machine Learning
+
+This version fits comfortably on a single page and highlights your transition from Senior Full Stack Architect to AI Engineer while preserving your 18 years of enterprise experience.
