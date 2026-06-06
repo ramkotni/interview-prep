@@ -34,19 +34,30 @@ DB_CONFIG = {
 # ─────────────────────────────────────────────────────────────────
 # Email Configuration
 # ─────────────────────────────────────────────────────────────────
+EMAIL_PROVIDER = os.getenv("EMAIL_PROVIDER", "office365").lower()
+DEFAULT_SMTP_HOST = "smtp.gmail.com" if EMAIL_PROVIDER == "gmail" else "smtp.office365.com"
+DEFAULT_FROM = os.getenv("SMTP_USER", "rioo-alerts@ercot.com")
+
 EMAIL_CONFIG = {
-    # SMTP server settings
-    "smtp_host":     os.getenv("SMTP_HOST",     "smtp.office365.com"),   # ERCOT uses O365
+    # Provider settings: gmail or office365
+    "provider":      EMAIL_PROVIDER,
+    "smtp_host":     os.getenv("SMTP_HOST", DEFAULT_SMTP_HOST),
     "smtp_port":     int(os.getenv("SMTP_PORT", "587")),
-    "smtp_user":     os.getenv("SMTP_USER",     "rioo-alerts@ercot.com"),
+    "smtp_user":     os.getenv("SMTP_USER", DEFAULT_FROM),
     "smtp_password": os.getenv("SMTP_PASSWORD", "change_me"),
-    "use_tls":       True,
+    "use_tls":       os.getenv("SMTP_USE_TLS", "true").lower() == "true",
 
     # Sender / Recipients
-    "from_address":  "rioo-alerts@ercot.com",
-    "manager_email": os.getenv("MANAGER_EMAIL",  "manager@ercot.com"),
-    "cc_emails":     os.getenv("CC_EMAILS",       "planner1@ercot.com,planner2@ercot.com").split(","),
-    "reply_to":      "rioo-alerts@ercot.com",
+    "from_address":  os.getenv("FROM_ADDRESS", DEFAULT_FROM),
+    "manager_email": os.getenv("MANAGER_EMAIL", "manager@ercot.com"),
+    "cc_emails":     os.getenv("CC_EMAILS", "planner1@ercot.com,planner2@ercot.com").split(","),
+    "reply_to":      os.getenv("REPLY_TO", DEFAULT_FROM),
+}
+
+# Optional AI summary using local Ollama
+OLLAMA_CONFIG = {
+    "enabled": os.getenv("ENABLE_OLLAMA_SUMMARY", "false").lower() == "true",
+    "model": os.getenv("OLLAMA_MODEL", "gemma3:1b"),
 }
 
 # ─────────────────────────────────────────────────────────────────
@@ -82,4 +93,3 @@ APP_INFO = {
     "dashboard":   "https://rioo.ercot.com/ginr/payments",
     "support":     "rioo-support@ercot.com",
 }
-

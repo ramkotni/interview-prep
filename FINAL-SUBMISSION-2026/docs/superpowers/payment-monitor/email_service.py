@@ -18,7 +18,12 @@ from email.mime.base import MIMEBase
 from email import encoders
 from pathlib import Path
 
-from config import EMAIL_CONFIG, APP_INFO, REPORT_DIR
+from config import EMAIL_CONFIG, APP_INFO, REPORT_DIR, OLLAMA_CONFIG
+
+try:
+    import ollama
+except Exception:
+    ollama = None
 
 LOG = logging.getLogger("EmailService")
 
@@ -31,6 +36,45 @@ BADGE_STYLE = {
     "MEDIUM":   "background:#F39C12;color:#fff;padding:3px 8px;border-radius:4px;font-size:11px;font-weight:bold;",
     "LOW":      "background:#27AE60;color:#fff;padding:3px 8px;border-radius:4px;font-size:11px;font-weight:bold;",
 }
+
+
+def _generate_ai_summary(report: dict) -> str:
+    """Generate a concise AI executive summary using Ollama when enabled."""
+    if not OLLAMA_CONFIG["enabled"]:
+        return ""
+    if ollama is None:
+        LOG.warning("Ollama summary enabled but ollama package is not installed.")
+        return ""
+
+    prompt = f"""
+You are an ERCOT finance reporting assistant.
+Write a concise executive summary for a daily payment failure report.
+Do not use markdown.
+Keep it to 5-7 bullet-style lines in plain text.
+
+Metrics:
+- Total records scanned: {report['total_records']}
+- Total failures: {report['total_failures']}
+- Critical failures: {report['critical_count']}
+- High priority failures: {report['high_count']}
+- Total amount at risk: ${report['total_at_risk']:,.2f}
+
+Include:
+1) Main risk posture
+2) Most urgent issue category
+3) Business impact in plain language
+4) Immediate next actions for operations team
+"""
+
+    try:
+        response = ollama.chat(
+            model=OLLAMA_CONFIG["model"],
+            messages=[{"role": "user", "content": prompt}],
+        )
+        return response["message"]["content"].strip()
+    except Exception as ex:
+        LOG.warning(f"Ollama summary generation failed: {ex}")
+        return ""
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -47,6 +91,7 @@ def build_html_email(report: dict) -> str:
     high          = report["high_count"]
     summary       = report["summary_by_type"]
     meta          = report["failure_meta"]
+    ai_summary    = _generate_ai_summary(report)
 
     # ── Overall alert banner color ──────────────────────────────────────────
     if critical > 0:
@@ -164,6 +209,15 @@ def build_html_email(report: dict) -> str:
         </div>"""
 
     # ── Full HTML template ───────────────────────────────────────────────────
+    ai_summary_block = ""
+    if ai_summary:
+        ai_summary_html = ai_summary.replace("\n", "<br>")
+        ai_summary_block = f"""
+        <div style="margin:12px 0 20px;padding:14px 16px;background:#F8F9FA;border-left:4px solid #1A5276;border-radius:6px;">
+          <h3 style="margin:0 0 8px;font-size:14px;color:#1A5276;">AI Executive Summary (Ollama)</h3>
+          <p style="margin:0;font-size:12px;color:#2C3E50;line-height:1.5;">{ai_summary_html}</p>
+        </div>"""
+
     html = f"""
 <!DOCTYPE html>
 <html>
@@ -197,6 +251,7 @@ def build_html_email(report: dict) -> str:
 
       <!-- ═══ SUMMARY CARDS ════════════════════════════════════════ -->
       {cards_html}
+      {ai_summary_block}
 
       <!-- ═══ FAILURE SECTIONS ══════════════════════════════════════ -->
       <h2 style="margin:25px 0 10px;font-size:16px;color:#2C3E50;border-bottom:2px solid #E8E8E8;
@@ -381,7 +436,7 @@ def send_email(report: dict, dry_run: bool = False) -> dict:
             server.login(EMAIL_CONFIG["smtp_user"], EMAIL_CONFIG["smtp_password"])
             server.sendmail(EMAIL_CONFIG["from_address"], recipients, msg.as_string())
 
-        LOG.info(f"✅ Email sent to {len(recipients)} recipient(s)")
+        LOG.info(f"✅ Email sent via {EMAIL_CONFIG['provider']} to {len(recipients)} recipient(s)")
         LOG.info(f"   Subject: {subject}")
         LOG.info(f"   To: {recipients}")
         return {

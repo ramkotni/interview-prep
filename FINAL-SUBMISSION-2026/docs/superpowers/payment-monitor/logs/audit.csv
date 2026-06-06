@@ -1,0 +1,3 @@
+run_date,run_timestamp,total_records,total_failures,critical_count,high_count,total_at_risk
+2026-06-06,2026-06-06T08:20:18.237818,110,72,29,16,661895.69
+2026-06-06,2026-06-06T08:28:03.564953,110,72,29,16,661895.69
