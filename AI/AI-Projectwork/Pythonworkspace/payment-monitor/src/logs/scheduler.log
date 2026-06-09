@@ -1,0 +1,236 @@
+2026-06-06 08:20:18 [INFO] PaymentMonitorScheduler — =================================================================
+2026-06-06 08:20:18 [INFO] PaymentMonitorScheduler — DAILY PAYMENT CHECK STARTING  —  2026-06-06 08:20:18
+2026-06-06 08:20:18 [INFO] PaymentMonitorScheduler — =================================================================
+2026-06-06 08:20:18 [INFO] PaymentAnalyzer — ============================================================
+2026-06-06 08:20:18 [INFO] PaymentAnalyzer — GINR PAYMENT FAILURE ANALYSIS — Starting
+2026-06-06 08:20:18 [INFO] PaymentAnalyzer — Run date: 2026-06-06
+2026-06-06 08:20:18 [INFO] PaymentAnalyzer — ============================================================
+2026-06-06 08:20:18 [INFO] PaymentAnalyzer — Loaded 110 payment records from payment_data.csv
+2026-06-06 08:20:18 [INFO] PaymentAnalyzer —   🔴  FIS_FEE_UNPAID                :  18 records  $  180,000.00 at risk
+2026-06-06 08:20:18 [INFO] PaymentAnalyzer —   🔴  SS_FEE_UNPAID                 :  11 records  $   55,000.00 at risk
+2026-06-06 08:20:18 [INFO] PaymentAnalyzer —   🟠  ANALYSIS_FEE_UNPAID           :   7 records  $   52,500.00 at risk
+2026-06-06 08:20:18 [INFO] PaymentAnalyzer —   🟠  PAYMENT_SYNC_ERROR            :   4 records  $   55,000.00 at risk
+2026-06-06 08:20:18 [INFO] PaymentAnalyzer —   🟠  AMOUNT_MISMATCH               :   5 records  $   19,395.69 at risk
+2026-06-06 08:20:18 [INFO] PaymentAnalyzer —   🟡  DUPLICATE_PAYMENT             :   4 records  $   45,000.00 at risk
+2026-06-06 08:20:18 [INFO] PaymentAnalyzer —   🟡  STALE_PENDING                 :  23 records  $  255,000.00 at risk
+2026-06-06 08:20:18 [INFO] PaymentAnalyzer — ------------------------------------------------------------
+2026-06-06 08:20:18 [INFO] PaymentAnalyzer — TOTAL FAILURES  : 72
+2026-06-06 08:20:18 [INFO] PaymentAnalyzer — CRITICAL        : 29
+2026-06-06 08:20:18 [INFO] PaymentAnalyzer — HIGH            : 16
+2026-06-06 08:20:18 [INFO] PaymentAnalyzer — TOTAL AT RISK   : $661,895.69
+2026-06-06 08:20:18 [INFO] PaymentAnalyzer — ============================================================
+2026-06-06 08:20:18 [INFO] EmailService — Building email report...
+2026-06-06 08:20:18 [INFO] EmailService — HTML preview saved: C:\RamKotni\Personal\interview-prep\FINAL-SUBMISSION-2026\docs\superpowers\payment-monitor\reports\payment_report_2026-06-06.html
+2026-06-06 08:20:18 [INFO] EmailService — CSV report saved: C:\RamKotni\Personal\interview-prep\FINAL-SUBMISSION-2026\docs\superpowers\payment-monitor\reports\GINR_Payment_Failures_2026-06-06.csv
+2026-06-06 08:20:18 [INFO] EmailService — [DRY RUN] Email NOT sent. Would have sent to: ['manager@ercot.com', 'planner1@ercot.com', 'planner2@ercot.com']
+2026-06-06 08:20:18 [INFO] EmailService — [DRY RUN] Subject: 🔴 CRITICAL: 29 GINR Payment Failures — $661,896 At Risk [2026-06-06]
+2026-06-06 08:20:18 [INFO] EmailService — [DRY RUN] Preview: C:\RamKotni\Personal\interview-prep\FINAL-SUBMISSION-2026\docs\superpowers\payment-monitor\reports\payment_report_2026-06-06.html
+2026-06-06 08:20:18 [INFO] PaymentMonitorScheduler — =================================================================
+2026-06-06 08:20:18 [INFO] PaymentMonitorScheduler — DAILY PAYMENT CHECK COMPLETE
+2026-06-06 08:20:18 [INFO] PaymentMonitorScheduler —   Failures found : 72
+2026-06-06 08:20:18 [INFO] PaymentMonitorScheduler —   Critical       : 29
+2026-06-06 08:20:18 [INFO] PaymentMonitorScheduler —   Total at risk  : $661,895.69
+2026-06-06 08:20:18 [INFO] PaymentMonitorScheduler —   Email status   : dry_run
+2026-06-06 08:20:18 [INFO] PaymentMonitorScheduler —   Report saved   : C:\RamKotni\Personal\interview-prep\FINAL-SUBMISSION-2026\docs\superpowers\payment-monitor\reports\payment_report_2026-06-06.html
+2026-06-06 08:20:18 [INFO] PaymentMonitorScheduler — =================================================================
+2026-06-06 08:28:03 [INFO] PaymentMonitorScheduler — =================================================================
+2026-06-06 08:28:03 [INFO] PaymentMonitorScheduler — DAILY PAYMENT CHECK STARTING  —  2026-06-06 08:28:03
+2026-06-06 08:28:03 [INFO] PaymentMonitorScheduler — =================================================================
+2026-06-06 08:28:03 [INFO] PaymentAnalyzer — ============================================================
+2026-06-06 08:28:03 [INFO] PaymentAnalyzer — GINR PAYMENT FAILURE ANALYSIS — Starting
+2026-06-06 08:28:03 [INFO] PaymentAnalyzer — Run date: 2026-06-06
+2026-06-06 08:28:03 [INFO] PaymentAnalyzer — ============================================================
+2026-06-06 08:28:03 [INFO] PaymentAnalyzer — Loaded 110 payment records from payment_data.csv
+2026-06-06 08:28:03 [INFO] PaymentAnalyzer —   🔴  FIS_FEE_UNPAID                :  18 records  $  180,000.00 at risk
+2026-06-06 08:28:03 [INFO] PaymentAnalyzer —   🔴  SS_FEE_UNPAID                 :  11 records  $   55,000.00 at risk
+2026-06-06 08:28:03 [INFO] PaymentAnalyzer —   🟠  ANALYSIS_FEE_UNPAID           :   7 records  $   52,500.00 at risk
+2026-06-06 08:28:03 [INFO] PaymentAnalyzer —   🟠  PAYMENT_SYNC_ERROR            :   4 records  $   55,000.00 at risk
+2026-06-06 08:28:03 [INFO] PaymentAnalyzer —   🟠  AMOUNT_MISMATCH               :   5 records  $   19,395.69 at risk
+2026-06-06 08:28:03 [INFO] PaymentAnalyzer —   🟡  DUPLICATE_PAYMENT             :   4 records  $   45,000.00 at risk
+2026-06-06 08:28:03 [INFO] PaymentAnalyzer —   🟡  STALE_PENDING                 :  23 records  $  255,000.00 at risk
+2026-06-06 08:28:03 [INFO] PaymentAnalyzer — ------------------------------------------------------------
+2026-06-06 08:28:03 [INFO] PaymentAnalyzer — TOTAL FAILURES  : 72
+2026-06-06 08:28:03 [INFO] PaymentAnalyzer — CRITICAL        : 29
+2026-06-06 08:28:03 [INFO] PaymentAnalyzer — HIGH            : 16
+2026-06-06 08:28:03 [INFO] PaymentAnalyzer — TOTAL AT RISK   : $661,895.69
+2026-06-06 08:28:03 [INFO] PaymentAnalyzer — ============================================================
+2026-06-06 08:28:03 [INFO] EmailService — Building email report...
+2026-06-06 08:28:03 [INFO] EmailService — HTML preview saved: C:\RamKotni\Personal\interview-prep\FINAL-SUBMISSION-2026\docs\superpowers\payment-monitor\reports\payment_report_2026-06-06.html
+2026-06-06 08:28:03 [INFO] EmailService — CSV report saved: C:\RamKotni\Personal\interview-prep\FINAL-SUBMISSION-2026\docs\superpowers\payment-monitor\reports\GINR_Payment_Failures_2026-06-06.csv
+2026-06-06 08:28:03 [INFO] EmailService — [DRY RUN] Email NOT sent. Would have sent to: ['manager@ercot.com', 'planner1@ercot.com', 'planner2@ercot.com']
+2026-06-06 08:28:03 [INFO] EmailService — [DRY RUN] Subject: 🔴 CRITICAL: 29 GINR Payment Failures — $661,896 At Risk [2026-06-06]
+2026-06-06 08:28:03 [INFO] EmailService — [DRY RUN] Preview: C:\RamKotni\Personal\interview-prep\FINAL-SUBMISSION-2026\docs\superpowers\payment-monitor\reports\payment_report_2026-06-06.html
+2026-06-06 08:28:03 [INFO] PaymentMonitorScheduler — =================================================================
+2026-06-06 08:28:03 [INFO] PaymentMonitorScheduler — DAILY PAYMENT CHECK COMPLETE
+2026-06-06 08:28:03 [INFO] PaymentMonitorScheduler —   Failures found : 72
+2026-06-06 08:28:03 [INFO] PaymentMonitorScheduler —   Critical       : 29
+2026-06-06 08:28:03 [INFO] PaymentMonitorScheduler —   Total at risk  : $661,895.69
+2026-06-06 08:28:03 [INFO] PaymentMonitorScheduler —   Email status   : dry_run
+2026-06-06 08:28:03 [INFO] PaymentMonitorScheduler —   Report saved   : C:\RamKotni\Personal\interview-prep\FINAL-SUBMISSION-2026\docs\superpowers\payment-monitor\reports\payment_report_2026-06-06.html
+2026-06-06 08:28:03 [INFO] PaymentMonitorScheduler — =================================================================
+2026-06-06 08:44:01 [INFO] PaymentMonitorScheduler — =================================================================
+2026-06-06 08:44:01 [INFO] PaymentMonitorScheduler — DAILY PAYMENT CHECK STARTING  —  2026-06-06 08:44:01
+2026-06-06 08:44:01 [INFO] PaymentMonitorScheduler — =================================================================
+2026-06-06 08:44:01 [INFO] PaymentAnalyzer — ============================================================
+2026-06-06 08:44:01 [INFO] PaymentAnalyzer — GINR PAYMENT FAILURE ANALYSIS — Starting
+2026-06-06 08:44:01 [INFO] PaymentAnalyzer — Run date: 2026-06-06
+2026-06-06 08:44:01 [INFO] PaymentAnalyzer — ============================================================
+2026-06-06 08:44:01 [INFO] PaymentAnalyzer — Loaded 110 payment records from payment_data.csv
+2026-06-06 08:44:01 [INFO] PaymentAnalyzer —   🔴  FIS_FEE_UNPAID                :  18 records  $  180,000.00 at risk
+2026-06-06 08:44:01 [INFO] PaymentAnalyzer —   🔴  SS_FEE_UNPAID                 :  11 records  $   55,000.00 at risk
+2026-06-06 08:44:01 [INFO] PaymentAnalyzer —   🟠  ANALYSIS_FEE_UNPAID           :   7 records  $   52,500.00 at risk
+2026-06-06 08:44:01 [INFO] PaymentAnalyzer —   🟠  PAYMENT_SYNC_ERROR            :   4 records  $   55,000.00 at risk
+2026-06-06 08:44:01 [INFO] PaymentAnalyzer —   🟠  AMOUNT_MISMATCH               :   5 records  $   19,395.69 at risk
+2026-06-06 08:44:01 [INFO] PaymentAnalyzer —   🟡  DUPLICATE_PAYMENT             :   4 records  $   45,000.00 at risk
+2026-06-06 08:44:01 [INFO] PaymentAnalyzer —   🟡  STALE_PENDING                 :  23 records  $  255,000.00 at risk
+2026-06-06 08:44:01 [INFO] PaymentAnalyzer — ------------------------------------------------------------
+2026-06-06 08:44:01 [INFO] PaymentAnalyzer — TOTAL FAILURES  : 72
+2026-06-06 08:44:01 [INFO] PaymentAnalyzer — CRITICAL        : 29
+2026-06-06 08:44:01 [INFO] PaymentAnalyzer — HIGH            : 16
+2026-06-06 08:44:01 [INFO] PaymentAnalyzer — TOTAL AT RISK   : $661,895.69
+2026-06-06 08:44:01 [INFO] PaymentAnalyzer — ============================================================
+2026-06-06 08:44:01 [INFO] EmailService — Building email report...
+2026-06-06 08:44:01 [INFO] EmailService — HTML preview saved: C:\RamKotni\GitHub\interview-prep\AI\AI-Projectwork\Pythonworkspace\payment-monitor\src\reports\payment_report_2026-06-06.html
+2026-06-06 08:44:01 [INFO] EmailService — CSV report saved: C:\RamKotni\GitHub\interview-prep\AI\AI-Projectwork\Pythonworkspace\payment-monitor\src\reports\GINR_Payment_Failures_2026-06-06.csv
+2026-06-06 08:44:01 [INFO] EmailService — [DRY RUN] Email NOT sent. Would have sent to: ['ramkotni@gmail.com', 'ramkotni@gmail.com', 'ramkotni@gmail.com']
+2026-06-06 08:44:01 [INFO] EmailService — [DRY RUN] Subject: 🔴 CRITICAL: 29 GINR Payment Failures — $661,896 At Risk [2026-06-06]
+2026-06-06 08:44:01 [INFO] EmailService — [DRY RUN] Preview: C:\RamKotni\GitHub\interview-prep\AI\AI-Projectwork\Pythonworkspace\payment-monitor\src\reports\payment_report_2026-06-06.html
+2026-06-06 08:44:01 [INFO] PaymentMonitorScheduler — =================================================================
+2026-06-06 08:44:01 [INFO] PaymentMonitorScheduler — DAILY PAYMENT CHECK COMPLETE
+2026-06-06 08:44:01 [INFO] PaymentMonitorScheduler —   Failures found : 72
+2026-06-06 08:44:01 [INFO] PaymentMonitorScheduler —   Critical       : 29
+2026-06-06 08:44:01 [INFO] PaymentMonitorScheduler —   Total at risk  : $661,895.69
+2026-06-06 08:44:01 [INFO] PaymentMonitorScheduler —   Email status   : dry_run
+2026-06-06 08:44:01 [INFO] PaymentMonitorScheduler —   Report saved   : C:\RamKotni\GitHub\interview-prep\AI\AI-Projectwork\Pythonworkspace\payment-monitor\src\reports\payment_report_2026-06-06.html
+2026-06-06 08:44:01 [INFO] PaymentMonitorScheduler — =================================================================
+2026-06-06 08:44:28 [INFO] PaymentMonitorScheduler — =================================================================
+2026-06-06 08:44:28 [INFO] PaymentMonitorScheduler — DAILY PAYMENT CHECK STARTING  —  2026-06-06 08:44:28
+2026-06-06 08:44:28 [INFO] PaymentMonitorScheduler — =================================================================
+2026-06-06 08:44:28 [INFO] PaymentAnalyzer — ============================================================
+2026-06-06 08:44:28 [INFO] PaymentAnalyzer — GINR PAYMENT FAILURE ANALYSIS — Starting
+2026-06-06 08:44:28 [INFO] PaymentAnalyzer — Run date: 2026-06-06
+2026-06-06 08:44:28 [INFO] PaymentAnalyzer — ============================================================
+2026-06-06 08:44:28 [INFO] PaymentAnalyzer — Loaded 110 payment records from payment_data.csv
+2026-06-06 08:44:28 [INFO] PaymentAnalyzer —   🔴  FIS_FEE_UNPAID                :  18 records  $  180,000.00 at risk
+2026-06-06 08:44:28 [INFO] PaymentAnalyzer —   🔴  SS_FEE_UNPAID                 :  11 records  $   55,000.00 at risk
+2026-06-06 08:44:28 [INFO] PaymentAnalyzer —   🟠  ANALYSIS_FEE_UNPAID           :   7 records  $   52,500.00 at risk
+2026-06-06 08:44:28 [INFO] PaymentAnalyzer —   🟠  PAYMENT_SYNC_ERROR            :   4 records  $   55,000.00 at risk
+2026-06-06 08:44:28 [INFO] PaymentAnalyzer —   🟠  AMOUNT_MISMATCH               :   5 records  $   19,395.69 at risk
+2026-06-06 08:44:28 [INFO] PaymentAnalyzer —   🟡  DUPLICATE_PAYMENT             :   4 records  $   45,000.00 at risk
+2026-06-06 08:44:28 [INFO] PaymentAnalyzer —   🟡  STALE_PENDING                 :  23 records  $  255,000.00 at risk
+2026-06-06 08:44:28 [INFO] PaymentAnalyzer — ------------------------------------------------------------
+2026-06-06 08:44:28 [INFO] PaymentAnalyzer — TOTAL FAILURES  : 72
+2026-06-06 08:44:28 [INFO] PaymentAnalyzer — CRITICAL        : 29
+2026-06-06 08:44:28 [INFO] PaymentAnalyzer — HIGH            : 16
+2026-06-06 08:44:28 [INFO] PaymentAnalyzer — TOTAL AT RISK   : $661,895.69
+2026-06-06 08:44:28 [INFO] PaymentAnalyzer — ============================================================
+2026-06-06 08:44:28 [INFO] EmailService — Building email report...
+2026-06-06 08:44:28 [INFO] EmailService — HTML preview saved: C:\RamKotni\GitHub\interview-prep\AI\AI-Projectwork\Pythonworkspace\payment-monitor\src\reports\payment_report_2026-06-06.html
+2026-06-06 08:44:28 [INFO] EmailService — CSV report saved: C:\RamKotni\GitHub\interview-prep\AI\AI-Projectwork\Pythonworkspace\payment-monitor\src\reports\GINR_Payment_Failures_2026-06-06.csv
+2026-06-06 08:44:35 [ERROR] EmailService — ❌ Email send failed: (535, b'5.7.3 Authentication unsuccessful [SA1PR05CA0023.namprd05.prod.outlook.com 2026-06-06T13:44:35.133Z 08DEC3A33FC268D8]')
+Traceback (most recent call last):
+  File "C:\RamKotni\GitHub\interview-prep\AI\AI-Projectwork\Pythonworkspace\payment-monitor\src\email_service.py", line 436, in send_email
+    server.login(EMAIL_CONFIG["smtp_user"], EMAIL_CONFIG["smtp_password"])
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\RamKotni\Python\Lib\smtplib.py", line 762, in login
+    raise last_exception
+  File "C:\RamKotni\Python\Lib\smtplib.py", line 751, in login
+    (code, resp) = self.auth(
+                   ~~~~~~~~~^
+        authmethod, getattr(self, method_name),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        initial_response_ok=initial_response_ok)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\RamKotni\Python\Lib\smtplib.py", line 669, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.3 Authentication unsuccessful [SA1PR05CA0023.namprd05.prod.outlook.com 2026-06-06T13:44:35.133Z 08DEC3A33FC268D8]')
+2026-06-06 08:44:35 [INFO] PaymentMonitorScheduler — =================================================================
+2026-06-06 08:44:35 [INFO] PaymentMonitorScheduler — DAILY PAYMENT CHECK COMPLETE
+2026-06-06 08:44:35 [INFO] PaymentMonitorScheduler —   Failures found : 72
+2026-06-06 08:44:35 [INFO] PaymentMonitorScheduler —   Critical       : 29
+2026-06-06 08:44:35 [INFO] PaymentMonitorScheduler —   Total at risk  : $661,895.69
+2026-06-06 08:44:35 [INFO] PaymentMonitorScheduler —   Email status   : error
+2026-06-06 08:44:35 [INFO] PaymentMonitorScheduler — =================================================================
+2026-06-06 08:49:50 [INFO] PaymentMonitorScheduler — =================================================================
+2026-06-06 08:49:50 [INFO] PaymentMonitorScheduler — DAILY PAYMENT CHECK STARTING  —  2026-06-06 08:49:50
+2026-06-06 08:49:50 [INFO] PaymentMonitorScheduler — =================================================================
+2026-06-06 08:49:50 [INFO] PaymentAnalyzer — ============================================================
+2026-06-06 08:49:50 [INFO] PaymentAnalyzer — GINR PAYMENT FAILURE ANALYSIS — Starting
+2026-06-06 08:49:50 [INFO] PaymentAnalyzer — Run date: 2026-06-06
+2026-06-06 08:49:50 [INFO] PaymentAnalyzer — ============================================================
+2026-06-06 08:49:50 [INFO] PaymentAnalyzer — Loaded 110 payment records from payment_data.csv
+2026-06-06 08:49:50 [INFO] PaymentAnalyzer —   🔴  FIS_FEE_UNPAID                :  18 records  $  180,000.00 at risk
+2026-06-06 08:49:50 [INFO] PaymentAnalyzer —   🔴  SS_FEE_UNPAID                 :  11 records  $   55,000.00 at risk
+2026-06-06 08:49:50 [INFO] PaymentAnalyzer —   🟠  ANALYSIS_FEE_UNPAID           :   7 records  $   52,500.00 at risk
+2026-06-06 08:49:50 [INFO] PaymentAnalyzer —   🟠  PAYMENT_SYNC_ERROR            :   4 records  $   55,000.00 at risk
+2026-06-06 08:49:50 [INFO] PaymentAnalyzer —   🟠  AMOUNT_MISMATCH               :   5 records  $   19,395.69 at risk
+2026-06-06 08:49:50 [INFO] PaymentAnalyzer —   🟡  DUPLICATE_PAYMENT             :   4 records  $   45,000.00 at risk
+2026-06-06 08:49:50 [INFO] PaymentAnalyzer —   🟡  STALE_PENDING                 :  23 records  $  255,000.00 at risk
+2026-06-06 08:49:50 [INFO] PaymentAnalyzer — ------------------------------------------------------------
+2026-06-06 08:49:50 [INFO] PaymentAnalyzer — TOTAL FAILURES  : 72
+2026-06-06 08:49:50 [INFO] PaymentAnalyzer — CRITICAL        : 29
+2026-06-06 08:49:50 [INFO] PaymentAnalyzer — HIGH            : 16
+2026-06-06 08:49:50 [INFO] PaymentAnalyzer — TOTAL AT RISK   : $661,895.69
+2026-06-06 08:49:50 [INFO] PaymentAnalyzer — ============================================================
+2026-06-06 08:49:50 [INFO] EmailService — Building email report...
+2026-06-06 08:49:50 [INFO] EmailService — HTML preview saved: C:\RamKotni\GitHub\interview-prep\AI\AI-Projectwork\Pythonworkspace\payment-monitor\src\reports\payment_report_2026-06-06.html
+2026-06-06 08:49:50 [INFO] EmailService — CSV report saved: C:\RamKotni\GitHub\interview-prep\AI\AI-Projectwork\Pythonworkspace\payment-monitor\src\reports\GINR_Payment_Failures_2026-06-06.csv
+2026-06-06 08:49:56 [ERROR] EmailService — ❌ Email send failed: (535, b'5.7.139 Authentication unsuccessful, basic authentication is disabled. [DS7PR05CA0085.namprd05.prod.outlook.com 2026-06-06T13:49:56.038Z 08DEC3B99FDF1C2D]')
+Traceback (most recent call last):
+  File "C:\RamKotni\GitHub\interview-prep\AI\AI-Projectwork\Pythonworkspace\payment-monitor\src\email_service.py", line 436, in send_email
+    server.login(EMAIL_CONFIG["smtp_user"], EMAIL_CONFIG["smtp_password"])
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\RamKotni\Python\Lib\smtplib.py", line 762, in login
+    raise last_exception
+  File "C:\RamKotni\Python\Lib\smtplib.py", line 751, in login
+    (code, resp) = self.auth(
+                   ~~~~~~~~~^
+        authmethod, getattr(self, method_name),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        initial_response_ok=initial_response_ok)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\RamKotni\Python\Lib\smtplib.py", line 669, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.139 Authentication unsuccessful, basic authentication is disabled. [DS7PR05CA0085.namprd05.prod.outlook.com 2026-06-06T13:49:56.038Z 08DEC3B99FDF1C2D]')
+2026-06-06 08:49:56 [INFO] PaymentMonitorScheduler — =================================================================
+2026-06-06 08:49:56 [INFO] PaymentMonitorScheduler — DAILY PAYMENT CHECK COMPLETE
+2026-06-06 08:49:56 [INFO] PaymentMonitorScheduler —   Failures found : 72
+2026-06-06 08:49:56 [INFO] PaymentMonitorScheduler —   Critical       : 29
+2026-06-06 08:49:56 [INFO] PaymentMonitorScheduler —   Total at risk  : $661,895.69
+2026-06-06 08:49:56 [INFO] PaymentMonitorScheduler —   Email status   : error
+2026-06-06 08:49:56 [INFO] PaymentMonitorScheduler — =================================================================
+2026-06-06 08:55:19 [INFO] PaymentMonitorScheduler — =================================================================
+2026-06-06 08:55:19 [INFO] PaymentMonitorScheduler — DAILY PAYMENT CHECK STARTING  —  2026-06-06 08:55:19
+2026-06-06 08:55:19 [INFO] PaymentMonitorScheduler — =================================================================
+2026-06-06 08:55:19 [INFO] PaymentAnalyzer — ============================================================
+2026-06-06 08:55:19 [INFO] PaymentAnalyzer — GINR PAYMENT FAILURE ANALYSIS — Starting
+2026-06-06 08:55:19 [INFO] PaymentAnalyzer — Run date: 2026-06-06
+2026-06-06 08:55:19 [INFO] PaymentAnalyzer — ============================================================
+2026-06-06 08:55:19 [INFO] PaymentAnalyzer — Loaded 110 payment records from payment_data.csv
+2026-06-06 08:55:19 [INFO] PaymentAnalyzer —   🔴  FIS_FEE_UNPAID                :  18 records  $  180,000.00 at risk
+2026-06-06 08:55:19 [INFO] PaymentAnalyzer —   🔴  SS_FEE_UNPAID                 :  11 records  $   55,000.00 at risk
+2026-06-06 08:55:19 [INFO] PaymentAnalyzer —   🟠  ANALYSIS_FEE_UNPAID           :   7 records  $   52,500.00 at risk
+2026-06-06 08:55:19 [INFO] PaymentAnalyzer —   🟠  PAYMENT_SYNC_ERROR            :   4 records  $   55,000.00 at risk
+2026-06-06 08:55:19 [INFO] PaymentAnalyzer —   🟠  AMOUNT_MISMATCH               :   5 records  $   19,395.69 at risk
+2026-06-06 08:55:19 [INFO] PaymentAnalyzer —   🟡  DUPLICATE_PAYMENT             :   4 records  $   45,000.00 at risk
+2026-06-06 08:55:19 [INFO] PaymentAnalyzer —   🟡  STALE_PENDING                 :  23 records  $  255,000.00 at risk
+2026-06-06 08:55:19 [INFO] PaymentAnalyzer — ------------------------------------------------------------
+2026-06-06 08:55:19 [INFO] PaymentAnalyzer — TOTAL FAILURES  : 72
+2026-06-06 08:55:19 [INFO] PaymentAnalyzer — CRITICAL        : 29
+2026-06-06 08:55:19 [INFO] PaymentAnalyzer — HIGH            : 16
+2026-06-06 08:55:19 [INFO] PaymentAnalyzer — TOTAL AT RISK   : $661,895.69
+2026-06-06 08:55:19 [INFO] PaymentAnalyzer — ============================================================
+2026-06-06 08:55:19 [INFO] EmailService — Building email report...
+2026-06-06 08:55:19 [INFO] EmailService — HTML preview saved: C:\RamKotni\GitHub\interview-prep\AI\AI-Projectwork\Pythonworkspace\payment-monitor\src\reports\payment_report_2026-06-06.html
+2026-06-06 08:55:19 [INFO] EmailService — CSV report saved: C:\RamKotni\GitHub\interview-prep\AI\AI-Projectwork\Pythonworkspace\payment-monitor\src\reports\GINR_Payment_Failures_2026-06-06.csv
+2026-06-06 08:55:21 [INFO] EmailService — ✅ Email sent via gmail to 3 recipient(s)
+2026-06-06 08:55:21 [INFO] EmailService —    Subject: 🔴 CRITICAL: 29 GINR Payment Failures — $661,896 At Risk [2026-06-06]
+2026-06-06 08:55:21 [INFO] EmailService —    To: ['ramkotni@gmail.com', 'ramkotni@gmail.com', 'ramkotni@gmail.com']
+2026-06-06 08:55:21 [INFO] PaymentMonitorScheduler — =================================================================
+2026-06-06 08:55:21 [INFO] PaymentMonitorScheduler — DAILY PAYMENT CHECK COMPLETE
+2026-06-06 08:55:21 [INFO] PaymentMonitorScheduler —   Failures found : 72
+2026-06-06 08:55:21 [INFO] PaymentMonitorScheduler —   Critical       : 29
+2026-06-06 08:55:21 [INFO] PaymentMonitorScheduler —   Total at risk  : $661,895.69
+2026-06-06 08:55:21 [INFO] PaymentMonitorScheduler —   Email status   : sent
+2026-06-06 08:55:21 [INFO] PaymentMonitorScheduler —   Report saved   : C:\RamKotni\GitHub\interview-prep\AI\AI-Projectwork\Pythonworkspace\payment-monitor\src\reports\payment_report_2026-06-06.html
+2026-06-06 08:55:21 [INFO] PaymentMonitorScheduler — =================================================================

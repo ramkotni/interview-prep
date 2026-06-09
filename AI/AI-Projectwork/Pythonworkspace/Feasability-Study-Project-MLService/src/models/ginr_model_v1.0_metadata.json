@@ -1,0 +1,41 @@
+{
+  "version": "1.0",
+  "trained_at": "2026-06-06T08:08:40.564448",
+  "roc_auc": 0.9826,
+  "cv_auc_mean": 0.9965,
+  "cv_auc_std": 0.0069,
+  "train_rows": 240,
+  "feature_groups": {
+    "numeric": [
+      "project_mw",
+      "poi_voltage_kv",
+      "nameplate_to_maxgen_ratio",
+      "months_to_cod",
+      "resubmission_count",
+      "thermal_margin_mw"
+    ],
+    "binary": [
+      "crez_flag",
+      "fis_fee_paid",
+      "ss_fee_paid",
+      "payment_made_flag",
+      "missing_poib_flag",
+      "poi_voltage_mismatch_flag",
+      "duplicate_substation_flag",
+      "null_connectivity_node_flag",
+      "orphan_node_flag",
+      "project_exceeds_thermal_flag"
+    ],
+    "categorical": [
+      "resource_type",
+      "inr_type",
+      "lead_tdsp",
+      "cmz_name"
+    ]
+  },
+  "label_distribution": {
+    "1": 180,
+    "0": 120
+  },
+  "status": "active"
+}

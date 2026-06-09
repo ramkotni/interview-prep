@@ -1,0 +1,6 @@
+pandas>=2.0.0
+apscheduler>=3.10.0
+ollama>=0.2.0
+# Optional for Oracle-backed data loading in production:
+# cx_Oracle>=8.3.0
+

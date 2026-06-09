@@ -1,0 +1,1252 @@
+
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"></head>
+<body style="margin:0;padding:0;font-family:Arial,sans-serif;background:#F4F6F9;">
+  <div style="max-width:950px;margin:20px auto;background:#fff;border-radius:10px;
+              box-shadow:0 2px 8px rgba(0,0,0,0.12);overflow:hidden;">
+
+    <!-- ═══ HEADER ════════════════════════════════════════════════ -->
+    <div style="background:#1A252F;padding:20px 30px;display:flex;align-items:center;">
+      <div>
+        <div style="font-size:11px;color:#7F8C8D;letter-spacing:2px;text-transform:uppercase;">
+          ERCOT RIOO-IS | GINR Payment Monitor</div>
+        <h1 style="margin:4px 0;font-size:22px;color:#fff;">Daily Payment Failure Report</h1>
+        <div style="font-size:13px;color:#AAB7B8;">
+          Generated: June 06, 2026 at 08:55 AM CST
+          &nbsp;|&nbsp; Report Date: 2026-06-06
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ ALERT BANNER ══════════════════════════════════════════ -->
+    <div style="background:#C0392B;padding:14px 30px;">
+      <span style="font-size:16px;font-weight:bold;color:#fff;">🔴 CRITICAL ALERT</span>
+      <span style="font-size:13px;color:rgba(255,255,255,0.9);margin-left:15px;">
+        72 payment issue(s) detected &nbsp;|&nbsp; $661,895.69 total at risk
+      </span>
+    </div>
+
+    <div style="padding:20px 30px;">
+
+      <!-- ═══ SUMMARY CARDS ════════════════════════════════════════ -->
+      
+    <table cellpadding="10" cellspacing="10" style="width:100%;border-collapse:separate;">
+      <tr>
+        
+        <td style="text-align:center;padding:15px 20px;background:#2C3E50;
+                   border-radius:8px;margin:5px;">
+          <div style="font-size:28px;font-weight:bold;color:#fff;">72</div>
+          <div style="font-size:12px;color:#fff;margin-top:4px;">Total Failures</div>
+        </td>
+        
+        <td style="text-align:center;padding:15px 20px;background:#C0392B;
+                   border-radius:8px;margin:5px;">
+          <div style="font-size:28px;font-weight:bold;color:#fff;">29</div>
+          <div style="font-size:12px;color:#fff;margin-top:4px;">Critical</div>
+        </td>
+        
+        <td style="text-align:center;padding:15px 20px;background:#E67E22;
+                   border-radius:8px;margin:5px;">
+          <div style="font-size:28px;font-weight:bold;color:#fff;">16</div>
+          <div style="font-size:12px;color:#fff;margin-top:4px;">High Priority</div>
+        </td>
+        
+        <td style="text-align:center;padding:15px 20px;background:#1A5276;
+                   border-radius:8px;margin:5px;">
+          <div style="font-size:28px;font-weight:bold;color:#fff;">$661,896</div>
+          <div style="font-size:12px;color:#fff;margin-top:4px;">$ At Risk</div>
+        </td>
+        
+        <td style="text-align:center;padding:15px 20px;background:#117864;
+                   border-radius:8px;margin:5px;">
+          <div style="font-size:28px;font-weight:bold;color:#fff;">110</div>
+          <div style="font-size:12px;color:#fff;margin-top:4px;">Records Scanned</div>
+        </td>
+      </tr>
+    </table>
+      
+
+      <!-- ═══ FAILURE SECTIONS ══════════════════════════════════════ -->
+      <h2 style="margin:25px 0 10px;font-size:16px;color:#2C3E50;border-bottom:2px solid #E8E8E8;
+                 padding-bottom:8px;">
+        Failure Details by Category
+      </h2>
+      
+        <div style="margin:20px 0;border:1px solid #ddd;border-radius:8px;overflow:hidden;background:#fff;">
+          <!-- Section Header -->
+          <div style="background:#C0392B;padding:12px 16px;display:flex;align-items:center;">
+            <span style="font-size:20px;margin-right:10px;">🔴</span>
+            <div>
+              <span style="font-size:15px;font-weight:bold;color:#fff;">FIS Study Fee Not Paid</span>
+              &nbsp;&nbsp;<span style="background:#C0392B;color:#fff;padding:3px 8px;border-radius:4px;font-size:11px;font-weight:bold;">CRITICAL</span>
+              <span style="font-size:13px;color:rgba(255,255,255,0.85);margin-left:12px;">
+                18 records &nbsp;|&nbsp; $180,000.00 at risk
+              </span>
+            </div>
+          </div>
+          <!-- Meta Info -->
+          <div style="background:#FDECEA;padding:10px 16px;border-bottom:1px solid #ddd;">
+            <p style="margin:3px 0;font-size:12px;"><strong>Impact:</strong> Full Interconnection Study CANNOT start. Queue position at risk.</p>
+            <p style="margin:3px 0;font-size:12px;"><strong>Required Action:</strong>
+              <span style="color:#C0392B;font-weight:bold;">Contact developer immediately. Fee must be received before study begins.</span></p>
+            <p style="margin:3px 0;font-size:12px;color:#666;"><strong>Data Source:</strong> ginr.ginr_request.FIS_FEE_PAID / FIS_FEE</p>
+          </div>
+          <!-- Detail Table -->
+          <div style="overflow-x:auto;padding:0 8px 8px;">
+            <table cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;">
+              <thead>
+                <tr style="background:#F2F3F4;">
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">GINR ID</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">INR ID</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">Company</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">Type</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">INR Type</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">CR Status</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">$ At Risk</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">Issue Detail</th>
+                </tr>
+              </thead>
+              <tbody>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2012</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2012</td>
+              <td style="padding:6px 8px;font-size:12px;">SunPower Development</td>
+              <td style="padding:6px 8px;font-size:12px;">WIND</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $10,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">FIS fee $10,000 required but not paid. Study cannot begin....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2043</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2043</td>
+              <td style="padding:6px 8px;font-size:12px;">Calpine Corporation</td>
+              <td style="padding:6px 8px;font-size:12px;">ESR</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $10,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">CR in PENDING_REVIEW for 110 days with no payment or activity. Potential abandoned submission....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2005</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2005</td>
+              <td style="padding:6px 8px;font-size:12px;">NextEra Energy Resources</td>
+              <td style="padding:6px 8px;font-size:12px;">WIND</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $10,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">FIS fee $10,000 required but not paid. Study cannot begin....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2010</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2010</td>
+              <td style="padding:6px 8px;font-size:12px;">Calpine Corporation</td>
+              <td style="padding:6px 8px;font-size:12px;">ESR</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $10,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">FIS fee $10,000 required but not paid. Study cannot begin....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2047</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2047</td>
+              <td style="padding:6px 8px;font-size:12px;">sPower</td>
+              <td style="padding:6px 8px;font-size:12px;">CONVENTIONAL</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $10,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">CR in PENDING_REVIEW for 81 days with no payment or activity. Potential abandoned submission....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2044</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2044</td>
+              <td style="padding:6px 8px;font-size:12px;">Apex Clean Energy</td>
+              <td style="padding:6px 8px;font-size:12px;">SOLAR</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $10,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">CR in PENDING_REVIEW for 106 days with no payment or activity. Potential abandoned submission....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2031</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2031</td>
+              <td style="padding:6px 8px;font-size:12px;">Luminant Generation</td>
+              <td style="padding:6px 8px;font-size:12px;">CONVENTIONAL</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $10,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Authorize.net transaction AUTH-94051646 recorded on 2026-05-30 but fis_fee_paid flag = FALSE. Possib...</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2028</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2028</td>
+              <td style="padding:6px 8px;font-size:12px;">Calpine Corporation</td>
+              <td style="padding:6px 8px;font-size:12px;">SOLAR</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $10,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Authorize.net transaction AUTH-19242340 recorded on 2026-06-04 but fis_fee_paid flag = FALSE. Possib...</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2030</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2030</td>
+              <td style="padding:6px 8px;font-size:12px;">Calpine Corporation</td>
+              <td style="padding:6px 8px;font-size:12px;">CONVENTIONAL</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $10,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Authorize.net transaction AUTH-41595120 recorded on 2026-05-27 but fis_fee_paid flag = FALSE. Possib...</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2003</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2003</td>
+              <td style="padding:6px 8px;font-size:12px;">NextEra Energy Resources</td>
+              <td style="padding:6px 8px;font-size:12px;">SOLAR</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $10,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">FIS fee $10,000 required but not paid. Study cannot begin....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2009</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2009</td>
+              <td style="padding:6px 8px;font-size:12px;">Invenergy</td>
+              <td style="padding:6px 8px;font-size:12px;">ESR</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $10,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">FIS fee $10,000 required but not paid. Study cannot begin....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2006</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2006</td>
+              <td style="padding:6px 8px;font-size:12px;">Clearway Energy Group</td>
+              <td style="padding:6px 8px;font-size:12px;">CONVENTIONAL</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $10,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">FIS fee $10,000 required but not paid. Study cannot begin....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2046</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2046</td>
+              <td style="padding:6px 8px;font-size:12px;">Orion Energy LLC</td>
+              <td style="padding:6px 8px;font-size:12px;">ESR</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $10,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">CR in PENDING_REVIEW for 32 days with no payment or activity. Potential abandoned submission....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2004</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2004</td>
+              <td style="padding:6px 8px;font-size:12px;">Clearway Energy Group</td>
+              <td style="padding:6px 8px;font-size:12px;">WIND</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $10,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">FIS fee $10,000 required but not paid. Study cannot begin....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2007</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2007</td>
+              <td style="padding:6px 8px;font-size:12px;">Invenergy</td>
+              <td style="padding:6px 8px;font-size:12px;">ESR</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $10,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">FIS fee $10,000 required but not paid. Study cannot begin....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2001</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2001</td>
+              <td style="padding:6px 8px;font-size:12px;">SunPower Development</td>
+              <td style="padding:6px 8px;font-size:12px;">BATTERY</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $10,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">FIS fee $10,000 required but not paid. Study cannot begin....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2048</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2048</td>
+              <td style="padding:6px 8px;font-size:12px;">sPower</td>
+              <td style="padding:6px 8px;font-size:12px;">WIND</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $10,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">CR in PENDING_REVIEW for 91 days with no payment or activity. Potential abandoned submission....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2033</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2033</td>
+              <td style="padding:6px 8px;font-size:12px;">Pattern Energy Group</td>
+              <td style="padding:6px 8px;font-size:12px;">WIND</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $10,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Authorize.net transaction AUTH-96223301 recorded on 2026-06-04 but fis_fee_paid flag = FALSE. Possib...</td>
+            </tr></tbody>
+            </table>
+            
+          </div>
+        </div>
+        <div style="margin:20px 0;border:1px solid #ddd;border-radius:8px;overflow:hidden;background:#fff;">
+          <!-- Section Header -->
+          <div style="background:#C0392B;padding:12px 16px;display:flex;align-items:center;">
+            <span style="font-size:20px;margin-right:10px;">🔴</span>
+            <div>
+              <span style="font-size:15px;font-weight:bold;color:#fff;">Scoping Study Fee Not Paid</span>
+              &nbsp;&nbsp;<span style="background:#C0392B;color:#fff;padding:3px 8px;border-radius:4px;font-size:11px;font-weight:bold;">CRITICAL</span>
+              <span style="font-size:13px;color:rgba(255,255,255,0.85);margin-left:12px;">
+                11 records &nbsp;|&nbsp; $55,000.00 at risk
+              </span>
+            </div>
+          </div>
+          <!-- Meta Info -->
+          <div style="background:#FDECEA;padding:10px 16px;border-bottom:1px solid #ddd;">
+            <p style="margin:3px 0;font-size:12px;"><strong>Impact:</strong> Scoping Study CANNOT begin. CR blocked in queue.</p>
+            <p style="margin:3px 0;font-size:12px;"><strong>Required Action:</strong>
+              <span style="color:#C0392B;font-weight:bold;">Contact developer. SS fee required before study assignment.</span></p>
+            <p style="margin:3px 0;font-size:12px;color:#666;"><strong>Data Source:</strong> ginr.ginr_request.SS_FEE_PAID / SS_FEE</p>
+          </div>
+          <!-- Detail Table -->
+          <div style="overflow-x:auto;padding:0 8px 8px;">
+            <table cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;">
+              <thead>
+                <tr style="background:#F2F3F4;">
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">GINR ID</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">INR ID</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">Company</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">Type</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">INR Type</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">CR Status</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">$ At Risk</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">Issue Detail</th>
+                </tr>
+              </thead>
+              <tbody>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2015</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2015</td>
+              <td style="padding:6px 8px;font-size:12px;">Pattern Energy Group</td>
+              <td style="padding:6px 8px;font-size:12px;">SOLAR</td>
+              <td style="padding:6px 8px;font-size:12px;">SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $5,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Scoping Study fee $5,000 required but not paid....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2045</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2045</td>
+              <td style="padding:6px 8px;font-size:12px;">Vesper Energy</td>
+              <td style="padding:6px 8px;font-size:12px;">ESR</td>
+              <td style="padding:6px 8px;font-size:12px;">SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $5,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">CR in PENDING_REVIEW for 59 days with no payment or activity. Potential abandoned submission....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2017</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2017</td>
+              <td style="padding:6px 8px;font-size:12px;">EDF Renewables</td>
+              <td style="padding:6px 8px;font-size:12px;">WIND</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $5,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Scoping Study fee $5,000 required but not paid....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2047</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2047</td>
+              <td style="padding:6px 8px;font-size:12px;">sPower</td>
+              <td style="padding:6px 8px;font-size:12px;">CONVENTIONAL</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $5,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">CR in PENDING_REVIEW for 81 days with no payment or activity. Potential abandoned submission....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2014</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2014</td>
+              <td style="padding:6px 8px;font-size:12px;">Apex Clean Energy</td>
+              <td style="padding:6px 8px;font-size:12px;">ESR</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $5,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Scoping Study fee $5,000 required but not paid....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2050</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2050</td>
+              <td style="padding:6px 8px;font-size:12px;">Vesper Energy</td>
+              <td style="padding:6px 8px;font-size:12px;">SOLAR</td>
+              <td style="padding:6px 8px;font-size:12px;">SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $5,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">CR in PENDING_REVIEW for 107 days with no payment or activity. Potential abandoned submission....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2019</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2019</td>
+              <td style="padding:6px 8px;font-size:12px;">Vesper Energy</td>
+              <td style="padding:6px 8px;font-size:12px;">CONVENTIONAL</td>
+              <td style="padding:6px 8px;font-size:12px;">SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $5,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Scoping Study fee $5,000 required but not paid....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2049</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2049</td>
+              <td style="padding:6px 8px;font-size:12px;">Calpine Corporation</td>
+              <td style="padding:6px 8px;font-size:12px;">WIND</td>
+              <td style="padding:6px 8px;font-size:12px;">SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $5,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">CR in PENDING_REVIEW for 107 days with no payment or activity. Potential abandoned submission....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2016</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2016</td>
+              <td style="padding:6px 8px;font-size:12px;">Calpine Corporation</td>
+              <td style="padding:6px 8px;font-size:12px;">BATTERY</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $5,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Scoping Study fee $5,000 required but not paid....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2046</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2046</td>
+              <td style="padding:6px 8px;font-size:12px;">Orion Energy LLC</td>
+              <td style="padding:6px 8px;font-size:12px;">ESR</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $5,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">CR in PENDING_REVIEW for 32 days with no payment or activity. Potential abandoned submission....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2013</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2013</td>
+              <td style="padding:6px 8px;font-size:12px;">Orion Energy LLC</td>
+              <td style="padding:6px 8px;font-size:12px;">CONVENTIONAL</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $5,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Scoping Study fee $5,000 required but not paid....</td>
+            </tr></tbody>
+            </table>
+            
+          </div>
+        </div>
+        <div style="margin:20px 0;border:1px solid #ddd;border-radius:8px;overflow:hidden;background:#fff;">
+          <!-- Section Header -->
+          <div style="background:#E67E22;padding:12px 16px;display:flex;align-items:center;">
+            <span style="font-size:20px;margin-right:10px;">🟠</span>
+            <div>
+              <span style="font-size:15px;font-weight:bold;color:#fff;">Analysis Fee Outstanding</span>
+              &nbsp;&nbsp;<span style="background:#E67E22;color:#fff;padding:3px 8px;border-radius:4px;font-size:11px;font-weight:bold;">HIGH</span>
+              <span style="font-size:13px;color:rgba(255,255,255,0.85);margin-left:12px;">
+                7 records &nbsp;|&nbsp; $52,500.00 at risk
+              </span>
+            </div>
+          </div>
+          <!-- Meta Info -->
+          <div style="background:#FEF3E2;padding:10px 16px;border-bottom:1px solid #ddd;">
+            <p style="margin:3px 0;font-size:12px;"><strong>Impact:</strong> Change Request blocked from progressing to READY_FOR_MODELING.</p>
+            <p style="margin:3px 0;font-size:12px;"><strong>Required Action:</strong>
+              <span style="color:#C0392B;font-weight:bold;">Send fee reminder to developer. Escalate if > 15 days outstanding.</span></p>
+            <p style="margin:3px 0;font-size:12px;color:#666;"><strong>Data Source:</strong> CHANGE_REQUESTS.ANALYSIS_FEE_PAID / ANALYSIS_FEE</p>
+          </div>
+          <!-- Detail Table -->
+          <div style="overflow-x:auto;padding:0 8px 8px;">
+            <table cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;">
+              <thead>
+                <tr style="background:#F2F3F4;">
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">GINR ID</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">INR ID</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">Company</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">Type</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">INR Type</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">CR Status</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">$ At Risk</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">Issue Detail</th>
+                </tr>
+              </thead>
+              <tbody>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2025</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2025</td>
+              <td style="padding:6px 8px;font-size:12px;">Clearway Energy Group</td>
+              <td style="padding:6px 8px;font-size:12px;">CONVENTIONAL</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $7,500.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Analysis fee $7,500 outstanding. CR blocked....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2023</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2023</td>
+              <td style="padding:6px 8px;font-size:12px;">SunPower Development</td>
+              <td style="padding:6px 8px;font-size:12px;">WIND</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $7,500.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Analysis fee $7,500 outstanding. CR blocked....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2021</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2021</td>
+              <td style="padding:6px 8px;font-size:12px;">8minutenergy</td>
+              <td style="padding:6px 8px;font-size:12px;">CONVENTIONAL</td>
+              <td style="padding:6px 8px;font-size:12px;">SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $7,500.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Analysis fee $7,500 outstanding. CR blocked....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2026</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2026</td>
+              <td style="padding:6px 8px;font-size:12px;">8minutenergy</td>
+              <td style="padding:6px 8px;font-size:12px;">BATTERY</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $7,500.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Analysis fee $7,500 outstanding. CR blocked....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2027</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2027</td>
+              <td style="padding:6px 8px;font-size:12px;">Invenergy</td>
+              <td style="padding:6px 8px;font-size:12px;">ESR</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $7,500.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Analysis fee $7,500 outstanding. CR blocked....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2024</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2024</td>
+              <td style="padding:6px 8px;font-size:12px;">Terraform Power</td>
+              <td style="padding:6px 8px;font-size:12px;">SOLAR</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $7,500.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Analysis fee $7,500 outstanding. CR blocked....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2022</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2022</td>
+              <td style="padding:6px 8px;font-size:12px;">Terraform Power</td>
+              <td style="padding:6px 8px;font-size:12px;">SOLAR</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $7,500.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Analysis fee $7,500 outstanding. CR blocked....</td>
+            </tr></tbody>
+            </table>
+            
+          </div>
+        </div>
+        <div style="margin:20px 0;border:1px solid #ddd;border-radius:8px;overflow:hidden;background:#fff;">
+          <!-- Section Header -->
+          <div style="background:#E67E22;padding:12px 16px;display:flex;align-items:center;">
+            <span style="font-size:20px;margin-right:10px;">🟠</span>
+            <div>
+              <span style="font-size:15px;font-weight:bold;color:#fff;">Payment Gateway Sync Error</span>
+              &nbsp;&nbsp;<span style="background:#E67E22;color:#fff;padding:3px 8px;border-radius:4px;font-size:11px;font-weight:bold;">HIGH</span>
+              <span style="font-size:13px;color:rgba(255,255,255,0.85);margin-left:12px;">
+                4 records &nbsp;|&nbsp; $55,000.00 at risk
+              </span>
+            </div>
+          </div>
+          <!-- Meta Info -->
+          <div style="background:#FEF3E2;padding:10px 16px;border-bottom:1px solid #ddd;">
+            <p style="margin:3px 0;font-size:12px;"><strong>Impact:</strong> Authorize.net shows payment received but RIOO fee_paid flag = FALSE. Study is blocked even though developer paid.</p>
+            <p style="margin:3px 0;font-size:12px;"><strong>Required Action:</strong>
+              <span style="color:#C0392B;font-weight:bold;">URGENT: Update fee_paid flag in RIOO. Contact developer to confirm payment.</span></p>
+            <p style="margin:3px 0;font-size:12px;color:#666;"><strong>Data Source:</strong> GINR_PAYMENT_DATA_VW.DATE_PAID vs ginr_request.FIS_FEE_PAID</p>
+          </div>
+          <!-- Detail Table -->
+          <div style="overflow-x:auto;padding:0 8px 8px;">
+            <table cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;">
+              <thead>
+                <tr style="background:#F2F3F4;">
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">GINR ID</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">INR ID</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">Company</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">Type</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">INR Type</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">CR Status</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">$ At Risk</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">Issue Detail</th>
+                </tr>
+              </thead>
+              <tbody>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2031</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2031</td>
+              <td style="padding:6px 8px;font-size:12px;">Luminant Generation</td>
+              <td style="padding:6px 8px;font-size:12px;">CONVENTIONAL</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $15,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Authorize.net transaction AUTH-94051646 recorded on 2026-05-30 but fis_fee_paid flag = FALSE. Possib...</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2028</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2028</td>
+              <td style="padding:6px 8px;font-size:12px;">Calpine Corporation</td>
+              <td style="padding:6px 8px;font-size:12px;">SOLAR</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $10,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Authorize.net transaction AUTH-19242340 recorded on 2026-06-04 but fis_fee_paid flag = FALSE. Possib...</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2030</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2030</td>
+              <td style="padding:6px 8px;font-size:12px;">Calpine Corporation</td>
+              <td style="padding:6px 8px;font-size:12px;">CONVENTIONAL</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $15,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Authorize.net transaction AUTH-41595120 recorded on 2026-05-27 but fis_fee_paid flag = FALSE. Possib...</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2033</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2033</td>
+              <td style="padding:6px 8px;font-size:12px;">Pattern Energy Group</td>
+              <td style="padding:6px 8px;font-size:12px;">WIND</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $15,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Authorize.net transaction AUTH-96223301 recorded on 2026-06-04 but fis_fee_paid flag = FALSE. Possib...</td>
+            </tr></tbody>
+            </table>
+            
+          </div>
+        </div>
+        <div style="margin:20px 0;border:1px solid #ddd;border-radius:8px;overflow:hidden;background:#fff;">
+          <!-- Section Header -->
+          <div style="background:#E67E22;padding:12px 16px;display:flex;align-items:center;">
+            <span style="font-size:20px;margin-right:10px;">🟠</span>
+            <div>
+              <span style="font-size:15px;font-weight:bold;color:#fff;">Payment Amount Mismatch</span>
+              &nbsp;&nbsp;<span style="background:#E67E22;color:#fff;padding:3px 8px;border-radius:4px;font-size:11px;font-weight:bold;">HIGH</span>
+              <span style="font-size:13px;color:rgba(255,255,255,0.85);margin-left:12px;">
+                5 records &nbsp;|&nbsp; $19,395.69 at risk
+              </span>
+            </div>
+          </div>
+          <!-- Meta Info -->
+          <div style="background:#FEF3E2;padding:10px 16px;border-bottom:1px solid #ddd;">
+            <p style="margin:3px 0;font-size:12px;"><strong>Impact:</strong> Amount received is less than required fee. Balance outstanding.</p>
+            <p style="margin:3px 0;font-size:12px;"><strong>Required Action:</strong>
+              <span style="color:#C0392B;font-weight:bold;">Invoice developer for balance. Do not start study until full amount received.</span></p>
+            <p style="margin:3px 0;font-size:12px;color:#666;"><strong>Data Source:</strong> GINR_PAYMENT_DATA_VW.TOTAL_AMOUNT vs ginr_request.FIS_FEE + SS_FEE</p>
+          </div>
+          <!-- Detail Table -->
+          <div style="overflow-x:auto;padding:0 8px 8px;">
+            <table cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;">
+              <thead>
+                <tr style="background:#F2F3F4;">
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">GINR ID</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">INR ID</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">Company</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">Type</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">INR Type</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">CR Status</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">$ At Risk</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">Issue Detail</th>
+                </tr>
+              </thead>
+              <tbody>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2034</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2034</td>
+              <td style="padding:6px 8px;font-size:12px;">Clearway Energy Group</td>
+              <td style="padding:6px 8px;font-size:12px;">WIND</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">IN_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $5,452.04
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Payment recorded: $9,547.96. Required: $15,000.00. Underpayment of $5,452.04....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2038</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2038</td>
+              <td style="padding:6px 8px;font-size:12px;">Calpine Corporation</td>
+              <td style="padding:6px 8px;font-size:12px;">ESR</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">IN_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $5,458.88
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Payment recorded: $9,541.12. Required: $15,000.00. Underpayment of $5,458.88....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2036</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2036</td>
+              <td style="padding:6px 8px;font-size:12px;">Orion Energy LLC</td>
+              <td style="padding:6px 8px;font-size:12px;">WIND</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS</td>
+              <td style="padding:6px 8px;font-size:12px;">IN_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $1,771.40
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Payment recorded: $8,228.60. Required: $10,000.00. Underpayment of $1,771.40....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2037</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2037</td>
+              <td style="padding:6px 8px;font-size:12px;">EDF Renewables</td>
+              <td style="padding:6px 8px;font-size:12px;">BATTERY</td>
+              <td style="padding:6px 8px;font-size:12px;">SS</td>
+              <td style="padding:6px 8px;font-size:12px;">IN_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $908.25
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Payment recorded: $4,091.75. Required: $5,000.00. Underpayment of $908.25....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2035</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2035</td>
+              <td style="padding:6px 8px;font-size:12px;">NextEra Energy Resources</td>
+              <td style="padding:6px 8px;font-size:12px;">SOLAR</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">IN_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $5,805.12
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Payment recorded: $9,194.88. Required: $15,000.00. Underpayment of $5,805.12....</td>
+            </tr></tbody>
+            </table>
+            
+          </div>
+        </div>
+        <div style="margin:20px 0;border:1px solid #ddd;border-radius:8px;overflow:hidden;background:#fff;">
+          <!-- Section Header -->
+          <div style="background:#F39C12;padding:12px 16px;display:flex;align-items:center;">
+            <span style="font-size:20px;margin-right:10px;">🟡</span>
+            <div>
+              <span style="font-size:15px;font-weight:bold;color:#fff;">Duplicate Payment Detected</span>
+              &nbsp;&nbsp;<span style="background:#F39C12;color:#fff;padding:3px 8px;border-radius:4px;font-size:11px;font-weight:bold;">MEDIUM</span>
+              <span style="font-size:13px;color:rgba(255,255,255,0.85);margin-left:12px;">
+                4 records &nbsp;|&nbsp; $45,000.00 at risk
+              </span>
+            </div>
+          </div>
+          <!-- Meta Info -->
+          <div style="background:#FEF9E7;padding:10px 16px;border-bottom:1px solid #ddd;">
+            <p style="margin:3px 0;font-size:12px;"><strong>Impact:</strong> Developer may have been double-charged via Authorize.net. Refund risk.</p>
+            <p style="margin:3px 0;font-size:12px;"><strong>Required Action:</strong>
+              <span style="color:#C0392B;font-weight:bold;">Review GINR_PAYMENT_DATA_VW for duplicate TRANS_IDs. Issue refund if confirmed.</span></p>
+            <p style="margin:3px 0;font-size:12px;color:#666;"><strong>Data Source:</strong> GINR_PAYMENT_DATA_VW — multiple rows per ID_CHANGE_REQUEST</p>
+          </div>
+          <!-- Detail Table -->
+          <div style="overflow-x:auto;padding:0 8px 8px;">
+            <table cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;">
+              <thead>
+                <tr style="background:#F2F3F4;">
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">GINR ID</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">INR ID</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">Company</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">Type</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">INR Type</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">CR Status</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">$ At Risk</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">Issue Detail</th>
+                </tr>
+              </thead>
+              <tbody>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2039</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2039</td>
+              <td style="padding:6px 8px;font-size:12px;">8minutenergy</td>
+              <td style="padding:6px 8px;font-size:12px;">BATTERY</td>
+              <td style="padding:6px 8px;font-size:12px;">SS</td>
+              <td style="padding:6px 8px;font-size:12px;">IN_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $5,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Two payment transactions found for same GINR. Possible double-charge to payer. Second trans: AUTH-13...</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2041</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2041</td>
+              <td style="padding:6px 8px;font-size:12px;">NextEra Energy Resources</td>
+              <td style="padding:6px 8px;font-size:12px;">WIND</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS</td>
+              <td style="padding:6px 8px;font-size:12px;">IN_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $10,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Two payment transactions found for same GINR. Possible double-charge to payer. Second trans: AUTH-54...</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2042</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2042</td>
+              <td style="padding:6px 8px;font-size:12px;">Calpine Corporation</td>
+              <td style="padding:6px 8px;font-size:12px;">WIND</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">IN_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $15,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Two payment transactions found for same GINR. Possible double-charge to payer. Second trans: AUTH-53...</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2040</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2040</td>
+              <td style="padding:6px 8px;font-size:12px;">Luminant Generation</td>
+              <td style="padding:6px 8px;font-size:12px;">WIND</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">IN_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $15,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Two payment transactions found for same GINR. Possible double-charge to payer. Second trans: AUTH-44...</td>
+            </tr></tbody>
+            </table>
+            
+          </div>
+        </div>
+        <div style="margin:20px 0;border:1px solid #ddd;border-radius:8px;overflow:hidden;background:#fff;">
+          <!-- Section Header -->
+          <div style="background:#F39C12;padding:12px 16px;display:flex;align-items:center;">
+            <span style="font-size:20px;margin-right:10px;">🟡</span>
+            <div>
+              <span style="font-size:15px;font-weight:bold;color:#fff;">Stale Pending > 30 Days</span>
+              &nbsp;&nbsp;<span style="background:#F39C12;color:#fff;padding:3px 8px;border-radius:4px;font-size:11px;font-weight:bold;">MEDIUM</span>
+              <span style="font-size:13px;color:rgba(255,255,255,0.85);margin-left:12px;">
+                23 records &nbsp;|&nbsp; $255,000.00 at risk
+              </span>
+            </div>
+          </div>
+          <!-- Meta Info -->
+          <div style="background:#FEF9E7;padding:10px 16px;border-bottom:1px solid #ddd;">
+            <p style="margin:3px 0;font-size:12px;"><strong>Impact:</strong> CR has been in PENDING_REVIEW with no fee or activity for extended period.</p>
+            <p style="margin:3px 0;font-size:12px;"><strong>Required Action:</strong>
+              <span style="color:#C0392B;font-weight:bold;">Contact developer to confirm intent. Consider withdrawing abandoned submissions.</span></p>
+            <p style="margin:3px 0;font-size:12px;color:#666;"><strong>Data Source:</strong> CHANGE_REQUEST_STATUS.PENDING_REVIEW(2) + CHANGE_REQUESTS.created</p>
+          </div>
+          <!-- Detail Table -->
+          <div style="overflow-x:auto;padding:0 8px 8px;">
+            <table cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;">
+              <thead>
+                <tr style="background:#F2F3F4;">
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">GINR ID</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">INR ID</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">Company</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">Type</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">INR Type</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">CR Status</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">$ At Risk</th>
+                  <th style="padding:8px;text-align:left;font-size:11px;color:#555;border-bottom:2px solid #ddd;">Issue Detail</th>
+                </tr>
+              </thead>
+              <tbody>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2011</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2011</td>
+              <td style="padding:6px 8px;font-size:12px;">EDF Renewables</td>
+              <td style="padding:6px 8px;font-size:12px;">WIND</td>
+              <td style="padding:6px 8px;font-size:12px;">SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $5,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">FIS fee $0 required but not paid. Study cannot begin....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2012</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2012</td>
+              <td style="padding:6px 8px;font-size:12px;">SunPower Development</td>
+              <td style="padding:6px 8px;font-size:12px;">WIND</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $15,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">FIS fee $10,000 required but not paid. Study cannot begin....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2043</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2043</td>
+              <td style="padding:6px 8px;font-size:12px;">Calpine Corporation</td>
+              <td style="padding:6px 8px;font-size:12px;">ESR</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $10,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">CR in PENDING_REVIEW for 110 days with no payment or activity. Potential abandoned submission....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2002</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2002</td>
+              <td style="padding:6px 8px;font-size:12px;">Luminant Generation</td>
+              <td style="padding:6px 8px;font-size:12px;">ESR</td>
+              <td style="padding:6px 8px;font-size:12px;">SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $5,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">FIS fee $0 required but not paid. Study cannot begin....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2005</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2005</td>
+              <td style="padding:6px 8px;font-size:12px;">NextEra Energy Resources</td>
+              <td style="padding:6px 8px;font-size:12px;">WIND</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $15,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">FIS fee $10,000 required but not paid. Study cannot begin....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2045</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2045</td>
+              <td style="padding:6px 8px;font-size:12px;">Vesper Energy</td>
+              <td style="padding:6px 8px;font-size:12px;">ESR</td>
+              <td style="padding:6px 8px;font-size:12px;">SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $5,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">CR in PENDING_REVIEW for 59 days with no payment or activity. Potential abandoned submission....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2023</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2023</td>
+              <td style="padding:6px 8px;font-size:12px;">SunPower Development</td>
+              <td style="padding:6px 8px;font-size:12px;">WIND</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $15,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Analysis fee $7,500 outstanding. CR blocked....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2047</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2047</td>
+              <td style="padding:6px 8px;font-size:12px;">sPower</td>
+              <td style="padding:6px 8px;font-size:12px;">CONVENTIONAL</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $15,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">CR in PENDING_REVIEW for 81 days with no payment or activity. Potential abandoned submission....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2044</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2044</td>
+              <td style="padding:6px 8px;font-size:12px;">Apex Clean Energy</td>
+              <td style="padding:6px 8px;font-size:12px;">SOLAR</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $10,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">CR in PENDING_REVIEW for 106 days with no payment or activity. Potential abandoned submission....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2050</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2050</td>
+              <td style="padding:6px 8px;font-size:12px;">Vesper Energy</td>
+              <td style="padding:6px 8px;font-size:12px;">SOLAR</td>
+              <td style="padding:6px 8px;font-size:12px;">SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $5,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">CR in PENDING_REVIEW for 107 days with no payment or activity. Potential abandoned submission....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2009</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2009</td>
+              <td style="padding:6px 8px;font-size:12px;">Invenergy</td>
+              <td style="padding:6px 8px;font-size:12px;">ESR</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $15,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">FIS fee $10,000 required but not paid. Study cannot begin....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2026</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2026</td>
+              <td style="padding:6px 8px;font-size:12px;">8minutenergy</td>
+              <td style="padding:6px 8px;font-size:12px;">BATTERY</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $15,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Analysis fee $7,500 outstanding. CR blocked....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2049</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2049</td>
+              <td style="padding:6px 8px;font-size:12px;">Calpine Corporation</td>
+              <td style="padding:6px 8px;font-size:12px;">WIND</td>
+              <td style="padding:6px 8px;font-size:12px;">SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $5,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">CR in PENDING_REVIEW for 107 days with no payment or activity. Potential abandoned submission....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2006</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2006</td>
+              <td style="padding:6px 8px;font-size:12px;">Clearway Energy Group</td>
+              <td style="padding:6px 8px;font-size:12px;">CONVENTIONAL</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $15,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">FIS fee $10,000 required but not paid. Study cannot begin....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2018</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2018</td>
+              <td style="padding:6px 8px;font-size:12px;">sPower</td>
+              <td style="padding:6px 8px;font-size:12px;">CONVENTIONAL</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $10,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Scoping Study fee $0 required but not paid....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2046</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2046</td>
+              <td style="padding:6px 8px;font-size:12px;">Orion Energy LLC</td>
+              <td style="padding:6px 8px;font-size:12px;">ESR</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $15,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">CR in PENDING_REVIEW for 32 days with no payment or activity. Potential abandoned submission....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2004</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2004</td>
+              <td style="padding:6px 8px;font-size:12px;">Clearway Energy Group</td>
+              <td style="padding:6px 8px;font-size:12px;">WIND</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $10,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">FIS fee $10,000 required but not paid. Study cannot begin....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2007</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2007</td>
+              <td style="padding:6px 8px;font-size:12px;">Invenergy</td>
+              <td style="padding:6px 8px;font-size:12px;">ESR</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $10,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">FIS fee $10,000 required but not paid. Study cannot begin....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2013</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2013</td>
+              <td style="padding:6px 8px;font-size:12px;">Orion Energy LLC</td>
+              <td style="padding:6px 8px;font-size:12px;">CONVENTIONAL</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $15,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Scoping Study fee $5,000 required but not paid....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2001</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2001</td>
+              <td style="padding:6px 8px;font-size:12px;">SunPower Development</td>
+              <td style="padding:6px 8px;font-size:12px;">BATTERY</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $15,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">FIS fee $10,000 required but not paid. Study cannot begin....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2048</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2048</td>
+              <td style="padding:6px 8px;font-size:12px;">sPower</td>
+              <td style="padding:6px 8px;font-size:12px;">WIND</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $10,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">CR in PENDING_REVIEW for 91 days with no payment or activity. Potential abandoned submission....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2022</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2022</td>
+              <td style="padding:6px 8px;font-size:12px;">Terraform Power</td>
+              <td style="padding:6px 8px;font-size:12px;">SOLAR</td>
+              <td style="padding:6px 8px;font-size:12px;">FIS_SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $15,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">Analysis fee $7,500 outstanding. CR blocked....</td>
+            </tr>
+            <tr style="border-bottom:1px solid #eee;">
+              <td style="padding:6px 8px;font-family:monospace;font-size:12px;">2008</td>
+              <td style="padding:6px 8px;font-size:12px;">INR24-2008</td>
+              <td style="padding:6px 8px;font-size:12px;">Invenergy</td>
+              <td style="padding:6px 8px;font-size:12px;">CONVENTIONAL</td>
+              <td style="padding:6px 8px;font-size:12px;">SS</td>
+              <td style="padding:6px 8px;font-size:12px;">PENDING_REVIEW</td>
+              <td style="padding:6px 8px;font-size:12px;color:#C0392B;font-weight:bold;">
+                $5,000.00
+              </td>
+              <td style="padding:6px 8px;font-size:11px;color:#666;">FIS fee $0 required but not paid. Study cannot begin....</td>
+            </tr></tbody>
+            </table>
+            
+          </div>
+        </div>
+
+      <!-- ═══ SQL ORACLE QUERIES ════════════════════════════════════ -->
+      <div style="background:#2C3E50;border-radius:8px;padding:16px 20px;margin:20px 0;">
+        <h3 style="color:#ECF0F1;margin:0 0 10px;font-size:13px;">
+          🔍 Oracle Verification Queries (run in RIOO DB)
+        </h3>
+        <pre style="color:#2ECC71;font-size:11px;margin:0;overflow-x:auto;line-height:1.6;">
+-- Unpaid FIS Fees:
+SELECT gr.id, gr.inr_id, gr.fis_fee, cr.change_request_status_id
+FROM ginr.ginr_request gr JOIN change_requests cr ON cr.ginr_request_id = gr.id
+WHERE gr.fis_fee > 0 AND gr.fis_fee_paid = 0 AND cr.change_request_status_id IN (2,3);
+
+-- Payment Sync Errors:
+SELECT gr.id, gpd.trans_id, gpd.date_paid, gr.fis_fee_paid
+FROM ginr.ginr_request gr JOIN ginr_payment_data_vw gpd ON gpd.rscr_id = cr.id
+WHERE gpd.date_paid IS NOT NULL AND gr.fis_fee_paid = 0;
+
+-- Duplicate Payments:
+SELECT id_change_request, COUNT(*) cnt
+FROM ginr_payment_data_vw GROUP BY id_change_request HAVING COUNT(*) > 1;
+        </pre>
+      </div>
+
+    </div>
+
+    <!-- ═══ FOOTER ════════════════════════════════════════════════ -->
+    <div style="background:#F2F3F4;padding:14px 30px;border-top:1px solid #ddd;">
+      <table style="width:100%;"><tr>
+        <td style="font-size:11px;color:#7F8C8D;">
+          🤖 GINR Payment Failure Monitor v1.0.0 &nbsp;|&nbsp; System: ERCOT RIOO-IS / RARF
+          &nbsp;|&nbsp; <a href="https://rioo.ercot.com/ginr/payments" style="color:#3498DB;">Open Dashboard</a>
+        </td>
+        <td style="text-align:right;font-size:11px;color:#7F8C8D;">
+          Questions? <a href="mailto:rioo-support@ercot.com" style="color:#3498DB;">rioo-support@ercot.com</a>
+        </td>
+      </tr></table>
+    </div>
+  </div>
+</body>
+</html>
