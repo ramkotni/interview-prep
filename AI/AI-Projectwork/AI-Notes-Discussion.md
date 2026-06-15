@@ -220,3 +220,77 @@ Clean and concise formatting suitable for senior-level interviews
 Predictive Settlement Risk
 
 Predict future participant defaults.
+
+06/14/2026 discussion
+
+AI Engineer ..
+
+Dell .. Appplication Architect . AI Engineer ..
+
+3-4 years Gen AI
+
+short resume ...
+
+remove java backend ... 
+
+spring boot FASt API ...
+
+AI & Gen AI
+
+first ...
+
+remove backend form skills ..
+
+ercot : remove 
+
+Amazon Robotics : AI Engineer
+
+bigoen : AI ..
+
+linked in add in header ...
+
+bacharlo rr..
+
+summary .. agentic AI Engineer ...
+
+===
+Manage kanna .. CI/CD pipe line ...
+
+application deploy ... devop infrstruct ..aoto
+
+logging , solar qube, automate ..
+
+migration ... on prem ...to migration ..
+
+---agentic ..
+
+Lang chain ...
+
+LLM quesiton ..answer ..sequentail step ...
+
+Lang graph ... task ... it will brak ..
+
+1. setp , tool, loop ... loop sequntion...
+
+repeate ...
+
+step store ...
+
+lang graph ... you tube ..
+
+report ..
+
+historicla data .. english ..question ...
+
+---
+RAG ..
+
+https://www.youtube.com/@abdul_bari
+
+RAG
+
+https://www.youtube.com/channel/UCh9nVJoWXmFb7sLApWGcLPQ
+
+
+
+
