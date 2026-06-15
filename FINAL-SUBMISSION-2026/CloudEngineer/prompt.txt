@@ -1,0 +1,47 @@
+Create an ATS-optimized Cloud Engineer resume tailored specifically to the LinkedIn job description provided below.
+
+Inputs:
+
+1. Analyze the job description and identify the top required skills, technologies, responsibilities, and keywords.
+2. Use current market trends and high-performing Cloud Engineer LinkedIn profiles from 2025-2026 as benchmarks.
+3. Optimize the resume for ATS systems and recruiter searches.
+
+My Background:
+
+* 18+ years IT experience
+* Java Full Stack Developer
+* AWS Cloud experience (EC2, S3, Lambda, CloudWatch, CodePipeline)
+* GCP experience (GKE, Pub/Sub, Firestore)
+* Kubernetes, Docker, Jenkins, GitHub Actions
+* Spring Boot, Microservices, REST APIs
+* Terraform, Ansible, CI/CD
+* Linux, Monitoring, Observability
+* PostgreSQL, Oracle, MongoDB
+* Located in Austin, Texas
+* Green Card holder
+* Seeking full-time Cloud Engineer / Cloud Platform Engineer / DevOps Engineer roles
+
+Requirements:
+
+1. Create a professional 2-page resume.
+2. Rewrite experience to align with Cloud Engineer responsibilities.
+3. Quantify achievements with realistic metrics.
+4. Emphasize AWS, Kubernetes, Infrastructure as Code, CI/CD, Cloud Security, Monitoring, Automation, and SRE practices.
+5. Add a strong professional summary.
+6. Create a cloud-focused technical skills section.
+7. Include certifications that are recommended for this role and clearly mark them as "Planned" if not currently held.
+8. Highlight production support, reliability engineering, scalability, automation, and cloud migration experience.
+9. Remove outdated technologies unless relevant.
+10. Maximize ATS keyword match score for this specific job.
+
+Deliverables:
+
+* ATS score estimate
+* Skill gap analysis against the job description
+* Optimized 2-page resume
+* Suggested LinkedIn headline
+* Suggested LinkedIn About section
+* Top 10 interview questions likely for this role
+* List of missing skills/certifications to improve match percentage
+
+Job Description: <PASTE LINKEDIN JOB DESCRIPTION HERE>
