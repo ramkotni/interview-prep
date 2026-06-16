@@ -1,0 +1,190 @@
+Ram Mohan Kotni  
+AI Engineer 
+Austin, TX | 603.858.7546 | ramkotni@gmail.com | https://www.linkedin.com/in/ramkotni/
+
+
+Objective:
+To obtain a challenging AI Engineer | Full Stack | Agentic AI | Cloud position in a dynamic and innovative organization, leveraging my 18 years of experience building enterprise systems with Java, Angular, and Python, now applying Agentic AI, LLMs, GitHub Copilot, APScheduler, and pandas to automate complex workflows, detect anomalies, and deliver intelligent full-stack solutions at scale.
+
+Professional Summary 
+  
+•	18 years of experience designing, developing, and automating complex enterprise systems using Java, JAX-RS/Spring Boot, Angular, Python, and AI/ML technologies. Recently pivoted to AI Engineering — building agentic workflows, payment failure detection pipelines, and LLM-assisted development using GitHub Copilot, APScheduler, pandas, and Oracle AI.
+•	Core strengths: 
+•	Backend (60%): Java 17+, JAX-RS, Spring Boot, Microservices, RESTful API design, JPA/Hibernate, secure coding.
+•	AI & Automation (25%): GitHub Copilot, Agentic AI, APScheduler, pandas, LangChain, OpenAI API, Plan-driven development.
+•	Cloud & DevOps: AWS, GCP, Kubernetes, Docker; CI/CD with Jenkins, GitHub Actions, Ansible.
+•	Data & Delivery: Oracle, PostgreSQL, MongoDB; Kafka/RabbitMQ; Agile/Scrum, cross-functional collaboration.
+•	Frontend (15%): Angular 16+, TypeScript, RxJS, Bootstrap, responsive UI/UX.
+
+ 
+Technical Skills
+
+•	Languages: Java (8–17), TypeScript, JavaScript (ES6+), Python 
+•	AI / ML Tools: GitHub Copilot, Agentic AI Workflows, scikit-learn, Flask, joblib, APScheduler, pandas, NumPy, cx_Oracle 
+•	Backend Frameworks: JAX RS, Spring Boot, Spring Security, Spring Cloud, Node.js 
+•	Frontend: Angular 16+, Angular Material, HTML5, CSS3, Bootstrap 
+•	Cloud: AWS (EC2, S3, Lambda, Code Pipeline, CloudWatch), GCP (GKE, Cloud Run), PCF 
+•	DevOps: Jenkins, GitHub Actions, Docker, Kubernetes, Ansible, Maven, Git (GitLab/Bitbucket) 
+•	Databases: Oracle, PostgreSQL, MySQL, MongoDB, Neo4j 
+•	Messaging & Caching: Kafka, RabbitMQ, Redis 
+•	Testing: JUnit, Mockito, Rest Assured, Cypress, JEST, JMeter 
+•	Tools & Observability: Swagger, Postman, SonarQube, JIRA/Confluence, Log4j/SLF4J, Kibana, Splunk, Prometheus, Elasticsearch 
+•	IDEs: IntelliJ IDEA, Eclipse, Spring STS, Visual Studio Code, NetBeans, MyEclipse 
+•	OS: Windows, Unix/Linux, Solaris
+
+
+Professional Experience:
+
+Electric Reliability Council of Texas (ERCOT), Taylor, TX, US
+Sr. AI Engineer | Full Stack | Agentic AI | Microservices | Cloud | Apr 2025 – Present
+
+Project: RIOO-RS, GINR & Repower System — Agentic AI, Retirement CR Automation & Payment Monitoring — Enhancing grid reliability operations and automating resource onboarding.
+
+
+•	Designed and implemented RESTful APIs with JAX RS for critical grid operations (solar, wind, conventional, combined cycle)
+•	Delivered low-latency APIs using JAX-RS and optimized backend workflows for faster data processing.
+•	Built and enhanced Angular UI components for RIOO IS and RIOO RS, improving usability and navigation across 10+ routes. 
+•	Delivered a production ready INR email notification system, enabling timely communication for grid reliability and operational alerts. 
+•	Refactored common code for 10+ entities (Breaker Switch, Generators, Lines, Load Resources), increasing reuse and cutting redundancy by 30%. 
+•	Implemented Ansible based deployments for higher environments with zero downtime. 
+•	Wrote unit and integration tests for 20+ APIs, achieving 99% reliability and reducing post release defects. 
+•	Resolved 25+ production issues and 50+ data corrections, improving data accuracy and meeting SLAs. 
+•	Investigated/mitigated file attachment limitations (e.g., unsupported types with Lastline API), improving file handling efficiency by 20%. 
+•	Collaborated in design reviews and defect triage for ESR graduation, SODG development, and CC configurations.
+•	AI Engineering — Use Case 1: GINR Feasibility Screening Model (Predictive ML)
+•	Designed and built an end-to-end GINR feasibility screening ML system — engineering 20 features from 16 Oracle DB tables (ginr_request, POIB_DATA, CONNECTIVITY_NODES, MOST_LIMITING_SERIES_ELEMENTS, CONGESTION_MANAGEMENT_ZONES), training a scikit-learn Logistic Regression pipeline (ROC-AUC > 0.85, 5-fold CV), and serving real-time PASS/FAIL predictions via a Flask REST microservice (port 5050) integrated with the existing Spring Boot RARF application.
+•	Architected a full ML lifecycle system: ColumnTransformer feature pipeline (StandardScaler, OneHotEncoder, SimpleImputer), versioned model registry (semantic versioning with joblib), prediction audit log, drift detection (15% FAIL-rate threshold), and automated retraining feedback loop triggered by Oracle CR status transitions (SENT_BACK / READY_FOR_MODELING). Deployed 4-tier risk scoring output (LOW/MEDIUM/HIGH/CRITICAL) with top risk factor explanations surfaced to developers at submission time.
+•	Engineered derived features from Oracle data: crez_flag (PUCT CREZ county mapping), months_to_cod (COD-submitDate), project_exceeds_thermal_flag (project_mw > MIN MLSE rating), nameplate_to_maxgen_ratio (overbuild detection); implemented Flask microservice (ginr_prediction_api.py) exposing 6 endpoints: POST /api/v1/score, batch, GET score/{id}, health, model/info, drift — consumed by Spring Boot RestTemplate in ChangeRequestService.
+•	AI Engineering — Use Case 2: GINR Payment Failure Monitor (Daily Scheduler)
+•	Designed and built an end-to-end automated GINR payment failure monitoring pipeline in Python using APScheduler, pandas, and Oracle DB — detecting 7 categories of payment failures (unpaid FIS/SS/Analysis fees, Authorize.net sync errors, amount mismatches, duplicate payments, stale PENDING_REVIEW CRs) across 100+ daily records and delivering severity-prioritized HTML/CSV reports to operations managers.
+•	Architected a production-grade BlockingScheduler with CronTrigger (7:00 AM CST daily), 1-hour misfire grace window, job coalescing, max_instances=1, and SIGTERM-based graceful shutdown for Docker/systemd environments; built audit trail CSV for trend analysis and implemented --dry-run / --now CLI flags for safe QA testing.
+•	Developed rich HTML email notification system using Python smtplib/MIME — dynamic severity banners (CRITICAL/HIGH/MEDIUM/ALL CLEAR), color-coded failure sections with detail tables, embedded Oracle verification SQL, and attached CSV reports delivered via ERCOT's Office 365 SMTP relay with auto-escalating subject lines.
+•	Tech: Python 3.10, scikit-learn (Logistic Regression, Pipeline, ColumnTransformer), Flask, pandas, NumPy, joblib, Oracle SQL (16-table JOIN), Java 17, JAX-RS/Jersey, Spring Boot RestTemplate, JPA/Hibernate, Angular 16, TypeScript, RxJS, APScheduler, smtplib/MIME, cx_Oracle, Docker, Jenkins, Maven, GitHub Copilot (Agentic AI)
+Amazon Robotics, Boston, US
+Sr. Sava Full Steck Developer | Feb 2023 – Mar 2025
+
+Project: Robotics Manufacturing & Warehouse Management — Real time tracking and automation of robot production and delivery.
+•	Architected Spring Boot microservices for manufacturing, delivery, and warehouse modules, improving scalability by 40% and reducing complexity by 35%.
+•	Developed Angular dashboards for real time KPIs (production, delivery status, warehouse stats)
+•	Achieved horizontal scalability through microservices and container orchestration.
+•	Automated operational workflows and digitized tracking dashboards to eliminate manual processes.
+•	Implemented Apache Kafka for event streaming, reducing inter service latency by 40%; adopted event driven design to cut delivery response time by 30%.
+•	Deployed services on AWS & GCP; achieved 99.9% uptime and 50% cost reduction via autoscaling and right sizing.
+•	Built CI/CD pipelines with AWS Code Pipeline and Jenkins, decreasing deployment time by 60%.
+•	Secured APIs with OAuth2/JWT and TLS; produced Swagger documentation to improve integration by 45% and reduce support queries by 25%.
+•	Achieved 90%+ code coverage with JUnit/Mockito and conducted load/stress testing; boosted response times by 25% with caching and load balancing.
+
+Biogen, North Carolina, US
+Lead Full Stack Java Developer |June 2022 – Jan 2023
+
+Project: Drug Supply Chain Management — Compliance and end to end visibility across global supply chains.
+•	Built secure Spring Boot microservices integrating ERP/CRM/inventory, improving data processing speed by 35%.
+•	Streamlined compliance workflows and automated reporting to minimize manual intervention.
+•	Delivered intuitive Angular dashboards aligned with modern UX principles for better accessibility
+•	Implemented OAuth2/JWT; ensured HIPAA/GDPR/FDA compliance with encryption and audit trails.
+•	Deployed on AWS (EC2, S3, RDS) achieving 99.9% uptime and 50% lower hardware costs; automated compliance checks/serialization (DSCSA) cutting audit time by 40%.
+•	Collaborated with cross-functional teams (product managers, logistics, legal) in a Scrum environment, achieving a 90% sprint goal completion rate and delivering features on time. 
+•	Implemented system monitoring using AWS CloudWatch and Prometheus to proactively troubleshoot and optimize system performance, reducing downtime by 50%. 
+•	Performed user acceptance testing (UAT) to ensure the system met functional requirements and provided positive user experience, with 95% of users reporting satisfaction during the testing phase. 
+
+Dell Technologies
+Application Architect |July 2015 – May 2022
+
+Project: Cloud-Native Migration & UI Modernization — Transforming legacy monolithic applications into scalable, cloud-native microservices while modernizing user interfaces for enterprise clients.
+
+
+•	Led migration from monoliths to microservices with Spring Boot.
+•	Engineered cloud-native architecture for dynamic scaling and high availability.
+•	Implemented responsive, component-driven UI for enhanced usability across devices.
+•	Orchestrated Kubernetes/GKE deployments; improved availability and streamlined container operations. 
+•	Applied Spring DI/MVC, JPA/Hibernate for robust backends; optimized data processing by 30%. 
+•	Established CI/CD pipelines; increased deployment frequency by 50% and reduced manual errors.
+•	Leveraged Java EE technologies (JSP, Servlets, JPA/Hibernate) to create robust, scalable backend systems, optimizing data processing by 30%.
+•	Integrated APIs using Angular and GraphQL, ensuring seamless and efficient communication between frontend and backend services.
+•	Applied Spring Framework for dependency injection and MVC architecture, improving maintainability and flexibility of complex applications.
+•	Utilized Postman and Swagger for API testing, ensuring that APIs were both robust and optimized for performance.
+•	Worked with PostgreSQL and MongoDB for database management, ensuring optimized queries for faster data retrieval and reporting.
+•	Collaborated closely with UX/UI teams to deliver optimized, visually appealing, and responsive web applications tailored to business needs.
+•	Led data migration projects from legacy systems to cloud platforms, ensuring seamless data integrity and reduced migration risks.
+•	Mentored junior developers, fostering a culture of learning and collaboration, and enhancing team productivity by 30%.
+
+IBM, New York, US
+Sr. Java Developer |May 2012 – July 2015
+
+Project: eCommerce Digital Transformation — Modernizing IBM’s eCommerce platform to deliver responsive, secure, and scalable solutions for global clients.
+
+•	Delivered responsive Angular UIs for eCommerce transformation; integrated backends via REST for seamless data flow. 
+•	Strengthened application security by enforcing encryption and secure coding standards.
+•	Optimized navigation and accessibility for seamless user interaction across platforms.
+•	Led improvements in the Packaging Module, optimizing product packaging processes and reducing assembly time by 20%.
+•	Played a key role in the Manage Barcode Project, designing, developing, and testing features that increased barcode scanning accuracy by 25%.
+•	Implemented ICE Faces screens for the Manage Barcode Project, enhancing user interface functionality.
+•	Created reusable TypeScript components and services to consume REST APIs within Angular 5’s component-based architecture, improving application scalability and maintainability.
+•	Led Agile PLM API integrations, improving system interoperability and streamlining product lifecycle management.
+•	Successfully implemented URL PX for the Barcode Project, enhancing system flexibility and enabling dynamic URL-based actions.
+•	Refined Agile configurations, enhancing user access control and security by adding new subclasses, attributes, roles, and user groups.
+•	Facilitated collaboration within the SR and Change Teams, aligning on project goals and driving a 15% increase in team productivity.
+
+
+
+Innominds, San Jose, CA
+Java Developer |Dec 2009 – March 2012
+
+Project: Queue Service Framework & Real-Time Data Exchange — Building enterprise-grade frameworks and utilities for task management and data synchronization.
+
+•	Designed/implemented a Queue Service Framework (Java/PL SQL), improving task management efficiency by 30%. 
+•	Optimized query execution and concurrency handling to boost system throughput.
+•	Developed AgileAsyncSWServices (Tomcat/WebLogic) for real time data exchange; created custom UI/attachment utilities to enhance UX. 
+•	Automated daily cleanup (UNCCleanup) jobs; integrated File Catalyst for accelerated data transfers.
+•	Utilized Agile API to enhance system functionality, gaining advanced proficiency in Agile PLM Technology and facilitating seamless integrations.
+•	Led the design, development, and testing of the Queue Service Framework, improving task management efficiency by 30%.
+•	Innovated Agile Attachment Utility/Custom UI, enabling advanced file operations and mimicking Agile’s OOTB features, improving user experience by 20%.
+•	Created a Custom UI web application deployed on WebLogic, enhancing user interface interactions and streamlining workflows with Agile URL PX.
+•	Integrated File Catalyst with Agile API calls to optimize data transfer speeds, increasing user satisfaction by 30%.
+•	Developed Groovy Scripts for platform code name validation in Agile, ensuring data accuracy and system reliability.
+•	Engineered web-based promotional functionalities for Dell products, increasing customer engagement by providing easy access to drivers and resources.
+
+
+Wells Fargo, IA
+Java Developer | Nov 2007 – May 2009
+
+Project: Smart Payment Plan & Bureau Retrieval System — Delivering secure, high-performance financial solutions for payment processing and data retrieval.
+
+•	Implemented Spring DI and transitioned EJBs to Spring enabled components.
+•	Automated repetitive workflows and enhanced resource utilization for better efficiency.
+•	Built a smart payment plan for ELC service (+20% efficiency) and the Bureau Retrieval System (+30% data retrieval speed). 
+•	Authored XML SAX parsers/XSLT transformations; contributed to SOA web services; established performance testing with JMeter and coverage with EclEmma.
+•	Transitioned EJBs to Spring-enabled EJBs, improving system performance and simplifying codebase maintenance.
+•	Delivered client-specific requirements for MR2 & ILOL, successfully meeting project milestones and improving client satisfaction.
+•	Utilized Find Bugs for code quality assurance, generating reports that identified and fixed potential bugs, improving software reliability.
+•	Developed JMeter scripts for performance testing, ensuring optimal application performance under varying load conditions.
+
+
+
+Education 
+
+•	 Computer Science from MK University, Master’s in Computer Applications 2001 
+•	Bachelor’s in Science - Mathematics from Andhra University, 1998  
+
+
+Certifications
+
+•	Oracle Certified Professional, Java SE Programmer
+•	Agile Scrum Master Certification
+
+
+Key Achievements
+
+•	Improved system reliability: Reduced downtime by 25% through proactive monitoring and optimization at Amazon Robotics. 
+•	ML-driven feasibility screening: Built GINR Feasibility Screening ML system (scikit-learn Logistic Regression, ROC-AUC > 0.85) integrating 20 features from 16 Oracle DB tables — enabling real-time PASS/FAIL scoring via Flask REST API at submission time, replacing manual planner pre-screening.
+•	AI-driven payment automation: Automated 7-category GINR payment failure detection using Python/pandas APScheduler, scanning 100+ records daily and replacing manual review — delivering actionable severity-prioritized reports to managers within minutes of the 7 AM CST run.
+•	Accelerated delivery cycles: Increased development velocity by 30% by implementing Agile practices and DevOps tools (Jenkins, Docker, Kubernetes). 
+•	Boosted user satisfaction: Enhanced UI and optimized application performance, resulting in a 30% increase in engagement.
+•	
+
+Professional Development
+
+•	Active contributor to open-source projects (Angular, Node.js). 
+•	Regular attendee of cloud, microservices, and frontend technology conferences/webinars.
+
+
