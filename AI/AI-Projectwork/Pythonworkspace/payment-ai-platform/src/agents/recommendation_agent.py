@@ -1,21 +1,45 @@
 from langchain_ollama import ChatOllama
 
 llm = ChatOllama(
-    model="llama3"
+    model="llama3.2"
 )
+import json
 
 def recommendation_agent(state):
 
     prompt = f"""
-    Based on root cause:
+    You are a payment failure recommendation agent.
 
+    Root cause:
     {state['root_cause']}
 
-    Provide recommendations.
+    Return ONLY valid JSON.
+
+    Format:
+    {{
+        "recommendations": [
+            {{
+                "priority": "HIGH",
+                "action": "action description",
+                "reason": "why this helps"
+            }}
+        ]
+    }}
     """
 
     response = llm.invoke(prompt)
 
-    state["recommendation"] = response.content
+    try:
+        state["recommendation"] = json.loads(response.content)
+    except Exception:
+        state["recommendation"] = {
+            "recommendations": [
+                {
+                    "priority": "UNKNOWN",
+                    "action": response.content,
+                    "reason": "LLM returned non JSON response"
+                }
+            ]
+        }
 
     return state

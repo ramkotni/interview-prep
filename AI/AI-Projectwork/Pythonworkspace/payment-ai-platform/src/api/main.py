@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 
-from src.graph import graph
+from graph import graph
 
 app = FastAPI()
 
