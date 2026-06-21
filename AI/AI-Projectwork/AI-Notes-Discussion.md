@@ -291,6 +291,26 @@ RAG
 
 https://www.youtube.com/channel/UCh9nVJoWXmFb7sLApWGcLPQ
 
+21st June 2026
+
+change the project with intent ...
+
+understand the code line by line ... explain ...
+
+embeddings are nothing but x and y axis coordingates ... matching
+
+words in 3 diminesnion lion cat cricket, if i need to add ball, i need to put in fromt of crickte
+
+it should know the meaning of the words .. this is called embedding ...
+
+read embeddings ...
+
+put the previous projects in 2 different projects ..
+
+regrassion model ... classification model ...
+
+
+
 
 
 
