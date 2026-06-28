@@ -309,6 +309,25 @@ put the previous projects in 2 different projects ..
 
 regrassion model ... classification model ...
 
+06/28/2026 Notes
+
+1. 2 Resumes
+
+2. Dell Machine learning for 1 year ( Logistic Regression ML)
+
+3. in all other projects only Machine learning .. No Java and Angular ..
+
+4. Last one year ... Agentic AI ... (payment inellgnece plante ... project )
+
+5. Basic Learning .. email .. Basic LLM Gen AI project ... senior architect level .. check with chatgpt ...
+add more functionality for 1 year experience AI developer ..
+
+single page one simple ..
+
+2 page will have detailed explainaiont ...
+
+market the resume ...in .. do easy apply ... and see the response ..
+
 
 
 
