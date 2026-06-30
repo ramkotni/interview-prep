@@ -1,0 +1,492 @@
+Most coding interviews (Amazon, Google, Microsoft, Meta, Walmart, PayPal, Dell, etc.) repeatedly test 10-12 core patterns, not hundreds of random questions.
+
+1. STACK (LIFO)
+
+Pattern: Last In First Out
+
+Real Life
+Browser Back button
+Undo operation
+Function Call Stack
+Expression evaluation
+Interview Problems
+Valid Parentheses
+Next Greater Element
+Min Stack
+Evaluate Reverse Polish Notation
+When to Use
+
+✅ Need recent element first
+✅ Nested structures
+✅ Matching brackets
+
+Python Implementation
+stack = []
+
+stack.append(10)
+stack.append(20)
+stack.append(30)
+
+print(stack.pop())   # 30
+print(stack[-1])     # Top = 20
+2. QUEUE (FIFO)
+
+Pattern: First In First Out
+
+Real Life
+Printer Queue
+Ticket Booking
+Task Scheduling
+Interview Problems
+BFS
+Sliding Window
+Producer Consumer
+When to Use
+
+✅ Process items in arrival order
+
+Python
+from collections import deque
+
+queue = deque()
+
+queue.append(10)
+queue.append(20)
+queue.append(30)
+
+print(queue.popleft())   # 10
+3. LINKED LIST
+
+Each node stores:
+
+Data + Next Pointer
+Why?
+
+Insertion/Deletion O(1)
+
+Interview Problems
+Reverse Linked List
+Detect Cycle
+Merge Lists
+Remove Nth Node
+Node Definition
+class Node:
+    def __init__(self,data):
+        self.data = data
+        self.next = None
+Create List
+head = Node(10)
+head.next = Node(20)
+head.next.next = Node(30)
+Traversal
+curr = head
+
+while curr:
+    print(curr.data)
+    curr = curr.next
+4. DOUBLY LINKED LIST
+Prev <- Node -> Next
+Use Cases
+Browser History
+Music Playlist
+LRU Cache
+Node
+class Node:
+    def __init__(self,data):
+        self.data = data
+        self.prev = None
+        self.next = None
+Interview Question
+Design Browser History
+LRU Cache
+5. HASH MAP / DICTIONARY
+
+Most frequently used DS in interviews.
+
+Pattern
+Key -> Value
+Time Complexity
+Operation	Time
+Insert	O(1)
+Search	O(1)
+Delete	O(1)
+Use Cases
+Frequency Counting
+Lookup
+Caching
+Example
+nums = [1,2,2,3,3,3]
+
+freq = {}
+
+for n in nums:
+    freq[n] = freq.get(n,0)+1
+
+print(freq)
+
+Output
+
+{1:1,2:2,3:3}
+Interview Problems
+Two Sum
+Group Anagrams
+Top K Frequent
+Longest Consecutive Sequence
+6. SET
+
+Stores unique values.
+
+Pattern
+s = set()
+
+s.add(10)
+s.add(20)
+s.add(10)
+
+print(s)
+
+Output
+
+{10,20}
+Use Cases
+Duplicate Detection
+Fast Search
+Interview Problems
+Contains Duplicate
+Longest Consecutive Sequence
+7. TREE
+
+Hierarchical Structure
+
+        10
+      /    \
+     5      15
+    / \
+   2   8
+Use Cases
+File System
+Organization Structure
+XML/HTML
+Node
+class TreeNode:
+
+    def __init__(self,val):
+        self.val = val
+        self.left = None
+        self.right = None
+8. BINARY SEARCH TREE (BST)
+
+Rule
+
+Left < Root < Right
+Why?
+
+Search becomes fast.
+
+Complexity
+Operation	Time
+Search	O(log n)
+Insert	O(log n)
+Interview Problems
+Validate BST
+Lowest Common Ancestor
+Kth Smallest Element
+9. DFS (Depth First Search)
+Pattern
+
+Go deep first.
+
+Tree DFS
+def dfs(root):
+
+    if not root:
+        return
+
+    print(root.val)
+
+    dfs(root.left)
+    dfs(root.right)
+Use Cases
+Backtracking
+Tree Traversal
+Path Finding
+Interview Questions
+Maximum Depth
+Path Sum
+Same Tree
+10. BFS (Breadth First Search)
+Pattern
+
+Level by Level
+
+10
+5 15
+2 8
+
+Visit:
+
+10 -> 5 ->15 ->2 ->8
+Code
+from collections import deque
+
+def bfs(root):
+
+    q = deque([root])
+
+    while q:
+
+        node = q.popleft()
+
+        print(node.val)
+
+        if node.left:
+            q.append(node.left)
+
+        if node.right:
+            q.append(node.right)
+Use Cases
+Shortest Path
+Level Order Traversal
+Interview Problems
+Binary Tree Level Order
+Minimum Depth
+Rotting Oranges
+11. GRAPH
+
+Most feared topic.
+
+Representation
+graph = {
+    'A':['B','C'],
+    'B':['D'],
+    'C':['E'],
+    'D':[],
+    'E':[]
+}
+Use Cases
+Social Network
+Google Maps
+Flight Routes
+12. GRAPH DFS
+Pattern
+
+Deep exploration
+
+def dfs(node, visited):
+
+    if node in visited:
+        return
+
+    visited.add(node)
+
+    print(node)
+
+    for nei in graph[node]:
+        dfs(nei, visited)
+
+visited = set()
+
+dfs('A', visited)
+13. GRAPH BFS
+Pattern
+
+Shortest path in unweighted graph
+
+from collections import deque
+
+def bfs(start):
+
+    visited = set()
+
+    q = deque([start])
+
+    visited.add(start)
+
+    while q:
+
+        node = q.popleft()
+
+        print(node)
+
+        for nei in graph[node]:
+
+            if nei not in visited:
+
+                visited.add(nei)
+
+                q.append(nei)
+14. HEAP (Priority Queue)
+
+Extremely important.
+
+Pattern
+
+Always get smallest/largest element
+
+Python
+import heapq
+
+heap = []
+
+heapq.heappush(heap, 10)
+heapq.heappush(heap, 5)
+heapq.heappush(heap, 2)
+
+print(heapq.heappop(heap))
+
+Output
+
+2
+Use Cases
+Top K Problems
+Scheduler
+Priority Tasks
+Interview Questions
+Kth Largest Element
+Top K Frequent
+Merge K Lists
+15. BINARY SEARCH
+
+Pattern most frequently asked.
+
+When to Use
+
+Problem contains:
+
+Sorted Array
+Sorted Data
+Search Space
+Example
+def binary_search(nums,target):
+
+    left = 0
+    right = len(nums)-1
+
+    while left <= right:
+
+        mid = (left+right)//2
+
+        if nums[mid] == target:
+            return mid
+
+        elif nums[mid] < target:
+            left = mid+1
+
+        else:
+            right = mid-1
+
+    return -1
+16. SLIDING WINDOW
+Pattern
+
+Subarray / Substring
+
+Keywords:
+
+Longest
+Smallest
+Maximum
+Minimum
+Continuous
+Substring
+Subarray
+Example
+
+Maximum sum size K
+
+def max_sum(nums,k):
+
+    window = sum(nums[:k])
+
+    result = window
+
+    for i in range(k,len(nums)):
+
+        window += nums[i]
+        window -= nums[i-k]
+
+        result = max(result,window)
+
+    return result
+17. TWO POINTERS
+Pattern
+
+Array/String
+
+left = 0
+right = len(nums)-1
+Use Cases
+Sorted Arrays
+Palindrome
+Pair Sum
+Interview Problems
+Two Sum Sorted
+Container With Most Water
+Valid Palindrome
+18. FAST & SLOW POINTER
+Pattern
+
+Linked List
+
+slow = head
+fast = head
+Use Cases
+Detect Cycle
+Find Middle
+Example
+while fast and fast.next:
+
+    slow = slow.next
+    fast = fast.next.next
+Interview Problems
+Linked List Cycle
+Happy Number
+Interview Cheat Sheet (Most Important)
+Pattern	Questions Asked
+HashMap	Very High
+Sliding Window	Very High
+Two Pointers	Very High
+Binary Search	Very High
+Stack	Very High
+DFS	Very High
+BFS	Very High
+Linked List	High
+Heap	High
+Tree Traversal	High
+Graph Traversal	Medium-High
+Dynamic Programming	Medium-High
+Top 20 Must-Do Coding Questions
+Two Sum (HashMap)
+Valid Parentheses (Stack)
+Reverse Linked List
+Merge Two Sorted Lists
+Linked List Cycle
+Binary Search
+Maximum Subarray
+Best Time to Buy and Sell Stock
+Longest Substring Without Repeating Characters
+Sliding Window Maximum
+Number of Islands (DFS)
+Clone Graph
+Course Schedule
+Lowest Common Ancestor
+Kth Largest Element
+Top K Frequent Elements
+Merge Intervals
+Rotting Oranges (BFS)
+Word Ladder (BFS)
+LRU Cache
+
+For your coding test as an 18+ year Java Full Stack developer transitioning into AI roles, I would focus on these patterns in order:
+
+HashMap
+Sliding Window
+Two Pointers
+Stack
+Binary Search
+Linked List
+Trees (DFS/BFS)
+Heap
+Graph DFS/BFS
+
+These 9 patterns cover roughly 80-90% of interview coding rounds.

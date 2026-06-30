@@ -1,0 +1,17 @@
+# Ignore all Python virtual environments
+**/.venv/
+**/venv/
+
+# Python cache
+**/__pycache__/
+*.py[cod]
+
+# IDE files
+.idea/
+.vscode/
+
+# Environment variables
+.env
+
+# Archives
+*.zip
