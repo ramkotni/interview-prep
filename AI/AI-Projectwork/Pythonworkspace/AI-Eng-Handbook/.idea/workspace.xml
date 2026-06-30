@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="285bf738-c0ba-4918-83e0-73bc4eba90a1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/AI/AI-Projectwork/Pythonworkspace/AI-Eng-Handbook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AI/AI-Projectwork/Pythonworkspace/AI-Eng-Handbook/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="285bf738-c0ba-4918-83e0-73bc4eba90a1" name="Changes" comment="Stop tracking .venv" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
@@ -70,6 +69,47 @@
       <option name="presentableId" value="Default" />
       <updated>1782655174322</updated>
     </task>
+    <task id="LOCAL-00001" summary="latest">
+      <option name="closed" value="true" />
+      <created>1782853446181</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1782853446181</updated>
+    </task>
+    <task id="LOCAL-00002" summary="latest">
+      <option name="closed" value="true" />
+      <created>1782853452345</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1782853452345</updated>
+    </task>
+    <task id="LOCAL-00003" summary="latest">
+      <option name="closed" value="true" />
+      <created>1782853454475</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1782853454475</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Stop tracking .venv">
+      <option name="closed" value="true" />
+      <created>1782853512317</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1782853512317</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Stop tracking .venv">
+      <option name="closed" value="true" />
+      <created>1782853517262</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1782853517262</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +182,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="latest" />
+    <MESSAGE value="Stop tracking .venv" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stop tracking .venv" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
