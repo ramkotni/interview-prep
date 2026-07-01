@@ -1,44 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="285bf738-c0ba-4918-83e0-73bc4eba90a1" name="Changes" comment="Stop tracking .venv" />
-
-    <list default="true" id="285bf738-c0ba-4918-83e0-73bc4eba90a1" name="Changes" comment="" />
+    <list default="true" id="285bf738-c0ba-4918-83e0-73bc4eba90a1" name="Changes" comment="latest">
+      <change afterPath="$PROJECT_DIR$/AI/AI-Projectwork/Pythonworkspace/AI-Eng-Handbook/02-Projects/Amazon-experience-AI.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AI/AI-Projectwork/Pythonworkspace/AI-Eng-Handbook/02-Projects/Biogen-Dell-Exp-AI.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AI/AI-Projectwork/Pythonworkspace/AI-Eng-Handbook/02-Projects/ERCOT-AI-Experience.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AI/AI-Projectwork/Pythonworkspace/AI-Eng-Handbook/02-Projects/My-Resume-Update-Notes.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AI/AI-Projectwork/Pythonworkspace/AI-Eng-Handbook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AI/AI-Projectwork/Pythonworkspace/AI-Eng-Handbook/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-
     <option name="PUSH_AUTO_UPDATE" value="true" />
-
-   <option name="RECENT_BRANCH_BY_REPOSITORY">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ramkotni"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ramkotni&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
 
-    "url": "https://github.com/ramkotni/interview-prep.git",
+    &quot;url&quot;: &quot;https://github.com/ramkotni/interview-prep.git&quot;,
 
-    "url": "https://github.com/ramkotni/AI-Eng-Handbook.git",
-    "accountId": "bba9e65f-8daa-4f63-b396-aa76dcdf3d08"
+    &quot;url&quot;: &quot;https://github.com/ramkotni/AI-Eng-Handbook.git&quot;,
+    &quot;accountId&quot;: &quot;bba9e65f-8daa-4f63-b396-aa76dcdf3d08&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5,
-  "fromUser": false
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3FlgfazjryT7LRAKJniPQS6tAPJ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -51,10 +53,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-
     "git-widget-placeholder": "main",
-
-    "git-widget-placeholder": "a82ee0e2",
     "last_opened_file_path": "C:/RamKotni/GitHub/interview-prep/AI/AI-Projectwork/Pythonworkspace/AI-Eng-Handbook",
     "nodejs_package_manager_path": "npm"
   }
