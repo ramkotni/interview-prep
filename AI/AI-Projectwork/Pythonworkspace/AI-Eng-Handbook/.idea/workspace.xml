@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="285bf738-c0ba-4918-83e0-73bc4eba90a1" name="Changes" comment="Stop tracking .venv" />
+
+    <list default="true" id="285bf738-c0ba-4918-83e0-73bc4eba90a1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+
     <option name="PUSH_AUTO_UPDATE" value="true" />
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
+
+   <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
@@ -24,7 +28,10 @@
 }]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
+
     "url": "https://github.com/ramkotni/interview-prep.git",
+
+    "url": "https://github.com/ramkotni/AI-Eng-Handbook.git",
     "accountId": "bba9e65f-8daa-4f63-b396-aa76dcdf3d08"
   }
 }]]></component>
@@ -44,7 +51,10 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
+
     "git-widget-placeholder": "main",
+
+    "git-widget-placeholder": "a82ee0e2",
     "last_opened_file_path": "C:/RamKotni/GitHub/interview-prep/AI/AI-Projectwork/Pythonworkspace/AI-Eng-Handbook",
     "nodejs_package_manager_path": "npm"
   }
